@@ -1,0 +1,20 @@
+@font-face {
+    font-family: BDScript;
+    src: url(./fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(./fonts/TT\ Norms\ Pro\ Regular.otf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(./fonts/TT\ Norms\ Pro\ Medium.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(./fonts/TT\ Norms\ Pro\ Bold.otf);
+}
+
+
