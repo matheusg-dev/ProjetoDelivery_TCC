@@ -17,4 +17,12 @@
     src: url(./fonts/TT\ Norms\ Pro\ Bold.otf);
 }
 
+body{
+    font-family: Regular;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
 
