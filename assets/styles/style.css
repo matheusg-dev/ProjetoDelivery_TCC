@@ -21,10 +21,22 @@ body{
     font-family: Regular;
 }
 
+
 .flex{
     display: flex;
     flex-direction: column;
 }
+
+.container{
+    width: 184px;
+    height: 205.05px;
+}
+
+.fruit-btn{
+    width: 184px;
+    height: 205.05px;
+}
+
 
 .logo__adicao{
     width: 24px;
@@ -37,7 +49,7 @@ body{
     background-position: center;
 }
 
-.mais::before{
+.cifrao::before{
     color: #F08626;
     content: '\0024';
 }
@@ -64,3 +76,5 @@ body{
     background-size: 12px;
     background-position: center;
     }
+
+
