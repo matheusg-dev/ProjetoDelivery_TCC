@@ -1,40 +1,59 @@
 @font-face {
     font-family: BDScript;
-    src: url(./fonts/BadScript-Regular.ttf);
+    src: url(../fonts/BadScript-Regular.ttf);
 }
 
 @font-face {
     font-family: Regular;
-    src: url(./fonts/TT\ Norms\ Pro\ Regular.otf);
+    src: url(../fonts/TT\ Norms\ Pro\ Regular.otf);
 }
 
 @font-face {
     font-family: Medium;
-    src: url(./fonts/TT\ Norms\ Pro\ Medium.otf);
+    src: url(../fonts/TT\ Norms\ Pro\ Medium.otf);
 }
 @font-face {
     font-family: Bold;
-    src: url(./fonts/TT\ Norms\ Pro\ Bold.otf);
+    src: url(../fonts/TT\ Norms\ Pro\ Bold.otf);
 }
 
-body{
-    font-family: Regular;
+body, html{
+    height: 100%;
+  }
+
+main{
+    height: 100% ;
+     display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 
-.flex{
+/* .flex{
+    display: flex;
+  align-items: center;
+        justify-content: center;
+}
+ */
+.container{
+    width: 15%;
     display: flex;
     flex-direction: column;
 }
 
-.container{
-    width: 184px;
-    height: 205.05px;
-}
-
 .fruit-btn{
+    font-family: Bold;
+    color: #FFF2E7;
+    border: none;
     width: 184px;
-    height: 205.05px;
+height: 40px;
+    background: #FFA451;
+box-shadow: 0px -30px 60px rgba(32, 32, 32, 0.05);
+border-radius: 16px 0px;
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
 }
 
 
