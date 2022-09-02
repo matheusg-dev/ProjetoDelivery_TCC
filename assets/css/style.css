@@ -29,16 +29,26 @@ main{
 }
 
 
-.flex{
+/* .flex{
+    display: flex;
+  align-items: center;
+        justify-content: center;
+}
+ */
+.container{
+    width: 15%;
     display: flex;
 }
 
+<<<<<<< HEAD:assets/css/style.css
 .container{
     width: 15%;
     display: flex;
     flex-direction: column;
 }
 
+=======
+>>>>>>> f16294966821403f6e893d1600d21d73b6a92db8:assets/styles/style.css
 .fruit-btn{
     font-family: Bold;
     color: #FFF2E7;
