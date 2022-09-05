@@ -1,0 +1,116 @@
+@font-face {
+    font-family: BDScript;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/TT\ Norms\ Pro\ Regular.otf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(../fonts/TT\ Norms\ Pro\ Medium.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(../fonts/TT\ Norms\ Pro\ Bold.otf);
+}
+
+
+
+body{
+    height: 100vh;
+    font-family: Regular;
+  }
+
+button{
+    color: #ffffff;
+    font-family: Medium;
+    background: #FFA451;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input{
+    background:#f5caca;
+    padding-left: 15px;
+    font-family: Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(194, 189, 189, 0.7);
+}
+
+.flex{
+    display: flex;  
+}
+
+  
+.tela__inteira{
+    height: 100%;
+}  
+
+.tela__primaria{
+    height: 60%;
+    background: #FFA451;
+    justify-content: center;
+}
+
+.tela__primaria--img{
+    width: 27%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tela__secundaria{
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nome{
+    flex-direction: column;
+}
+
+.nome__label{
+    font-family: Medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #27214D;
+    margin-bottom: 17px;
+}
+  
+.nome__input{
+    width: 327px;
+    height: 56px;
+    background: #f5caca;
+    border-radius: 10px;
+    margin-bottom: 58px;
+}
+
+.btn{
+    
+
+}
+
+.btn__pedido{
+    width: 163px;
+    height: 56px;
+    background: #FFA451;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn__cadastro{
+    width: 163px;
+    height: 56px;
+    background: #FFA451;
+    border-radius: 10px;
+    border: none;
+}
