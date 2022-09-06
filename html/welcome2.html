@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/estilosPadroes.css">
 
 </head>
 <body>
 
-    <main>
-        <div class="uni">
-            <div class="uni-img">
-                <img class="cesta1" src="../assets/img/cesta1.svg" alt="Cesta de frutas">
-                <img src="../assets/img/sombraCesta1.svg" alt="Sombra da Cesta de frutas">
+    <main class="tela__inteira ">
+        <section class="tela__primaria flex">
+            <div class="flex tela__primaria--img">
+                <img  src="../assets/img/cesta1.svg" alt="Cesta de frutas">
+                <img class="primaria__sombra" src="../assets/img/sombraCesta1.svg" alt="Sombra da Cesta de frutas">
             </div>       
-        </div>
-        <div class="secundaria">
-            <h1 class="titulo-h1">Obtenha o combo de salada de frutas mais fresco</h1>
-            <p class="paragrafo-1">Entregamos a melhor e mais fresca salada de frutas da cidade. Peça um combo hoje mesmo!!!</p>
-            <button class="btn">Vamos continuar</button>
-        </div>
+        </section>
+        <section class="tela__secundaria flex">
+            <div >
+                <h1 class="nome__label">Obtenha o combo de salada de frutas mais fresco</h1>
+                <p class="paragrafo_pg2">Entregamos a melhor e mais fresca salada <br> de frutas da cidade. Peça um combo hoje mesmo!!!</p>
+                <button class="btn__continuar">Vamos continuar</button>
+            </div>
+        </section>
     </main>
 
     <script src="./js/main.js" ></script>

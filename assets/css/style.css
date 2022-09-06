@@ -17,51 +17,52 @@
     src: url(../fonts/TT\ Norms\ Pro\ Bold.otf);
 }
 
+
+
 body{
     height: 100vh;
-  }
-
-main{
-    height: 100% ;
-     display: flex;
-        align-items: center;
-        justify-content: center;
+    font-family: Regular;
+}
+ 
+.flex{
+    display: flex;  
 }
 
+  
+.tela__inteira{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}  
 
-/* .flex{
-    display: flex;
-  align-items: center;
-        justify-content: center;
-}
- */
-.container{
-    width: 15%;
-    display: flex;
-}
 
 .container{
-    width: 15%;
-    display: flex;
+    width: 25%;
     flex-direction: column;
+    align-items: center;
+  
 }
 
-.fruit-btn{
-    font-family: Bold;
+.container__img{
+    width: 100%;
+}
+
+ .fruit-btn{
+    font-family: BDScript;
     color: #FFF2E7;
     border: none;
-    width: 184px;
-height: 40px;
+    width: 100%;
+    height: 40px;
     background: #FFA451;
-box-shadow: 0px -30px 60px rgba(32, 32, 32, 0.05);
-border-radius: 16px 0px;
-font-style: italic;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+    box-shadow: 0px -30px 60px rgba(32, 32, 32, 0.05);
+    border-radius: 16px 0px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
 }
 
-
+/*
 .logo__adicao{
     width: 24px;
     height: 24px;
@@ -99,13 +100,9 @@ line-height: 40px;
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
-    }
+    } */
 
-/* Estilos padrões */
 
-.menu{
-    flex-direction: row;
-}
 
 
 

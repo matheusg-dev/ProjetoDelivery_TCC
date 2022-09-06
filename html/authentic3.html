@@ -15,15 +15,18 @@
         <section class="tela__primaria flex">
             <div class="flex tela__primaria--img">
                 <img src="../assets/img/cesta2.svg" alt="cesta de frutas2">
-                <img src="../assets/img/sombracesta2.svg" alt="sombra da cesta de frutas 2">
+                <img class="primaria__sombra" src="../assets/img/sombracesta1.svg" alt="sombra da cesta de frutas 2">
             </div>
         </section>
 
         <section class="tela__secundaria flex">
             <div class="nome flex">
-                <label class="nome__label" for="fnome">Qual é o seu nome?</label>
-                <input class="nome__input" type="text" id="fnome" placeholder="Chris"></div>
-            <div class="btn">
+                <label class="nome__label" for="fnome">Qual é o seu usuario?</label>
+                <input class="nome__input--usuario" type="text" id="fnome" placeholder="Chris">
+                <label class="nome__label" for="fnome">Senha</label>
+                <input class="nome__input" type="password"  placeholder="Digite sua senha">
+            </div>
+            <div >
                 <button class="btn__pedido" type="submit">Iniciar pedido</button>
                 <button class="btn__cadastro" type="submit">Cadastrar-se</button>
             </div>
