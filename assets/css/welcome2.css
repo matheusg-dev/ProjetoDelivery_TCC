@@ -26,7 +26,12 @@
     flex-direction: column;
 }
 
-.nome__label{
+.user{
+    width: 80%;
+    justify-content: center;
+}
+
+.user__nome--label{
     font-family: Medium;
     font-weight: 500;
     font-size: 16px;
@@ -34,16 +39,17 @@
     letter-spacing: -0.01em;
     color: #27214D;
     margin-bottom: 17px;
+    text-align: center;
 }
 
-.paragrafo_pg2{
+.user__paragrafo--pg2{
     margin-bottom:80px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
     color: #5D577E;
-
+    text-align: center;
 }
 
 
@@ -80,7 +86,7 @@
     border: none;
 }
 
-.btn__continuar{
+.user__btn--continuar{
     width: 100%;
     height:56px;
 }
