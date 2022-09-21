@@ -96,20 +96,24 @@
 }
 
 @media screen and (max-width: 960px) {
+
     .user__texto{
-        text-align: center;
+        width: 80%;
     }
 
-    .user__nome--label{
-        font-size: 1.7vh;
-        margin-bottom:  1.8vh;
+    .user__nome--label {
+        margin-bottom: 3vh;
+        font-size: 3vh;
     }
 
-    .user__paragrafo--pg2{
-        font-size: 1.7vh;
-        line-height: 2.56vh;
+    .user__paragrafo--pg2 {
+        font-size: 2.2vh;
     }
 
+    .user__btn--continuar {
+        width: 80%;
+    }
+  
 }
 
 
@@ -123,4 +127,15 @@
     .tela__primaria--img {
         width: 97%;
     }
+
+    .user__nome--label{
+        font-size: 1.7vh;
+        margin-bottom:  1.8vh;
+    }
+
+    .user__paragrafo--pg2{
+        font-size: 1.7vh;
+        line-height: 2.56vh;
+    }
+
 }
