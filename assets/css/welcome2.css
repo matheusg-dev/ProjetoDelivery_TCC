@@ -32,21 +32,25 @@
     align-items: center;
 }
 
+.user__texto{
+    width: 60%;
+}
+
 .user__nome--label{
     font-family: Medium;
     font-weight: 500;
-    font-size: 1.7vh;
+    font-size: 3.7vh;
     line-height: 2.56vh;
     letter-spacing: -0.01em;
     color: #27214D;
-    margin-bottom:  1.8vh;
+    margin-bottom:  3.8vh;
 }
 
 .user__paragrafo--pg2{
-    margin-bottom:80px;
+    margin-bottom:8.62vh;
     font-weight: 400;
-    font-size: 1.7vh;
-    line-height: 2.56vh;
+    font-size: 2.7vh;
+    line-height: 3.56vh;
     letter-spacing: -0.01em;
     color: #5D577E;
    
@@ -89,6 +93,23 @@
 .user__btn--continuar{
     width: 60%;
     height:56px;
+}
+
+@media screen and (max-width: 960px) {
+    .user__texto{
+        text-align: center;
+    }
+
+    .user__nome--label{
+        font-size: 1.7vh;
+        margin-bottom:  1.8vh;
+    }
+
+    .user__paragrafo--pg2{
+        font-size: 1.7vh;
+        line-height: 2.56vh;
+    }
+
 }
 
 
