@@ -1,0 +1,141 @@
+
+.tela__primaria{
+    height: 60%;
+    background: #FFA451;
+    justify-content: center;
+}
+
+.tela__primaria--img{
+    width: 27%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.primaria__sombra{
+    margin-top: 0.85vh;
+}
+
+.tela__secundaria{
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nome{
+    flex-direction: column;
+}
+
+.user{
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__texto{
+    width: 60%;
+}
+
+.user__nome--label{
+    font-family: Medium;
+    font-weight: 500;
+    font-size: 3.7vh;
+    line-height: 2.56vh;
+    letter-spacing: -0.01em;
+    color: #27214D;
+    margin-bottom:  3.8vh;
+}
+
+.user__paragrafo--pg2{
+    margin-bottom:8.62vh;
+    font-weight: 400;
+    font-size: 2.7vh;
+    line-height: 3.56vh;
+    letter-spacing: -0.01em;
+    color: #5D577E;
+   
+}
+
+
+.nome__input--usuario{
+    width: 327px;
+    height: 56px;
+    background: #f5caca;
+    border-radius:  1vh;
+    margin-bottom: 0.85vh;
+}
+  
+.nome__input{
+    width: 327px;
+    height: 56px;
+    background: #f5caca;
+    border-radius:  1vh;
+    margin-bottom: 58px;
+}
+
+
+.btn__pedido{
+    width: 163px;
+    height: 56px;
+    background: #FFA451;
+    border-radius:  1vh;
+    border: none;
+}
+
+.btn__cadastro{
+    width: 163px;
+    height: 56px;
+    background: #FFA451;
+    border-radius:  1vh;
+    border: none;
+}
+
+.user__btn--continuar{
+    width: 60%;
+    height:56px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .user__texto{
+        width: 80%;
+    }
+
+    .user__nome--label {
+        margin-bottom: 3vh;
+        font-size: 3vh;
+    }
+
+    .user__paragrafo--pg2 {
+        font-size: 2.2vh;
+    }
+
+    .user__btn--continuar {
+        width: 80%;
+    }
+  
+}
+
+
+@media screen and (max-width: 912px) {
+    .tela__primaria--img {
+        width: 81%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .tela__primaria--img {
+        width: 97%;
+    }
+
+    .user__nome--label{
+        font-size: 1.7vh;
+        margin-bottom:  1.8vh;
+    }
+
+    .user__paragrafo--pg2{
+        font-size: 1.7vh;
+        line-height: 2.56vh;
+    }
+
+}
