@@ -1,4 +1,5 @@
-.form {
+/* /* .form {
+
     padding: 40px;
 }
 
@@ -9,7 +10,7 @@
     align-items: center;
 
    /* background: #f7f5f5;    */
-}
+/* }
 
 .grid{
     display: grid;
@@ -24,12 +25,12 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(169,169,169,1.0);
     border: none;
-
     box-sizing: border-box;
     padding: 4px 10px;
 }
 
 .botao{
+    background: #191970;
      height:56px;
      width:327px;
      margin-top: 20px;
@@ -42,12 +43,90 @@
 }
 
 .form-container {
-    background: blue;
+    background: #191970;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
+@media screen and (max-width: 960px){
+    .form {
+        width: 36%;
+    }
+}  */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form{
+    padding: 30px;
+}
+
+.flexivel{
+    
+    flex-direction: column;
+    
+    
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 30px;
+
+}
+
+.nome{ 
+    border-radius: 10px;
+    background: #F7F5F5;
+    width:327px;
+    height:56px;
+    box-shadow: 2px 2px 2px rgba(169,169,169,0.9);
+    padding:4px 10px;
+    left:0px;
+    top:0px;
+    border:none;
+    box-sizing: border-box;
+}
+
+.botao{
+    width:327px;
+    height:56px;
+    margin-top: 30px;  
+}
+
+.form-container{
+    display: flex;
+    background: blue;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+    .color {
+        background: #F7F5F5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+
+
+
+
+ 
