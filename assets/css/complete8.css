@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.center{
+    flex-direction: column;
+
+}
+
+
+
+.check{
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 164px;
+    height:164px;
+    left:0px;
+    top:0px;
+    background: #e0ffe5;
+    border-radius: 200px;
+    margin-bottom:50px ;
+}
