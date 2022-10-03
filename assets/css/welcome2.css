@@ -90,12 +90,37 @@
     border: none;
 }
 
-.user__btn--continuar{
+.user__btn{
     width: 60%;
+}
+
+.user__btn--continuar{
+    width: 100%;
     height:56px;
 }
 
 @media screen and (max-width: 960px) {
+
+    .tela__primaria--img {
+        width: 50%;
+    }
+
+    .user__nome--label {
+        font-size: 2.2vh;
+    }
+
+    .user__paragrafo--pg2 {
+        font-size: 2.2vh;
+    }
+
+}
+
+
+@media screen and (max-width: 912px) {
+
+    .tela__primaria--img {
+        width: 75%;
+    }
 
     .user__texto{
         width: 80%;
@@ -103,39 +128,73 @@
 
     .user__nome--label {
         margin-bottom: 3vh;
-        font-size: 3vh;
+        font-size: 1.9vh;
     }
 
     .user__paragrafo--pg2 {
+        font-size: 1.82vh;
+    }
+
+    .user__btn{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .user__nome--label {
         font-size: 2.2vh;
     }
 
-    .user__btn--continuar {
-        width: 80%;
-    }
-  
-}
-
-
-@media screen and (max-width: 912px) {
-    .tela__primaria--img {
-        width: 81%;
+    .user__paragrafo--pg2 {
+        font-size: 2.1vh;
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 415px) {
     .tela__primaria--img {
-        width: 97%;
+        width: 90%;
+    }
+
+    .user__texto {
+        width: 100%;
     }
 
     .user__nome--label{
-        font-size: 1.7vh;
+        font-size: 1.6vh;
         margin-bottom:  1.8vh;
     }
 
     .user__paragrafo--pg2{
-        font-size: 1.7vh;
+        font-size: 1.6vh;
         line-height: 2.56vh;
     }
 
+    .user__btn {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .user__nome--label {
+        font-size: 2vh; 
+    }
+
+    .user__paragrafo--pg2 {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .user {
+        width: 85%;
+    }
+
+    .user__nome--label {
+        font-size: 1.6vh;
+    }
+
+    .user__paragrafo--pg2 {
+        font-size: 1.62vh;
+    }
 }
