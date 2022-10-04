@@ -2,12 +2,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    background: #E5E5E5;
     
 }
 
 .center{
     flex-direction: column;
-
+    align-items: center; 
 }
 
 
@@ -24,4 +25,51 @@
     background: #e0ffe5;
     border-radius: 200px;
     margin-bottom:50px ;
+}
+
+h2{
+    color: #27214D;
+    margin-bottom: 2px;
+}
+
+p{
+    margin-bottom: 56px;
+    letter-spacing: -0.01em;
+    line-height: 24px;
+    font-size:16px
+    
+}
+
+.acompanhar_pdo{
+    background: #FFA451;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:208px;
+    height:56px;
+    padding:16px 64px;
+    margin-bottom:40px;
+    border-radius: 10px;
+}
+
+.continue_cpd{
+    background:#fcf6f0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:183px;
+    height: 56px;
+    padding:16px 24px;
+    color: #F08626;   
+}
+
+@media screen and(max-width: 960px) {
+    .center{
+        width:50%;
+    }
+    
+    .check{
+
+    }
+
 }
