@@ -14,7 +14,6 @@
 
 
 .check{
-   
     justify-content: center;
     align-items: center;
     display: flex;
@@ -29,22 +28,25 @@
 
 h2{
     color: #27214D;
-    margin-bottom: 2px;
+    margin-bottom: 1.2vh;
+    font-size: 3.7vh;
+    line-height: 2.56vh;
 }
 
 p{
-    margin-bottom: 56px;
+    margin-bottom: 8.62vh;
     letter-spacing: -0.01em;
-    line-height: 24px;
-    font-size:16px
+    line-height: 3.56vh;
+    font-size:2.7vh;
     
 }
 
-.acompanhar_pdo{
+.btn_acompanhar{
     background: #FFA451;
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size:16px;
     width:208px;
     height:56px;
     padding:16px 64px;
@@ -52,11 +54,12 @@ p{
     border-radius: 10px;
 }
 
-.continue_cpd{
+.btn_continue{
     background:#fcf6f0;
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
     width:183px;
     height: 56px;
     padding:16px 24px;
@@ -68,8 +71,37 @@ p{
         width:50%;
     }
     
-    .check{
+    h2{
+        font-size: 2.2vh;
+    }
 
+    p{
+        font-size:2.2vh;
     }
 
 }
+
+@media screen and(max-width:540px) {
+    h2{
+        font-size:2.2vh;
+    }
+
+    p{
+        font-size:2.1vh;
+    }
+}
+
+@media screen and(max-width:375px) {
+    h2{
+        font-size:2vh;
+    }
+
+    p{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width:280px) {
+    
+}
+
