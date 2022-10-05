@@ -42,13 +42,13 @@
 }
 
 @media screen and (max-width: 540px) {
-    .fruit-btn{
+    .fruit-btn {
         line-height: 0px;
     }
 }
 
 @media screen and (max-width: 412px) {
     .container {
-        width: 36%
+        width: 36%;
     }
 }

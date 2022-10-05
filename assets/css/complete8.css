@@ -11,8 +11,6 @@
     align-items: center; 
 }
 
-
-
 .check{
     justify-content: center;
     align-items: center;
@@ -26,18 +24,18 @@
     margin-bottom:50px ;
 }
 
-h2{
+.titulo{
     color: #27214D;
     margin-bottom: 1.2vh;
     font-size: 3.7vh;
     line-height: 2.56vh;
 }
 
-p{
+.paragrafo{
     margin-bottom: 8.62vh;
     letter-spacing: -0.01em;
     line-height: 3.56vh;
-    font-size:2.7vh;
+    font-size:2.2vh;
     
 }
 
@@ -71,37 +69,39 @@ p{
         width:50%;
     }
     
-    h2{
+    .titulo	{
         font-size: 2.2vh;
     }
 
-    p{
+    .paragrafo{
         font-size:2.2vh;
     }
 
 }
 
 @media screen and(max-width:540px) {
-    h2{
+    .titulo{
         font-size:2.2vh;
     }
 
-    p{
+    .paragrafo{
         font-size:2.1vh;
     }
 }
 
 @media screen and(max-width:375px) {
-    h2{
+    .center{
+        width:80px;
+    }
+
+    .titulo{
         font-size:2vh;
     }
 
-    p{
+    .paragrafo{
         font-size: 2vh;
     }
 }
 
-@media screen and (max-width:280px) {
-    
-}
+
 
