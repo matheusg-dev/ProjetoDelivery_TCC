@@ -1,0 +1,48 @@
+.container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background: #FFFFFF;
+   padding: 24px;
+}
+
+.label{
+    color:#27214d;
+    font-size: 16px;
+}
+
+.input{
+    width:327px;
+    height:56px;
+    left:0px;
+    top:0px;
+    background: #F7F5F5;
+    border-radius: 10px; 
+}
+
+.input_num{
+   width:150px;
+   height:56px;
+   left:0px;
+   top:0px;
+   background: #F7F5F5;
+   border-radius: 10px;
+   
+}
+
+.input_data{
+    width:150px;
+    height:56px;
+    left:0px;
+    top:0px;
+    background: #F7F5F5;
+    border-radius: 10px;
+
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text
+}
