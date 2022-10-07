@@ -96,4 +96,25 @@
     }
 }
 
-@media screen and (max-width:414px) {}
+@media screen and (max-width:415px) {
+    .form {
+        width: 68%;
+    }
+
+    .titulo {
+        font-size: 3vh;
+    }
+
+    .grid {
+        grid-template-columns: 18.83vh 18.83vh;
+    }
+
+    .input {
+        font-size: 1.5vh;
+        height: 6.5vh;
+    }
+
+    .botao {
+        width: 32.8vh;
+    }
+}
