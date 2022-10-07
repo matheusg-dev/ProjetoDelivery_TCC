@@ -6,6 +6,8 @@
 }
 
 .form {
+    width: 44%;
+    height: 79%;
     padding: 2.43vh 5.43vh 5.43vh 5.43vh;
     background: #F7F5F5;
     flex-direction: column;
@@ -49,7 +51,6 @@
     padding: 4px 1.3vh;
     border: none;
     box-sizing: border-box;
-    font-size: 2.17vh;
 }
 
 .botao {
@@ -64,13 +65,26 @@
     filter: drop-shadow(0px 4px 8px rgba(72, 148, 255, 0.5));
 }
 
-@media screen and (max-width:960px) {}
+@media screen and (max-width:960px) {
+    .form {
+        width: 73%;
+    }
+}
 
 @media screen and (max-width:912px) {
-
+    .form {
+        width: 75%;
+        height: 86%;
+        padding: 2.43vh 5.43vh 0px 5.43vh;
+    }
 
     .grid {
-        gap: 4.8vh 3.2vh;
+        gap: 2.8vh 2.2vh;
+        grid-template-columns: 26.83vh 26.83vh;
+    }
+
+    .input {
+        font-size: 2vh;
     }
 
     .botao {
@@ -80,10 +94,6 @@
     .label {
         font-size: 2.4vh;
     }
-
-    .input {
-        font-size: 2.5vh;
-    }
 }
 
-@media screen and (max-width:540px) {}
+@media screen and (max-width:414px) {}

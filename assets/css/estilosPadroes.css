@@ -12,27 +12,28 @@
     font-family: Medium;
     src: url(../fonts/TT\ Norms\ Pro\ Medium.otf);
 }
+
 @font-face {
     font-family: Bold;
     src: url(../fonts/TT\ Norms\ Pro\ Bold.otf);
 }
 
 
-body{
+body {
     height: 100vh;
-    font-family: Regular;
-}
- 
-.flex{
-    display: flex;  
+    font-family: Regular, sans-serif;
 }
 
-.tela__inteira{
+.flex {
+    display: flex;
+}
+
+.tela__inteira {
     height: 100%;
-}  
+}
 
 
-button{
+button {
     color: #ffffff;
     font-family: Medium;
     background: #FFA451;
@@ -41,8 +42,9 @@ button{
     cursor: pointer;
 }
 
-input{
-    background: rgba(194, 189, 189, 0.7);;
+input {
+    background: rgba(194, 189, 189, 0.7);
+    ;
     padding-left: 15px;
     font-family: Regular;
     font-style: normal;
@@ -51,6 +53,7 @@ input{
     line-height: 24px;
     color: #000000;
 }
+
 /*   
 label{
     
