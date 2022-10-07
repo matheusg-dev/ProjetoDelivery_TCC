@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inscreva-se</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/estilosPadroes.css">
-    <link rel="stylesheet" href="../assets/css/cadastrar4.css">
-</head>
-<body>
-    <div class="form-container">
-        <form class="flex color grid form">
-            <h1 class="titulo">Inscreva-se</h1>
-            <div class="grid flex"> 
-                <div class="flex flexivel"><label class="label" for="Nome"><strong>Nome</strong></label>
-                    <input class="nome" type="text" id="Nome" placeholder="Chris">
-                </div>
-                
-                <div class="flex flexivel"><label class="label" for="sobrenome"><strong>Sobrenome</strong></label>
-                    <input class="nome" type="text" id="sobrenome" placeholder="da Silva">
-                </div>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/cadastrar4.css" />
+  </head>
 
-                <div class="flex flexivel"><label class="label" for="email"><strong>Email</strong></label>
-                    <input class="nome" type="email" id="email" placeholder="Chrisdasilva@gmail.com">
-                </div>
+  <body class="form-container">
+    <form class="flex form">
+      <h1 class="titulo">Delivery <span class="Armagem"> Armagem</span></h1>
 
-                <div class="flex flexivel"><label class="label" for="telefone"><strong>Telefone</strong></label>
-                    <input class="nome" type="number" id="telefone" placeholder="41 995429432">
-                </div>
-                
-                <div class="flex flexivel"><label class="label" for="nasc"><strong>Nascimento</strong></label>
-                    <input class="nome" type="date" id="nasc">
-                </div>
-                
-                <div class="flex flexivel"><label class="label" for="cpf"><strong>CPF</strong></label>
-                    <input class="nome" type="text" id="cpf"  placeholder="090.909.090-90">
-                </div>
-                
-                <div class="flex flexivel"> <label class="label" for="rua"><strong>Rua</strong></label>
-                    <input class="nome" type="text" id="rua" placeholder="10th avenue, Lekki,Lagos">
-                </div>
-
-                <div class="flex flexivel"><label class="label" for="bairro"><strong>Bairro</strong></label>
-                    <input class="nome" type="text" id="bairro"  placeholder="Centro">
-                </div>
-
-                <div class="flex flexivel"><label class="label" for="complemento"><strong>Complemento</strong></label>
-                    <input class="nome" type="text" id="complemento" placeholder="Casa">
-                </div>
-
-                <div class="flex flexivel"><label class="label" for="numero"><strong>Numero</strong></label>
-                    <input class="nome" type="number" id="numero" placeholder="450">
-                </div>
-            </div>
-            
-            <button class="botao flex" type="submit">Concluir</button>
-
+      <div class="grid flex">
+        <div>
+          <label class="label" for="Nome"><strong>Nome</strong></label>
+          <input class="input" type="text" id="Nome" placeholder="Chris" />
         </div>
-            
-        </form> 
-    </div>
-    <script src="./js/main.js" ></script>
-</body>
 
+        <div>
+          <label class="label" for="sobrenome"
+            ><strong>Sobrenome</strong></label
+          >
+          <input
+            class="input"
+            type="text"
+            id="sobrenome"
+            placeholder="da Silva"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="email"><strong>Email</strong></label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="Chrisdasilva@gmail.com"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="telefone"><strong>Telefone</strong></label>
+          <input
+            class="input"
+            type="number"
+            id="telefone"
+            placeholder="41 995429432"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="nasc"><strong>Nascimento</strong></label>
+          <input class="input" type="date" id="nasc" />
+        </div>
+
+        <div>
+          <label class="label" for="cpf"><strong>CPF</strong></label>
+          <input
+            class="input"
+            type="text"
+            id="cpf"
+            placeholder="090.909.090-90"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="rua"><strong>Rua</strong></label>
+          <input
+            class="input"
+            type="text"
+            id="rua"
+            placeholder="10th avenue, Lekki,Lagos"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="bairro"><strong>Bairro</strong></label>
+          <input class="input" type="text" id="bairro" placeholder="Centro" />
+        </div>
+
+        <div>
+          <label class="label" for="complemento"
+            ><strong>Complemento</strong></label
+          >
+          <input
+            class="input"
+            type="text"
+            id="complemento"
+            placeholder="Casa"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="numero"><strong>Numero</strong></label>
+          <input class="input" type="number" id="numero" placeholder="450" />
+        </div>
+      </div>
+
+      <button class="botao flex" type="submit">Cadastrar</button>
+    </form>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
