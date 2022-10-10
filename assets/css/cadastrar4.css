@@ -16,11 +16,11 @@
     filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
 }
 
-.Armagem {
+.Armazem {
     font-family: BDScript;
 }
 
-.Armagem::before {
+.Armazem::before {
     content: url(../img/logoBefore.svg);
 }
 
@@ -116,5 +116,20 @@
 
     .botao {
         width: 32.8vh;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .titulo {
+        font-size: 2.91vh;
+    }
+
+    .grid {
+        grid-template-columns: 17.83vh 17.83vh;
+        gap: 5.8vh 2vh;
+    }
+
+    .input {
+        height: 5.5vh;
     }
 }
