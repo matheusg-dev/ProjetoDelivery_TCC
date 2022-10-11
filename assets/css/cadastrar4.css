@@ -16,11 +16,11 @@
     filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
 }
 
-.Armagem {
+.Armazem {
     font-family: BDScript;
 }
 
-.Armagem::before {
+.Armazem::before {
     content: url(../img/logoBefore.svg);
 }
 
@@ -119,7 +119,7 @@
     }
 }
 
-
+/*
 @media screen and (max-width:1024px) {
     .form {
         width:51%;

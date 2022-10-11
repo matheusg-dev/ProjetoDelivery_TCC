@@ -5,27 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/home5.css" />
   </head>
   <body>
-    <header>
-      <section class="menu flex">
-        <!--        <nav>
-            <ul>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Minhas Compras</a></li>
-                <li><a href="#">Carrinho</a></li>
-                <li><a href="#">Favoritos</a></li>
-            </ul>
+    <header class="flex cabecalho">
+      <a href="#"
+        ><img
+          class="cabecalho__logo"
+          src="../assets/img/logo.svg"
+          alt="Logo do delivery armazem"
+      /></a>
+
+      <section>
+        <!--   <nav>
+          <ul class="menu flex">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Minhas Compras</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Favoritos</a></li>
+          </ul>
         </nav> -->
-        <img src="../assets/img/menu.svg" alt="Icone de menu" />
+
+        <img class="none" src="../assets/img/menu.svg" alt="Icone de menu" />
         <h1>Bem-Vindo, Cris.</h1>
-        <img src="../assets/img/cestaHome.svg" alt="Cesta de compras" />
+        <!--  <img src="../assets/img/cestaHome.svg" alt="Cesta de compras" /> -->
       </section>
 
       <div class="barra">
-        <input type="text" >
+        <input type="text" />
         <img src="../assets/img/filtro.svg" alt="icone de filtro" />
       </div>
 
@@ -65,7 +74,10 @@
       <div>
         <div>
           <img src="../assets/img/coracao.svg" alt="Coração" />
-          <img src="../assets/img/prato3.svg" alt="Salada de frutas de quinua" />
+          <img
+            src="../assets/img/prato3.svg"
+            alt="Salada de frutas de quinua"
+          />
           <p class="cifrao">2,000</p>
           <div class="logo__adicao"></div>
           <p>Salada de frutas de quinua</p>
@@ -73,7 +85,10 @@
 
         <div>
           <img src="../assets/img/coracao.svg" alt="Coração" />
-          <img src="../assets/img/prato4.svg" alt="Salada de frutas tropicais" />
+          <img
+            src="../assets/img/prato4.svg"
+            alt="Salada de frutas tropicais"
+          />
           <p class="cifrao">2,000</p>
           <div class="logo__adicao"></div>
           <p>Salada de frutas tropicais</p>
@@ -89,6 +104,6 @@
       </div>
     </main>
 
-    <script src="./js/main.js" ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
