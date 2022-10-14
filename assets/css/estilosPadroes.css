@@ -44,7 +44,7 @@ button {
 
 input {
     background: rgba(194, 189, 189, 0.7);
-    ;
+    width: 100%;
     padding-left: 15px;
     font-family: Regular;
     font-style: normal;
