@@ -20,3 +20,13 @@
 .none {
     display: none;
 }
+
+.selecao{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao__berry{
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+}
