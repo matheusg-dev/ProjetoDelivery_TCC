@@ -18,10 +18,11 @@
 }
 
 .section{
-    height:100%;
+   width: 50%;
     flex-direction: column;
     background: #F7F5F5;
     border-radius: 15px;
+    padding: 24px;
 }
 
 .label{
