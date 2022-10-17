@@ -13,6 +13,7 @@
 .cabecalho__menu {
     flex-direction: row;
     gap: 24px;
+    color: black;
 }
 
 .none {
@@ -21,11 +22,12 @@
 
 .cabecalho__barra {
     width: 50%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cabecalho__barra--pesqui {
-
-    width: 100%;
+    width: 85%;
     background: #f0f0f0;
     border-radius: 8px;
     height: 48px;
@@ -40,9 +42,18 @@
 }
 
 .cabecalho__barra--filtro {
-    padding: 19px 8px;
+    padding: 16px 6px;
     width: 35px;
-    height: 55px;
     background: #f0f0f0;
     border-radius: 10px;
+    justify-content: center;
+}
+
+.selecao__berry {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 9px 20px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 2px 2px 2px rgba(169, 169, 169, 0.9);
 }
