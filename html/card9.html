@@ -12,26 +12,37 @@
 </head>
 <body class="main-container">
 
-    <main class=" flex container">
+    <main class="container">
         <section class="section flex">
-            <div>
+            
+            <div class="nome_titular">
                 <label class="label" for="nome">Nome do titular do Cartão</label>
             </div>
                 <input class="input" type="text" id="nome">
-             <div>
+
+             <div class="numero_cartao">
             <label class="label"for="cartao">Número do cartão</label>
              </div>
             <input class="input" type="text" id="cartao">
         
             <div class="flex lp">
-                <div class="grid">
-                    <label class="label"for="data">Data</label>
-            <input class="input_data" type="date" id="data">
 
-            <div>
-            <label class="label" for="cvv">Valor de Verificação do Cartão</label>
+                <div class="grid">
+                
+                    <label class="label"for="data">Data</label>
+                
+            <input class="input_data" type="date" id="data">
+                </div>
+            
+                <div class="grid">
+                    <label class="label" for="cvv">cvv</label>
+            <input class="input_num" type="number" id="cvv">
+                </div>
+
             </div>
-            <input class="input_num" type="number" id="cvv">   
+
+                
+            
 
             <button class="btn" type="submit">Continuar</button>
 
