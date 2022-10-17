@@ -19,37 +19,43 @@
       /></a>
 
       <section>
-           <nav>
-          <ul class="menu flex">
+        <nav>
+          <ul class="flex cabecalho__menu">
             <li><a href="#">Perfil</a></li>
-            <li><a href="#">Minhas Compras</a></li>
             <li><a href="#">Carrinho</a></li>
             <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Minhas Compras</a></li>
           </ul>
-        </nav> 
+        </nav>
 
-        <img  src="../assets/img/menu.svg" alt="Icone de menu" />
-        <h1>Bem-Vindo, Cris.</h1>
-         <img src="../assets/img/cestaHome.svg" alt="Cesta de compras" /> 
+        <img class="none" src="../assets/img/menu.svg" alt="Icone de menu" />
+        <!--  <h1>Bem-Vindo, Cris.</h1> -->
+        <!--  <img src="../assets/img/cestaHome.svg" alt="Cesta de compras" /> -->
       </section>
 
-      <div class="barra">
-        <input type="text" />
-        <img src="../assets/img/filtro.svg" alt="icone de filtro" />
+      <div class="cabecalho__barra">
+        <input
+          class="cabecalho__barra--pesqui"
+          type="text"
+          placeholder="Procure por combos de salada de frutas"
+        />
+        <span>
+          <img
+            class="cabecalho__barra--filtro"
+            src="../assets/img/filtro.svg"
+            alt="icone de filtro"
+          />
+        </span>
       </div>
-
-     
     </header>
 
-    <main> 
-      <section>
-        <ul class="flex selecao">
-        <li class="selecao__berry">Tudo</li>
-        <li class="selecao__berry">Combo de saladas</li>
-        <li class="selecao__berry">Salada de frutas</li>
+    <main class="flex home">
+      <ul>
+        <li class="berry">Tudo</li>
+        <li class="berry">Combo de saladas</li>
+        <li class="berry">Salada de frutas</li>
       </ul>
-      </section>
-      
+
       <h2>Combinação recomendada</h2>
       <div>
         <div>

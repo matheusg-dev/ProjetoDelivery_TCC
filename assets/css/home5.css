@@ -1,9 +1,8 @@
 .cabecalho {
-    background: rgb(23, 58, 255);
     height: 80px;
     align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+    gap: 24px;
+    padding: 20px 32px;
 }
 
 .cabecalho__logo {
@@ -11,29 +10,39 @@
 
 }
 
-.menu {
+.cabecalho__menu {
     flex-direction: row;
-    color: black;
-    /*     align-items: center;
-    justify-content: center ;*/
+    gap: 24px;
 }
 
 .none {
     display: none;
 }
 
-.selecao{
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+.cabecalho__barra {
+    width: 50%;
 }
 
-.selecao__berry{
-    text-align: center;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 9px 20px;
-    border: 1px solid #dcdcdc;
-    box-shadow: 2px 2px 2px rgba(169, 169, 169, 0.9);
-    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+.cabecalho__barra--pesqui {
+
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 8px;
+    height: 48px;
+    padding-left: 50px;
+    line-height: 1.25em;
+    font-weight: 300;
+    background-image: url(../img/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+    background-position-x: 2%;
+}
+
+.cabecalho__barra--filtro {
+    padding: 19px 8px;
+    width: 35px;
+    height: 55px;
+    background: #f0f0f0;
+    border-radius: 10px;
 }
