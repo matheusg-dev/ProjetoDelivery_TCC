@@ -5,23 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/detalhes10.css">
 
 </head>
-<body>
+<body class="main-container">
 
-    <main>
-        <section>
-            <label for="entrega">O seu endereço de entrega</label>
-            <input type="text" id="entrega">
+    <main class="flex container">
+        <section class="flex section">
+          <div class="endereco">
+            <label class="label" for="entrega">O seu endereço de entrega</label>
+        </div>
+            <input class="input" type="text" id="entrega">
 
-            <label for="NumEntrega">Número que podemos ligar</label>
-            <input type="text" id="NumEntrega">
-        
-            <button type="submit">Pague com cartão</button>
+            <div class="numero">
+            <label class="label" for="NumEntrega">Número que podemos ligar</label>
+        </div>
+            <input class="input" type="text" id="NumEntrega">
+
+            <div class="flex gap">
+
+            <div class="grid">
+            <button class="btn_cartao"type="submit">Pague com cartão</button>
+            </div>
+
+            <div class="grid">
+            <button class="btn_entrega" type="submit">Pague na entrega</button>
+            </div>
+
+        </div>
+
         </section>
-        <button type="submit">Pague na entrega</button>
     </main>
 
  
