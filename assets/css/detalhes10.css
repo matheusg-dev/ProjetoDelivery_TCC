@@ -1,0 +1,81 @@
+.main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #FFA451, 50%, #F7F5F5 50%);
+}
+
+.container{
+    height:50%;
+    width:41%;
+    background: #F7F5F5;
+    padding: 24px;
+    border-radius:10px;
+    border: none;
+    box-sizing:border-box;
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+    margin-top:20px;
+}
+
+.section{
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    background: #F7F5F5;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.label{
+    margin-top: 20px;
+    color:#27214d;
+    font-size: 2.3vh;
+
+}
+
+.input{
+    width:58.1vh;
+    height:7.8vh;
+    background:#F7F5F5;
+    box-shadow: 2px 2px 2px rgba(169,169,169,0.9);
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.btn_cartao{
+    background:#FCF6F0;
+    color:#F08626;
+    box-shadow: 2px 2px 2px rgba(169,169,169,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.9vh;
+    width:28.2vh;
+    height:5.6vh;
+    cursor: pointer;
+    font-size:2.46vh;
+    margin-top: 8.4vh;
+}
+
+.btn_entrega{
+    background:#FCF6F0;
+    color:#F08626;
+    box-shadow: 2px 2px 2px rgba(169,169,169,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.9vh;
+    width:28.2vh;
+    height:5.6vh;
+    cursor: pointer;
+    font-size:2.46vh;
+    margin-top: 8.4vh;
+}
+
+.grid{
+    display:grid;
+}
+
+.gap{
+    gap:4.2vh;
+}
