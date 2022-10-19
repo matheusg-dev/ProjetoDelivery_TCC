@@ -95,4 +95,9 @@ input {
     background-position: center;
 }
 
+.between{
+    justify-content: space-between;
+}
+
+
 /* Acaba estilos pag 5 */

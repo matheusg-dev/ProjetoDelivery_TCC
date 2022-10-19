@@ -23,7 +23,6 @@
 .cabecalho__barra {
     width: 50%;
     align-items: center;
-    justify-content: space-between;
 }
 
 .cabecalho__barra--pesqui {
@@ -78,8 +77,19 @@
 
 /* Aqui acaba a seção de de filtro */
 
+.combinado{
+    gap: 5%;
+    margin-bottom: 50px;
+}
+
 .container__prato {
     flex-direction: row;
+}
+
+.popular{
+    gap: 24px;
+    margin-top: 60px;
+    margin-bottom: 24px;
 }
 
 .recomentado {
@@ -90,10 +100,12 @@
 }
 
 .prato {
+    flex-direction: column;
     text-align: center;
-    width: 152px;
-    height: 183px;
-    background: yellowgreen;
+  padding: 16px 16px 20px 16px;
+  width: 12%;
+
+  box-shadow: 0px .1px .1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
 }
 
 .nome__prato {
@@ -102,4 +114,23 @@
     font-size: 14px;
     line-height: 18px;
 text-align: center;
+padding: 13px 0px 13px 0px;
+}
+
+.prato__coracao{
+    width: 25px;
+    height: 26px;
+    margin-left: 86%;
+}
+
+.prato__img{
+    width: 155px;
+}
+
+.nome__prato{
+    font-family: Medium;
+    font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+padding: 19px 0px 19px 0px;
 }
