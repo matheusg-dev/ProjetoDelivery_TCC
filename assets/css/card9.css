@@ -110,6 +110,11 @@
         width:50%;
     }
 
+    .label{
+        font-size:3.3vh;
+        margin-top:0vh;
+    }
+
     .input{
         width:58.1vh;
     }
@@ -130,6 +135,27 @@
         width:26.4vh;
     }
 }
+
+@media screen and (max-width:1024px){
+    .btn{
+        margin-top: 2.4vh;
+    }
+
+    .label{
+        margin-top:0vh;
+        font-size: 3.3vh;
+    }
+
+    .input_data{
+        width:26.4vh;
+    }
+
+    .input_num{
+        width:25.4vh;
+    }
+}
+
+
 
 @media screen and (max-width:960px){
     .container{
