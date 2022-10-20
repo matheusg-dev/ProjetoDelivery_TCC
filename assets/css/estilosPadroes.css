@@ -70,6 +70,7 @@ input {
 .cifrao::before {
     color: #F08626;
     content: '\0024';
+    margin-right: 4px;
 }
 
 .logo__subtracao {
