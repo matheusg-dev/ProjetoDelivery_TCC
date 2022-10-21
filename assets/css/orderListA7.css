@@ -1,0 +1,39 @@
+.carrinho{
+  background: #FFA451;
+  height: 11%;
+  align-items: center;
+  color: #ffffff;
+}
+
+.carrinho__gap{
+  gap: 32px;
+  align-items: center;
+  margin-left: 24px;
+}
+.volta{
+  font-size: 12px;
+line-height: 16px;
+align-items: center;
+color: #27214D;
+background: #ffffff;
+border-radius: 100px;
+padding: 6px 8px;
+gap: 4px;
+}
+
+.volta::before{
+  content: url(../img/seta__voltar.svg);
+  font-size: 19px;
+}
+
+/* aqui termina o header */
+
+.carrinho__itens{
+  height: 78%;
+}
+
+
+
+.carrinho__total{
+  height: 11%;
+}
