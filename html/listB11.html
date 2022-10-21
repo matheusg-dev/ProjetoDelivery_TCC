@@ -5,23 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/listB11.css">
 
 </head>
 <body>
 
-    <main>
-        <div class="uni">
-            <button type="submit">Volte</button>
-            <h1>Status de entrega</h1>
+    <header class="flex carrinho">
+        <div class="flex carrinho__gap">
+          <button class="flex volta">Voltar</button>
+          <h1>Status Da Entrega</h1>
         </div>
+    </header>
 
-        <div class="secundaria">
-            <div class="img1"></div>
-            <div class="img2"></div>
-            <div class="img3"></div>
-        </div>
+    <main>
+
+        
+            <div class="img1">
+                <img src="../assets/img/recebido.svg" alt="" >
+                <p>Pedido recebido</p>
+                <img src="../assets/img/verificado.svg" alt="" >
+            </div>
+
+            <div class="img2">
+                <img src="../assets/img/processando.svg" alt="" >
+                <p>O pedido está sendo processado</p>
+                <img src="../assets/img/verificado.svg" alt="" >
+            </div>
+
+            <div class="img3">
+                <img src="../assets/img/motoBoy.svg" alt="" >
+                <p>O pedido está sendo entregue</p>
+                <p>Sua refeição está a caminho!!</p>
+                <!-- <button></button> -->
+            </div>
+
+            <div class="localizacao"></div>
+
+            <div>
+                <img src="../assets/img/verificado.svg" alt="" >
+                <p>Pedido Entregue</p>
+                
+            </div>
+        
     </main>
 
     <script src="./js/main.js" ></script>
