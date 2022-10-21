@@ -5,53 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/orderListA7.css">
 
 </head>
-<body>
+<body >
 
-    <main>
-        <div class="uni">
-            <br>
-            <button class="volta">Voltar</button>
-           <h1>Minha cesta</h1>
+    <header class="flex carrinho">
+
+        <div class="flex carrinho__gap">
+            <button class="flex volta">Voltar</button>
+           <h1>Minha Cesta</h1>
         </div>
-        <div class="secundaria">
+        
+    </header>
+
+    <main class="carrinho__itens">
+
+        <div>
             <img src="../assets/img/saladafrutaquinoa.svg" alt="salada de fruta de quinoa" class="prato">
-            <h2>Salada de fruta de quinoa</h2>
-            <h3>2 pacotes</h3>
-        </div>
-        <div>
-        <p class="cifrao">20,000</p>
-         </div>
-        <img src="../assets/img/menos.svg" alt="sinal de menos">
-        <div class="frutaMelao">
-            <img src="../assets/img/saladafrutamelao.svg" alt="salada de fruta de melao">
-            <h2>Salada de fruta de melao</h2>
-            <h3>2 pacotes</h3>
-        </div>
-        <div>
-            <p class="cifrao">20,000</p>
-        </div>
-        <img src="../assets/img/menos.svg" alt="sinal de menos">
-        <div class="frutatropical">
-            <img src="../assets/img/saladafrutatropical.svg" alt="salada de fruta tropical">
-            <h2>Salada de fruta tropical</h2>
-            <h3>2 pacotes</h3>
-        </div>
-        <div>
-        <p class="cifrao">20,000</p>
-        </div>
-        <img src="../assets/img/menos.svg">
-
-        <h2>Total</h2>
-            <p class="cifrao">60,000</p>
-        </div>
-
-        <button class="checkout">Confira</button>
+            <p>Salada de fruta de quinoa</p>
+            <p>2 pacotes</p>
+            <p>20,000</p>
+        </div>    
          
     </main>
+
+    <footer class="carrinho__total">
+
+        <p>Total</p>
+        <p class="cifrao">60,000</p>
+ 
+
+    <button class="checkout">Confira</button>
+    </footer>
 
     <script src="./js/scripts.js" defer></script>
     
