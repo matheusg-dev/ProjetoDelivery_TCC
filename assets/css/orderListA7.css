@@ -66,4 +66,18 @@ font-size: 12px;
 
 .carrinho__total {
   height: 11%;
+  gap: 42px;
+}
+
+.total__texto{
+  font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: -0.01em;
+margin-bottom: 4px;
+}
+
+.checkout{
+  width: 199px;
+  height: 56px;
 }
