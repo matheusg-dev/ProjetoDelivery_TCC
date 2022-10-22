@@ -99,3 +99,8 @@ input {
 .between{
     justify-content: space-between;
 }
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
