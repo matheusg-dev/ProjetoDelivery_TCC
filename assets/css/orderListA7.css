@@ -9,6 +9,8 @@
   gap: 32px;
   align-items: center;
   margin-left: 24px;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .volta {
@@ -30,16 +32,34 @@
 /* aqui termina o header */
 
 .carrinho__itens {
-  height: 78%;
+  height: 71%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
 }
 
-.itens{
-  height: 17%;
+.itens {
+  height: fit-content;
+  align-items: center;
+  gap: 60px;
+}
+
+.prato__itens {
+  gap: 32px;
   align-items: center;
 }
 
-.prato{
+.prato__img {
+  padding: 32px;
+  width: 80px;
+  background: #F1EFF6;
+  border-radius: 10px;
+}
 
+.prato__itens--texto{
+  margin: 20px 0px;
+  font-weight: 300;
+font-size: 12px;
 }
 
 /* aqui termina o main */
