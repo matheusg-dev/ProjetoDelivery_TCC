@@ -1,8 +1,15 @@
+ :root {
+   --tam-grid: 525.2px;
+ }
+
 .carrinho {
   background: #FFA451;
   height: 11%;
   align-items: center;
   color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .carrinho__gap {
@@ -36,10 +43,11 @@
 /* aqui termina o header */
 
 .carrinho__itens {
-  height: 71%;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 48px;
+  padding-top: 148px;
+  padding-bottom: 98px;
+  grid-template-columns: var(--tam-grid) var(--tam-grid);
+  gap: 8.69vh;
 }
 
 .itens {
@@ -79,6 +87,10 @@ font-size: 12px;
 .carrinho__total {
   height: 11%;
   gap: 42px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
 }
 
 .total__texto{
