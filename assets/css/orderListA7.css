@@ -1,8 +1,13 @@
+
+
 .carrinho {
   background: #FFA451;
   height: 11%;
   align-items: center;
   color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .carrinho__gap {
@@ -34,8 +39,8 @@
 .carrinho__itens {
   height: 71%;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 48px;
+  margin-top: 148px;
+ 
 }
 
 .itens {
@@ -67,6 +72,10 @@ font-size: 12px;
 .carrinho__total {
   height: 11%;
   gap: 42px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
 }
 
 .total__texto{
