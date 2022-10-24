@@ -9,6 +9,8 @@
   gap: 32px;
   align-items: center;
   margin-left: 24px;
+  width: 54%;
+  justify-content: space-between;
 }
 
 .volta {
@@ -28,3 +30,75 @@
 }
 
 /* aqui termina o header */
+
+.carrinho__itens {
+  height: 71%;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.status {
+  flex-direction: column;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.status__pedido {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 36px;
+}
+
+.pedido__recebido--text {
+  width: 57%;
+}
+
+.pedido__img {
+  padding: 16px;
+  background: #F1EFF6;
+  border-radius: 10px;
+  width: 48px;
+}
+
+.pedido__refeicao--text {
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 33px;
+}
+
+.verificado {
+  width: 14px;
+  padding: 7px;
+  background: #4CD964;
+  border-radius: 100px;
+}
+
+.pedido__telefone {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../img/telefone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mapa__pedido {
+  margin: 0 auto;
+}
+
+.pedido__entregue {
+  padding: 16px;
+  width: 48px;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.entregue {
+  width: 26px;
+}
