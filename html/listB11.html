@@ -19,35 +19,43 @@
         </div>
     </header>
 
-    <main>
+    <main class="flex carrinho__itens">
 
-        
-            <div class="img1">
-                <img src="../assets/img/recebido.svg" alt="" >
-                <p>Pedido recebido</p>
-                <img src="../assets/img/verificado.svg" alt="" >
+        <section class="flex status">
+            <div class="flex status__pedido">
+                <img class="pedido__img" src="../assets/img/recebido.svg" alt="" >
+                <p class="pedido__recebido--text">Pedido recebido</p>
+                <img class="verificado" src="../assets/img/verificado.svg" alt="" >
             </div>
 
-            <div class="img2">
-                <img src="../assets/img/processando.svg" alt="" >
-                <p>O pedido está sendo processado</p>
-                <img src="../assets/img/verificado.svg" alt="" >
+            <div class="flex  status__pedido">
+                <img class="pedido__img" src="../assets/img/processando.svg" alt="" >
+                <p>O pedido está sendo preparado</p>
+                <img class="verificado" src="../assets/img/verificado.svg" alt="" >
             </div>
 
-            <div class="img3">
-                <img src="../assets/img/motoBoy.svg" alt="" >
-                <p>O pedido está sendo entregue</p>
-                <p>Sua refeição está a caminho!!</p>
-                <!-- <button></button> -->
+            <div class="flex  status__pedido">
+                <img class="pedido__img" src="../assets/img/motoBoy.svg" alt="" >
+                <div>
+                    <p>O pedido está sendo entregue</p>
+                    <p class="pedido__refeicao--text">Sua refeição está a caminho!!</p>    
+                </div>
+                
+                <button  class="pedido__telefone"></button>
             </div>
 
-            <div class="localizacao"></div>
+            <img class="mapa__pedido" src="../assets/img/mapaEx.svg" >
 
-            <div>
-                <img src="../assets/img/verificado.svg" alt="" >
+            <div class="flex  status__pedido start">
+                <div class="pedido__entregue">
+                    <img class="verificado entregue" src="../assets/img/verificado.svg" alt="" >
+                </div>
+                
                 <p>Pedido Entregue</p>
                 
             </div>
+        </section>
+            
         
     </main>
 
