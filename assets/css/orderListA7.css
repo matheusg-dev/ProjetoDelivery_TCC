@@ -1,4 +1,6 @@
-
+ :root {
+   --tam-grid: 525.2px;
+ }
 
 .carrinho {
   background: #FFA451;
@@ -40,7 +42,8 @@
   height: 71%;
   justify-content: center;
   margin-top: 148px;
- 
+  grid-template-columns: var(--tam-grid) var(--tam-grid);
+  gap: 8.69vh;
 }
 
 .itens {
