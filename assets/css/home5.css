@@ -3,6 +3,9 @@
     align-items: center;
     gap: 3.21vh;
     padding: 2.68vh 4.28vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .cabacalho__icone {
@@ -21,10 +24,18 @@
     flex-direction: row;
     gap: 3.21vh;
     color: black;
+    
 }
 
 .none {
     display: none;
+}
+
+
+.cabecalho__user{
+    height: 10.72vh;
+    align-items: center;
+    gap: 3.21vh;
 }
 
 .cabecalho__barra {
@@ -63,6 +74,7 @@
     margin: 0 auto;
     justify-content: center;
     flex-direction: column;
+    margin-top: 29.82vh;
 }
 
 .selecao {
@@ -70,7 +82,8 @@
     width: 100%;
     justify-content: space-evenly;
     padding: 0.93vh 0px 0.93vh 0px;
-    margin-bottom: 4.82vh;
+    position: fixed;
+    top: 150px;
 }
 
 .selecao__berry {
