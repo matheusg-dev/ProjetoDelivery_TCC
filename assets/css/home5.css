@@ -1,18 +1,25 @@
 .cabecalho {
-    height: 80px;
+    height: 10.72vh;
     align-items: center;
-    gap: 24px;
-    padding: 20px 32px;
+    gap: 3.21vh;
+    padding: 2.68vh 4.28vh;
+}
+
+.cabacalho__icone {
+    box-shadow: 0px 2px 1px rgb(0 0 0 / 5%), 0px 0px 1px rgb(0 0 0 / 25%);
+    padding: 1.2vh;
+    border-radius: 50%;
+    width: 3.21vh;
 }
 
 .cabecalho__logo {
-    width: 52px;
+    width: 6.97vh;
 
 }
 
 .cabecalho__menu {
     flex-direction: row;
-    gap: 24px;
+    gap: 3.21vh;
     color: black;
 }
 
@@ -29,24 +36,24 @@
     width: 85%;
     background: #f0f0f0;
     border-radius: 8px;
-    height: 48px;
-    padding-left: 50px;
+    height: 6.43vh;
+    padding-left: 6.7vh;
     line-height: 1.25em;
     font-weight: 300;
     background-image: url(../img/lupa.svg);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 24px;
+    background-size: 3.21vh;
     background-position-x: 2%;
 }
 
 .cabecalho__barra--filtro {
-    padding: 16px 6px;
+    padding: 2.14vh 0.8vh;
     width: 35px;
     background: #f0f0f0;
     border-radius: 10px;
     justify-content: center;
-    margin-left:4px;
+    margin-left: 0.53vh;
 }
 
 /* Aqui termina o header */
@@ -62,15 +69,15 @@
     background: #f0f0f0;
     width: 100%;
     justify-content: space-evenly;
-    padding: 7px 0px 7px 0px;
-    margin-bottom: 36px;
+    padding: 0.93vh 0px 0.93vh 0px;
+    margin-bottom: 4.82vh;
 }
 
 .selecao__berry {
     /*     width: 69%; */
     text-align: center;
     cursor: pointer;
-    padding: 9px 20px;
+    padding: 1.2vh 2.68vh;
     border: 1px solid #dcdcdc;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -80,7 +87,7 @@
 
 .combinado {
     gap: 5%;
-    margin-bottom: 50px;
+    margin-bottom: 6.7vh;
 }
 
 .container__prato {
@@ -88,15 +95,15 @@
 }
 
 .popular {
-    gap: 24px;
-    margin-top: 60px;
-    margin-bottom: 24px;
+    gap: 3.21vh;
+    margin-top: 8vh;
+    margin-bottom: 3.21vh;
 }
 
 .recomentado {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 2.41vh;
+    line-height: 4vh;
     color: #27214D;
 }
 
@@ -104,48 +111,50 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 16px 16px 20px 16px;
+    padding: 2.14vh 2.14vh 2.68vh 2.14vh;
     width: auto;
     border-radius: 10px;
     box-shadow: 0px .1px .1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
 }
 
-.prato__1{
+.prato__1 {
     background: #FFFCF2;
 }
 
-.prato__2{
+.prato__2 {
     background: #FEF4F4;
 }
 
-.prato__3{
+.prato__3 {
     background: #F1EFF6;
 }
 
 .nome__prato {
     color: #27214D;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.87vh;
+    line-height: 2.41vh;
     text-align: center;
-    padding: 13px 0px 13px 0px;
+    padding: 1.74vh 0px 1.74vh 0px;
 }
 
 .prato__coracao {
-    width: 25px;
-    height: 26px;
+    width: 3.35vh;
+    height: 3.48vh;
     margin-left: 86%;
 }
 
 .prato__img {
-    width: 155px;
+    width: 20.77vh;
     margin: 0 auto;
 }
 
 .nome__prato {
     font-family: Medium;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 19px 0px 19px 0px;
+    font-size: 2.14vh;
+    line-height: 2.41vh;
+    padding: 2.54vh 0px 2.54vh 0;
 }
+
+@media screen and (max-width: 1024px) {}
