@@ -2,6 +2,7 @@
     height: 10.72vh;
     align-items: center;
     gap: 3.21vh;
+    background: #ffffff;
     padding: 2.68vh 4.28vh;
     position: fixed;
     width: 100%;
@@ -13,6 +14,7 @@
     padding: 1.2vh;
     border-radius: 50%;
     width: 3.21vh;
+    justify-content: center;
 }
 
 .cabecalho__logo {
@@ -83,7 +85,7 @@
     justify-content: space-evenly;
     padding: 0.93vh 0px 0.93vh 0px;
     position: fixed;
-    top: 150px;
+    top: 140px;
 }
 
 .selecao__berry {
