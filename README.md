@@ -1,6 +1,6 @@
 <h1 align="center">
-    <img   height="50%" width="40%" title="#mario jogar" src="../img/telasProjeto.png" alt="paginas layout celular"/>
-    <img   height="50%" width="40%" title="#mario jogar" src="../img/telasProjetoDesktop.png" alt="paginas layout desktop"/>
+    <img   height="50%" width="40%" title="#mario jogar" src="" alt="paginas layout celular"/>
+    <img   height="50%" width="40%" title="#mario jogar" src="" alt="paginas layout desktop"/>
 </h1>
 
 <h1 align="center">
