@@ -1,21 +1,21 @@
 .carrinho {
   background: #FFA451;
-  height: 11%;
+  height: 8%;
   align-items: center;
   color: #ffffff;
 }
 
 .carrinho__gap {
-  gap: 32px;
+  gap: 5.0vh;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 3.7vh;
   width: 54%;
   justify-content: space-between;
 }
 
 .volta {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.8vh;
+  line-height: 2.5vh;
   align-items: center;
   color: #27214D;
   background: #ffffff;
@@ -26,28 +26,28 @@
 
 .volta::before {
   content: url(../img/seta__voltar.svg);
-  font-size: 19px;
+  font-size: 2.9vh;
 }
 
 /* aqui termina o header */
 
 .carrinho__itens {
   height: 71%;
-  margin-top: 48px;
+  margin-top: 3.5vh;
   justify-content: center;
 }
 
 .status {
   flex-direction: column;
   align-items: baseline;
-  gap: 40px;
+  gap:4.2vh;
 }
 
 .status__pedido {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 36px;
+  gap: 5.6vh;
 }
 
 .pedido__recebido--text {
@@ -55,26 +55,23 @@
 }
 
 .pedido__img {
-  padding: 16px;
+  padding: 2.5vh;
   background: #F1EFF6;
   border-radius: 10px;
-  width: 48px;
+  width: 7.5vh;
 }
-
 .pedido__refeicao--text {
   letter-spacing: -0.01em;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 33px;
+  font-size: 2.1vh;
+  line-height: 5.1vh;
 }
-
 .verificado {
-  width: 14px;
+  width: 3.1vh;
   padding: 7px;
   background: #4CD964;
   border-radius: 100px;
 }
-
 .pedido__telefone {
   width: 40px;
   height: 40px;
@@ -87,7 +84,8 @@
 }
 
 .mapa__pedido {
-  margin: 0 auto;
+  width:100%;
+  
 }
 
 .pedido__entregue {
@@ -102,3 +100,50 @@
 .entregue {
   width: 26px;
 }
+
+@media screen and (max-width:1024px){
+  .status{
+    gap:3.2vh;
+  }
+  .carrinho{
+    height:9%;
+  }
+}
+@media screen and (max-width:912px){
+  .carrinho__gap{
+    margin-left:2.7vh;
+    width:59%;
+  }
+  .volta{
+    font-size:2.2vh;
+    line-height: 2.2vh;
+  }
+  .status{
+    font-size:2.2vh;
+  }
+  .pedido__telefone{
+    width:60px;
+    height:60px;
+  }
+  .entregue{
+    width:48px;
+    height:48px;
+  }
+  .pedido__recebido--text{
+    font-size:36px;
+  }
+  .preparo__pedido{
+    font-size:30px;
+  }
+  .entrega__pedido{
+    font-size:30px;
+  }
+  .pedido__refeicao--text{
+    font-size:30px;
+  }
+  .titulo__pedido{
+    font-size:30px;
+  }
+}
+@media screen and (max-width:)
+
