@@ -26,7 +26,7 @@
     flex-direction: row;
     gap: 3.21vh;
     color: black;
-    
+
 }
 
 .none {
@@ -34,7 +34,7 @@
 }
 
 
-.cabecalho__user{
+.cabecalho__user {
     height: 10.72vh;
     align-items: center;
     gap: 3.21vh;
@@ -71,6 +71,34 @@
 
 /* Aqui termina o header */
 
+
+
+.filtro {
+    width: 100%;
+    position: fixed;
+    top: 140px;
+}
+
+.selecao {
+    background: #f0f0f0;
+    width: fit-content;
+    justify-content: space-evenly;
+    padding: 0.93vh 0px 0.93vh 0px;
+
+}
+
+.selecao__berry {
+    text-align: center;
+    cursor: pointer;
+    padding: 1.2vh 2.68vh;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: max-content;
+}
+
+/* Aqui acaba a seção de de filtro */
+
 .home {
     width: 90%;
     margin: 0 auto;
@@ -78,27 +106,6 @@
     flex-direction: column;
     margin-top: 29.82vh;
 }
-
-.selecao {
-    background: #f0f0f0;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 0.93vh 0px 0.93vh 0px;
-    position: fixed;
-    top: 140px;
-}
-
-.selecao__berry {
-    /*     width: 69%; */
-    text-align: center;
-    cursor: pointer;
-    padding: 1.2vh 2.68vh;
-    border: 1px solid #dcdcdc;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-/* Aqui acaba a seção de de filtro */
 
 .combinado {
     gap: 5%;
@@ -172,4 +179,24 @@
     padding: 2.54vh 0px 2.54vh 0;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 540px) {
+
+    .container__seleca-carrosel {
+        position: relative;
+    }
+
+    .empacotador__carrosel {
+        overflow-x: auto;
+    }
+
+    .empacotador__carrosel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .selecao {
+        flex-flow: row nowrap;
+        justify-content: none;
+        gap: 20px;
+    }
+
+}
