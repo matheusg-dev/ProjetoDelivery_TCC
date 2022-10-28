@@ -8,7 +8,7 @@
 </h1>
 
 <h3 align="center">
-    Projeto desenvolvido para conclusão de curso de desenvolvimento de sistemas 
+    Projeto desenvolvido para conclusão do curso de desenvolvimento de sistemas 
 </h3>
 
 <h4 align="center"> 
@@ -38,7 +38,7 @@ Um site com tela etapas de compra...
 - Css
   - [x] Definir fonte e classes de style
  - Design responsivo
-     - [x] Todas as telas
+  - [x] Todas as telas
 - Javascript
   - [ ] Botões de navegação
   - [ ] Criar itens de compra
