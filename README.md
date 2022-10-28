@@ -57,6 +57,7 @@ Um site com tela etapas de compra...
  <img style="border-radius: 50%;" src="https://github.com/Matheusg-dev.png" width="100px;" alt="desenvolvedor web Matheus Gomes"/>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Jhony-Luz?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jhony-luz-720b73211/)](https://www.linkedin.com/in/jhony-luz-720b73211/)
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus-Gomes?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/Matheus-Gomes-720b73211/)](https://www.linkedin.com/in/Matheus-Gomes-720b73211/)
 
 
 ---
