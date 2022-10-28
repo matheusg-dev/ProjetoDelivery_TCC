@@ -1,0 +1,328 @@
+.carrinho {
+  background: #FFA451;
+  height: 8%;
+  align-items: center;
+  color: #ffffff;
+}
+
+.carrinho__gap {
+  gap: 5.0vh;
+  align-items: center;
+  margin-left: 3.7vh;
+  width: 54%;
+  justify-content: space-between;
+}
+
+.volta {
+  font-size: 1.8vh;
+  line-height: 2.5vh;
+  align-items: center;
+  color: #27214D;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 6px 8px;
+  gap: 4px;
+}
+
+.volta::before {
+  content: url(../img/seta__voltar.svg);
+  font-size: 2.9vh;
+}
+
+/* aqui termina o header */
+
+.carrinho__itens {
+  height: 71%;
+  margin-top: 3.5vh;
+  justify-content: center;
+}
+
+.status {
+  flex-direction: column;
+  align-items: baseline;
+  gap:4.2vh;
+}
+
+.status__pedido {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5.6vh;
+}
+
+.pedido__recebido--text {
+  width: 57%;
+}
+
+.pedido__img {
+  padding: 2.5vh;
+  background: #F1EFF6;
+  border-radius: 10px;
+  width: 7.5vh;
+}
+.pedido__refeicao--text {
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  font-size: 2.3vh;
+  line-height: 5.1vh;
+}
+.verificado {
+  width: 3.1vh;
+  padding: 7px;
+  background: #4CD964;
+  border-radius: 100px;
+}
+.pedido__telefone {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../img/telefone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mapa__pedido {
+  width:100%;
+  
+}
+
+.pedido__entregue {
+  padding: 16px;
+  width: 48px;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.entregue {
+  width: 23px;
+}
+
+@media screen and (max-width:1280px){
+  .pedido__recebido--text{
+    width:50%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .pedido__recebido--text{
+    width:56%;
+  }
+  .status{
+    gap:3.2vh;
+  }
+  .carrinho{
+    height:8%;
+  }
+  .pedido__entregue{
+    width:20px;
+  }
+}
+
+@media screen and (max-width:912px){
+  .carrinho__gap{
+    margin-left:2.7vh;
+    width:59%;
+  }
+  .volta{
+    font-size:2.2vh;
+    line-height: 2.2vh;
+  }
+  .status{
+    font-size:2.2vh;
+  }
+  .pedido__telefone{
+    width:60px;
+    height:60px;
+  }
+  .entregue{
+    width:48px;
+    height:48px;
+  }
+  .pedido__recebido--text{
+    font-size:36px;
+  }
+  .preparo__pedido{
+    font-size:30px;
+  }
+  .entrega__pedido{
+    font-size:30px;
+  }
+  .pedido__refeicao--text{
+    font-size:30px;
+  }
+  .titulo__pedido{
+    font-size:30px;
+  }
+}
+@media screen and (max-width:540px){
+  .carrinho{
+    height:8%;
+  }
+  .carrinho__itens{
+    height:88%;
+  }
+  .pedido__img {
+    width:6.5vh;
+  }
+  .pedido__recebido--text {
+      font-size: 21px;
+      margin-left: 3px;
+  }
+  .status__pedido {
+    gap:4.6vh;
+  }
+  .pedido__img {
+    width:6.5vh;
+  }
+  .preparo__pedido {
+      font-size: 20px;
+  }
+  .entrega__pedido {
+      font-size: 20px;
+  }
+  .pedido__refeicao--text {
+      font-size: 19px;
+  }
+  .pedido__telefone {
+      width: 50px;
+      height: 50px;
+  }
+  .mapa__pedido {
+      width: 100%;
+      height: 30%;
+  }
+  .entregue {
+      width: 26px;
+      height: 26px;
+  }
+  .pedido__entregue {
+      padding: 16px;
+      width: 17px;
+  }
+  .titulo__pedido{
+    font-size:18px;
+  }
+}
+@media screen and (max-width:415px){
+  .carrinho__gap{
+    margin-left:1.2vh;
+    width:65%;
+  }
+  .carrinho__itens{
+    width:93%;
+    margin-left:17px;
+  }
+  .volta{
+    font-size:1.7vh;
+    line-height:1.7vh;
+  }
+  .status{
+    font-size:1.7vh;
+  }
+  .status__pedido{
+    gap:3.6vh;
+  }
+  .pedido__img{
+    width:4.5vh;
+  }
+  .pedido__recebido--text{
+    font-size:17px;
+  }
+  .preparo__pedido{
+    font-size:14px;
+  }
+  .entrega__pedido{
+    font-size:16px;
+  }
+  .pedido__refeicao--text{
+    font-size:13px;
+  }
+  .verificado{
+    width:2.6vh;
+    height:2.6vh;
+  }
+  .entrega__pedido{
+    font-size:13px;
+  }
+}
+
+@media screen and (max-width:412px){
+  .preparo__pedido{
+    font-size:13px;
+  }
+}
+
+@media screen and (max-width:393px){
+  .entrega__pedido{
+    font-size:12px;
+  }
+  .pedido__refeicao--text{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .status{
+    font-size:2.0vh;
+  }
+  .carrinho__itens{
+    width:92%;
+    margin-left:17px;
+  }
+  .verificado{
+    width:2.5vh;
+    height:2.5vh;
+  }
+  .pedido__telefone{
+    width:40px;
+    height:40px;
+  }
+}
+
+@media screen and (max-width:360px){
+  .preparo__pedido{
+    font-size:12px;
+  }
+}
+
+@media screen and (max-width:280px){
+  .carrinho__gap{
+    height:67%;
+  }
+  .status{
+    font-size:1.7vh;
+  }
+  .volta{
+    font-size:1.4vh;
+    line-height: 1.4vh;
+  }
+  .pedido__recebido--text{
+    font-size:10px;
+  }
+  .preparo__pedido{
+    font-size:8px;
+  }
+  .entrega__pedido{
+    font-size:8px;
+  }
+  .pedido__refeicao--text{
+    font-size:8px;
+  }
+  .verificado{
+    width:1.9vh;
+    height:1.9vh;
+  }
+  .pedido__telefone{
+    width:30px;
+    height:30px;
+  }
+  .titulo__pedido{
+    font-size:12px;
+  }
+}
+
+

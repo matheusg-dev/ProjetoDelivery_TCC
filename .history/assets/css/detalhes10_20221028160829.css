@@ -61,11 +61,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 3.9vh;
-    width:27.2vh;
+    width:30.2vh;
     height:5.6vh;
     cursor: pointer;
     font-size:2.46vh;
     margin-top: 4.4vh;
+    margin-right:30px;
 }
 
 .btn_entrega{
@@ -76,7 +77,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 3.9vh;
-    width:23.2vh;
+    width:25.2vh;
     height:5.6vh;
     cursor: pointer;
     font-size:2.46vh;
