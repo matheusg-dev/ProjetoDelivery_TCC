@@ -63,7 +63,7 @@
 .pedido__refeicao--text {
   letter-spacing: -0.01em;
   font-weight: 300;
-  font-size: 2.1vh;
+  font-size: 2.3vh;
   line-height: 5.1vh;
 }
 .verificado {
@@ -98,7 +98,7 @@
 }
 
 .entregue {
-  width: 26px;
+  width: 23px;
 }
 
 @media screen and (max-width:1280px){
@@ -121,6 +121,7 @@
     width:20px;
   }
 }
+
 @media screen and (max-width:912px){
   .carrinho__gap{
     margin-left:2.7vh;
@@ -212,8 +213,8 @@
     width:65%;
   }
   .carrinho__itens{
-    width:97%;
-    margin-left:7px;
+    width:93%;
+    margin-left:17px;
   }
   .volta{
     font-size:1.7vh;
@@ -223,13 +224,13 @@
     font-size:1.7vh;
   }
   .status__pedido{
-    gap:2.6vh;
+    gap:3.6vh;
   }
   .pedido__img{
     width:4.5vh;
   }
   .pedido__recebido--text{
-    font-size:18px;
+    font-size:17px;
   }
   .preparo__pedido{
     font-size:14px;
@@ -238,7 +239,89 @@
     font-size:16px;
   }
   .pedido__refeicao--text{
-    font-size:16px;
+    font-size:13px;
+  }
+  .verificado{
+    width:2.6vh;
+    height:2.6vh;
+  }
+  .entrega__pedido{
+    font-size:13px;
+  }
+}
+
+@media screen and (max-width:412px){
+  .preparo__pedido{
+    font-size:13px;
+  }
+}
+
+@media screen and (max-width:393px){
+  .entrega__pedido{
+    font-size:12px;
+  }
+  .pedido__refeicao--text{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .status{
+    font-size:2.0vh;
+  }
+  .carrinho__itens{
+    width:92%;
+    margin-left:17px;
+  }
+  .verificado{
+    width:2.5vh;
+    height:2.5vh;
+  }
+  .pedido__telefone{
+    width:40px;
+    height:40px;
+  }
+}
+
+@media screen and (max-width:360px){
+  .preparo__pedido{
+    font-size:12px;
+  }
+}
+
+@media screen and (max-width:280px){
+  .carrinho__gap{
+    height:67%;
+  }
+  .status{
+    font-size:1.7vh;
+  }
+  .volta{
+    font-size:1.4vh;
+    line-height: 1.4vh;
+  }
+  .pedido__recebido--text{
+    font-size:10px;
+  }
+  .preparo__pedido{
+    font-size:8px;
+  }
+  .entrega__pedido{
+    font-size:8px;
+  }
+  .pedido__refeicao--text{
+    font-size:8px;
+  }
+  .verificado{
+    width:1.9vh;
+    height:1.9vh;
+  }
+  .pedido__telefone{
+    width:30px;
+    height:30px;
+  }
+  .titulo__pedido{
+    font-size:12px;
   }
 }
 
