@@ -38,7 +38,7 @@ Um site com tela etapas de compra...
 - Css
   - [x] Definir fonte e classes de style
  - Design responsivo
-  - [x] Todas as telas
+   - [x] Todas as telas
 - Javascript
   - [ ] Botões de navegação
   - [ ] Criar itens de compra
