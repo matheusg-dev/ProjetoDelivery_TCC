@@ -1,6 +1,6 @@
 <h1 align="center">
-    <img   height="50%" width="40%" title="#mario jogar" src="" alt="paginas layout celular"/>
-    <img   height="50%" width="40%" title="#mario jogar" src="" alt="paginas layout desktop"/>
+    <img   height="50%" width="40%" title="#" src="./assets/img/telasProjeto.PNG" alt="paginas layout celular"/>
+    <img   height="50%" width="40%" title="#" src="./assets/img/telasProjetoDesktop.PNG" alt="paginas layout desktop"/>
 </h1>
 
 <h1 align="center">
@@ -17,7 +17,7 @@
 
 ## Figma
 
-📚 [figma](https://www.figma.com/file/zhwkuDA72h40SZtvUmiwTK/UI%2FInteraction-Design-(Copy)?node-id=12%3A0)
+📚 [figma](<https://www.figma.com/file/zhwkuDA72h40SZtvUmiwTK/UI%2FInteraction-Design-(Copy)?node-id=12%3A0>)
 
 <p align="center">
      •
@@ -37,8 +37,8 @@ Um site com tela etapas de compra...
   - [x] Estrutura pronta
 - Css
   - [x] Definir fonte e classes de style
- - Design responsivo
-   - [x] Todas as telas
+- Design responsivo
+  - [x] Todas as telas
 - Javascript
   - [ ] Botões de navegação
   - [ ] Criar itens de compra
@@ -47,7 +47,6 @@ Um site com tela etapas de compra...
   - [ ] Validar cadastro
   - [ ] Barra de peasquisa
   - [ ] Consumo de API
-
 
 ---
 
@@ -58,7 +57,6 @@ Um site com tela etapas de compra...
 
 [![Linkedin Badge](https://img.shields.io/badge/-Jhony-Luz?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jhony-luz-720b73211/)](https://www.linkedin.com/in/jhony-luz-720b73211/)
 [![Linkedin Badge](https://img.shields.io/badge/-Matheus-Gomes?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/Matheus-Gomes-720b73211/)](https://www.linkedin.com/in/Matheus-Gomes-720b73211/)
-
 
 ---
 
@@ -71,4 +69,3 @@ Um site com tela etapas de compra...
 - [Paletton](https://paletton.com/)
 - [W3Schools propriedades CSS no DOM](https://www.w3schools.com/jsref/dom_obj_style.asp)
 - [MDN lista de eventos](https://developer.mozilla.org/en-US/docs/Web/Events)
-
