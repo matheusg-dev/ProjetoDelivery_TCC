@@ -1,5 +1,4 @@
 <h1 align="center">
-    <img   height="50%" width="40%" title="#" src="./assets/img/telasProjeto.PNG" alt="paginas layout celular"/>
     <img   height="50%" width="40%" title="#" src="./assets/img/telasProjetoDesktop.PNG" alt="paginas layout desktop"/>
 </h1>
 
@@ -15,7 +14,7 @@
 	 Status: Em desenvolvimento
 </h4>
 
-## Figma
+## Layout do projeto
 
 📚 [figma](<https://www.figma.com/file/zhwkuDA72h40SZtvUmiwTK/UI%2FInteraction-Design-(Copy)?node-id=12%3A0>)
 
@@ -53,9 +52,9 @@ Um site com tela etapas de compra...
 ## Autor
 
  <img style="border-radius: 50%;" src="https://github.com/JhonLight.png" width="100px;" alt="desenvolvedor web jhony luz"/>
+ [![Linkedin Badge](https://img.shields.io/badge/-Jhony-Luz?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jhony-luz-720b73211/)](https://www.linkedin.com/in/jhony-luz-720b73211/)
+ 
  <img style="border-radius: 50%;" src="https://github.com/Matheusg-dev.png" width="100px;" alt="desenvolvedor web Matheus Gomes"/>
-
-[![Linkedin Badge](https://img.shields.io/badge/-Jhony-Luz?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jhony-luz-720b73211/)](https://www.linkedin.com/in/jhony-luz-720b73211/)
 [![Linkedin Badge](https://img.shields.io/badge/-Matheus-Gomes?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/Matheus-Gomes-720b73211/)](https://www.linkedin.com/in/Matheus-Gomes-720b73211/)
 
 ---
