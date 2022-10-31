@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-   <a href="#"> Delivery Armazem</a>
+   <a href="#"> Delivery Armazém</a>
 </h1>
 
 <h3 align="center">
@@ -26,7 +26,7 @@
 
 ## Sobre
 
-Um site com tela etapas de compra...
+Um site com telas de etapas de compra...
 
 ---
 
