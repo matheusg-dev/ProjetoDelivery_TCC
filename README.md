@@ -44,7 +44,7 @@ Um site com telas de etapas de compra...
   - [ ] filtro dos itens de compra
   - [ ] Favoritar item
   - [ ] Validar cadastro
-  - [ ] Barra de peasquisa
+  - [ ] Barra de pesquisa
   - [ ] Consumo de API
 
 ---
