@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    <title>List</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/estilosPadroes.css" />
+    <link rel="stylesheet" href="../assets/css/listB10.css">
+
+</head>
+<body>
+
+    <header class="flex carrinho">
+        <div class="flex carrinho__gap">
+          <button class="flex volta">Voltar</button>
+          <h1 class="status">Status Da Entrega</h1>
+        </div>
+    </header>
+
+    <main class="flex carrinho__itens">
+
+        <section class="flex status">
+            <div class="flex status__pedido">
+                <img class="pedido__img" src="../assets/img/recebido.svg" alt="" >
+                <p class="pedido__recebido--text">Pedido recebido</p>
+                <img class="verificado" src="../assets/img/verificado.svg" alt="" >
+            </div>
+
+            <div class="flex  status__pedido">
+                <img class="pedido__img" src="../assets/img/processando.svg" alt="" >
+                <p class="preparo__pedido">O pedido está sendo preparado</p>
+                <img class="verificado" src="../assets/img/verificado.svg" alt="" >
+            </div>
+
+            <div class="flex  status__pedido">
+                <img class="pedido__img" src="../assets/img/motoBoy.svg" alt="" >
+                <div>
+                    <p class="entrega__pedido">O pedido está sendo entregue</p>
+                    <p class="pedido__refeicao--text">Sua refeição está a caminho!!</p>    
+                </div>
+                
+                <button  class="pedido__telefone"></button>
+            </div>
+
+            <img class="mapa__pedido" src="../assets/img/mapaEx.svg" >
+
+            <div class="flex  status__pedido start">
+                <div class="pedido__entregue">
+                    <img class="verificado entregue" src="../assets/img/verificado.svg" alt="" >
+                </div>
+                
+                <p class="titulo__pedido">Pedido Entregue</p>
+                
+            </div>
+        </section>
+            
+        
+    </main>
+
+    <script src="../js/listB10.js" ></script>
+    
+</body>
+
+</html>

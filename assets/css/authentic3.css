@@ -25,6 +25,16 @@
     flex-direction: column;
 }
 
+.nomes{
+    display:flex;
+}
+
+.imagem__olho{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
 .nome__label {
     font-family: Medium;
     font-weight: 500;
@@ -59,7 +69,7 @@
     height: 5.97vh;
     background: #f5caca;
     border-radius: 10px;
-    margin-bottom: 7.28vh;
+    margin-bottom: 5.28vh;
 }
 
 
