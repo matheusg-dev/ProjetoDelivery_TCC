@@ -46,6 +46,7 @@ Um site com telas de etapas de compra...
   - [ ] Validar cadastro
   - [ ] Barra de pesquisa
   - [ ] Consumo de API
+  - [x] Funcionalidade de ocultar/mostrar senha
 
 ---
 
