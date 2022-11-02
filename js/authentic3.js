@@ -1,14 +1,16 @@
-let container = document.querySelector('nomes__input');
-let input = document.querySelector('input');
-let icon = document.querySelector('img');
+const nome__input = document.querySelector('.nome__input');
+const imagem__olho = document.querySelector('.imagem__olho');
 
-icon.addEventListener( 'click', function(){
-    container.classList.toogle('visible');
-    if(container.classList.contains('visible')){
-        icon.src='assets/eye-off.svg';
-        input.type='text';
-    } else{
-        icon.src = 'assets/eye.svg';
-        input.type = 'password';
+imagem__olho.onclick = () =>
+{
+    if (nome__input.type === 'password')
+    {
+        nome__input.type = 'text'
+        imagem__olho.src = '../assets/img/eye-off.svg'
     }
-});
+    else
+    {
+        nome__input.type = 'password'
+        imagem__olho.src = '../assets/img/eye.svg'
+    }
+}

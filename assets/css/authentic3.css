@@ -26,13 +26,16 @@
 }
 
 .nomes{
-    display:flex;
+    position:relative;
 }
 
 .imagem__olho{
+    position: absolute;
     width:20px;
     height:20px;
     cursor:pointer;
+    right:10px;
+    top:10px;
 }
 
 .nome__label {
