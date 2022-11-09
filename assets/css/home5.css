@@ -123,12 +123,15 @@
 
 .btn {
     position: absolute;
-    width: 50px;
     color: #000000;
-    top: 0;
-    bottom: 0;
+    top: 39%;
     opacity: 0.2;
     font-size: -webkit-xxx-large;
+    border-radius: 50%;
+    width: 6.7vh;
+    height: 6.7vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
@@ -136,13 +139,15 @@
 }
 
 .btn__esquerda {
-    background: linear-gradient(to left, #FFA451, transparent);
-    right: 0;
+    right: 1.34vh;
+}
+
+.seta__voltar--refletir-esquerda {
+    transform: rotateY(180deg);
 }
 
 .btn__direita {
-    background: linear-gradient(to right, #FFA451, transparent);
-    left: 0;
+    left: 1.34vh;
 }
 
 .empacotador__carrosel-compra {
