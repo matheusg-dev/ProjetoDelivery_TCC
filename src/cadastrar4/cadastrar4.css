@@ -21,7 +21,7 @@
 }
 
 .Armazem::before {
-    content: url(../img/logoBefore.svg);
+    content: url(../../assets/img/logoBefore.svg);
 }
 
 .titulo {
