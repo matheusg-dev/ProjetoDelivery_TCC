@@ -59,7 +59,7 @@
 
 }
 
-.nome__input--usuario {
+.email__input--usuario {
     width: 52.89vh;
     height: 5.97vh;
     background: #f5caca;
@@ -67,12 +67,17 @@
     margin-bottom: 8px;
 }
 
-.nome__input {
+.email__input {
     width: 52.89vh;
     height: 5.97vh;
     background: #f5caca;
     border-radius: 10px;
     margin-bottom: 5.28vh;
+}
+
+.span-required{
+   /* display:none;*/
+    font-size:16px;
 }
 
 

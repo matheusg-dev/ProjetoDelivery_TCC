@@ -7,7 +7,7 @@
 
 .form {
     width: 44%;
-    height: 79%;
+    height: 83%;
     padding: 2.43vh 5.43vh 5.43vh 5.43vh;
     background: #F7F5F5;
     flex-direction: column;
@@ -51,6 +51,12 @@
     padding: 4px 1.3vh;
     border: none;
     box-sizing: border-box;
+}
+
+.span-required{
+    display:none;
+    font-size:16px;
+    color:#e63636;
 }
 
 .botao {
