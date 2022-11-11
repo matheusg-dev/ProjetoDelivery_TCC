@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../assets/img/favicon.ico"
-    />
+    <link rel="icon"type="image/png"sizes="16x16" href="../../assets/img/favicon.ico">
     <title>Cadastro - Armazém saladas e frutas</title>
     <link rel="stylesheet" href="../../assets/css padrao/reset.css" />
     <link rel="stylesheet" href="../../assets/css padrao/estilosPadroes.css" />
@@ -23,7 +18,7 @@
       <div class="grid flex">
         <div> 
           <label class="label" for="Nome"><strong>Nome</strong></label>
-          <input class="input" type="text" id="Nome" placeholder="Chris" oninput="nameValidate()">
+          <input class="input" type="text" id="nome" placeholder="Chris" oninput="nameValidate()">
           <span class="span-required">Nome no mínimo 3 caracteres</span>
         </div>
 
@@ -41,8 +36,8 @@
 
         <div>
           <label class="label" for="telefone"><strong>Telefone</strong></label>
-          <input class="input" type="text"id="telefone"placeholder="41 995429432" oninput ="telefoneValidate()">
-          <span class="span-required">Telefone no mínimo 11 caracteres</span>
+          <input class="input" type="text"id="telefone"placeholder="41 995429432" oninput ="telefoneValidate()" onkeypress="return onlynumber();">
+          <span class="span-required">Telefone no mínimo 11 números</span>
         </div>
 
         <div>
