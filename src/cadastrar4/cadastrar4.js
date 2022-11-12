@@ -24,13 +24,13 @@ function nameValidate(){
 }
 
 function emailValidate(){
-    if(emailRegex.test(campos[2].value))
+    if(!emailRegex.test(campos[2].value))
     {
-        console.log('VALIDADO');
+        setError(2);
     }
     else
     {
-        console.log('NÃO VALIDADO');
+        removeError(2);
     }
 }
 

@@ -1,11 +1,11 @@
 .tela__primaria {
-    height: 60%;
+    height: 55%;
     background: #FFA451;
     justify-content: center;
 }
 
 .tela__primaria--img {
-    width: 27%;
+    width: 23%;
     justify-content: center;
     flex-direction: column;
 }
@@ -38,14 +38,14 @@
     top:10px;
 }
 
-.nome__label {
+.label{
     font-family: Medium;
     font-weight: 500;
     font-size: 2.5vh;
     line-height: 2.56vh;
     letter-spacing: -0.01em;
     color: #27214D;
-    margin-bottom: 1.8vh;
+    margin-bottom: 1.0vh;
     margin-top: 2.08vh;
 }
 
@@ -59,25 +59,36 @@
 
 }
 
-.email__input--usuario {
+.input__email {
     width: 52.89vh;
     height: 5.97vh;
-    background: #f5caca;
+    background: #F7F5F5;
+    box-shadow: 2px 2px 2px rgba(169, 169, 169, 0.9);
     border-radius: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 1.28vh;
+    
 }
 
-.email__input {
+.input__senha {
     width: 52.89vh;
     height: 5.97vh;
-    background: #f5caca;
+    background: #F7F5F5;
+    box-shadow: 2px 2px 2px rgba(169, 169, 169, 0.9);
     border-radius: 10px;
-    margin-bottom: 5.28vh;
+    margin-bottom: 4.28vh;
 }
 
-.span-required{
-   /* display:none;*/
-    font-size:16px;
+
+.span__email{
+    display:none;
+    color:#e63636;
+    margin-bottom:1.28vh;
+}
+
+.span__senha{
+    margin-bottom:1.28vh;
+    display:none;
+    color:#e63636;
 }
 
 
