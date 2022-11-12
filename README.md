@@ -47,7 +47,7 @@ Um site com telas de etapas de compra...
   - [ ] Barra de pesquisa
   - [ ] Consumo de API
   - [x] Funcionalidade de ocultar/mostrar senha
-  - [ ] Bloqueio de caracter especial no input
+  - [x] Bloqueio de caracter especial no input
 
 ---
 
