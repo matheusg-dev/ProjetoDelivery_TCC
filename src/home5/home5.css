@@ -6,8 +6,24 @@
     padding: 2.68vh 4.28vh;
     z-index: 1;
     position: fixed;
-    width: 100%;
+    width: 95%;
     top: 0;
+}
+
+.cabecalho__menu {
+    align-items: center;
+    gap: 2.71vh;
+}
+
+.cabecalho__logo {
+    width: 6.97vh;
+}
+
+.textos__menu {
+    flex-direction: row;
+    gap: 3.21vh;
+    color: black;
+
 }
 
 .cabacalho__icone {
@@ -18,27 +34,16 @@
     justify-content: center;
 }
 
-.cabecalho__logo {
-    width: 6.97vh;
-
-}
-
-.cabecalho__menu {
-    flex-direction: row;
-    gap: 3.21vh;
-    color: black;
-
-}
-
-.none {
-    display: none;
-}
 
 
 .cabecalho__user {
     height: 10.72vh;
     align-items: center;
     gap: 3.21vh;
+}
+
+.nomeUsuario {
+    min-width: max-content;
 }
 
 .cabecalho__barra {
@@ -54,11 +59,17 @@
     padding-left: 6.7vh;
     line-height: 1.25em;
     font-weight: 300;
-    background-image: url(../img/lupa.svg);
+    background-image: url(../../assets/img/lupa.svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 3.21vh;
     background-position-x: 2%;
+    font-family: Regular, sans-serif;
+}
+
+.cabecalho__barra--pesqui::placeholder {
+    font-size: 2vh;
+    font-family: Regular, sans-serif;
 }
 
 .cabecalho__barra--filtro {
@@ -86,7 +97,7 @@
     width: -webkit-fill-available;
     justify-content: space-evenly;
     padding: 0.93vh 0px 0.93vh 0px;
-
+    height: 5.5vh;
 }
 
 .selecao__berry {
@@ -96,7 +107,11 @@
     border: 1px solid #dcdcdc;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: max-content;
+    min-width: fit-content;
+}
+
+.selecao__berry:hover {
+    border-bottom-width: thick;
 }
 
 /* Aqui acaba a seção de de filtro */
@@ -228,7 +243,123 @@
     padding: 2.54vh 0px 2.54vh 0;
 }
 
+/* Aqui começa a responsividade */
+
+@media screen and (max-width: 1280px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 1.35vh;
+        gap: 2.21vh;
+        height: 28vh;
+        width: 100%;
+    }
+
+    .cabecalho__menu {
+        gap: 11.71vh;
+    }
+
+    .textos__menu {
+        gap: 12.71vh;
+    }
+
+    .cabecalho__barra {
+        width: 77%;
+        align-items: center;
+    }
+
+    .filtro {
+        top: 22.76vh;
+    }
+
+    .home {
+        margin-top: 31.82vh;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .cabecalho {
+        gap: 0vh;
+    }
+
+    .cabecalho__logo {
+        width: 4.97vh;
+    }
+
+    .cabecalho__menu {
+        gap: 3vh;
+        font-size: larger;
+    }
+
+    .textos__menu {
+        gap: 2.71vh;
+    }
+
+    .cabecalho__barra {
+        width: 95%;
+    }
+
+    .cabecalho__barra--pesqui {
+        height: 5.43vh;
+    }
+
+    .selecao__berry {
+        font-size: larger;
+    }
+
+    .combinado {
+        margin-bottom: 0px;
+    }
+
+    .between {
+        font-size: x-large;
+        align-items: center;
+    }
+
+    .logo__adicao {
+        width: 50px;
+        height: 50px;
+        background-size: 16px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .popular {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 542px) {
+    .none__btn-menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 540px) {
+
+    .cabecalho {
+        align-items: flex-start;
+        gap: 1vh;
+        margin-left: 3%;
+        width: 97%;
+        height: 22vh;
+    }
+
+    .btn__menu {
+        width: 50px;
+        height: 50px;
+        background: none;
+    }
+
+    .cabecalho__menu {
+        gap: 35vh;
+    }
+
+    .cabecalho__barra {
+        width: 97%;
+    }
 
     .container__seleca-carrosel {
         position: relative;
@@ -244,9 +375,28 @@
 
     .selecao {
         flex-flow: row nowrap;
-        justify-content: none;
         gap: 20px;
-
+        width: max-content;
     }
 
+    .filtro {
+        top: 21.76vh;
+    }
+
+    .home {
+        margin-top: 24.82vh;
+    }
+
+    .none__textos-menu {
+        display: none;
+    }
+
+    .none__img-logo {
+        display: none;
+    }
+
+    .cabecalho__barra--filtro {
+        padding: 1.6vh 0.8vh;
+        width: 4vh;
+    }
 }
