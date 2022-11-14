@@ -96,15 +96,23 @@ input {
     background-position: center;
 }
 
-.between{
+.between {
     justify-content: space-between;
 }
 
-.center{
+.center {
     justify-content: center;
     align-items: center;
 }
 
-.grid{
+.grid {
     display: grid;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
 }
