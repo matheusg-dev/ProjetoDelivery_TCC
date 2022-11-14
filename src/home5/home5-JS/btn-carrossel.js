@@ -1,12 +1,14 @@
-const btn = document.querySelectorAll(".btn");
-const itemCarrossel = document.querySelectorAll(".item-carrossel");
+const btnRecomendado = document.querySelectorAll("[data-btnRecomendado]");
+const combinado = document.querySelectorAll(".combinado");
 
-let maxItemCarrossel = itemCarrossel.length;
+let combinadoCarrossel = combinado[0].children;
+let maxCombinado = combinadoCarrossel.length;
+
 let itemCarrosselAtual = 0;
 
-btn.forEach((controle) => {
-  controle.addEventListener("click", () => {
-    const btnEsquerdo = controle.classList.contains("btn__esquerda");
+btnRecomendado.forEach((elementos) => {
+  elementos.addEventListener("click", () => {
+    const btnEsquerdo = elementos.classList.contains("btn__esquerda");
 
     if (btnEsquerdo) {
       itemCarrosselAtual -= 3;
@@ -14,15 +16,15 @@ btn.forEach((controle) => {
       itemCarrosselAtual += 3;
     }
 
-    if (itemCarrosselAtual >= maxItemCarrossel) {
+    if (itemCarrosselAtual >= maxCombinado) {
       itemCarrosselAtual = 0;
     }
 
     if (itemCarrosselAtual < 0) {
-      itemCarrosselAtual = maxItemCarrossel - 1;
+      itemCarrosselAtual = maxCombinado - 1;
     }
 
-    itemCarrossel[itemCarrosselAtual].scrollIntoView({
+    combinadoCarrossel[itemCarrosselAtual].scrollIntoView({
       inline: "center",
       behavior: "smooth",
       block: "nearest",
