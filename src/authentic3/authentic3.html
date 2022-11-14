@@ -8,8 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../assets/img/favicon.ico"
-    />
+      href="../../assets/img/favicon.ico"/>
     <title>Login - Armazém saladas e frutas</title>
     <link rel="stylesheet" href="../../assets/css padrao/reset.css" />
     <link rel="stylesheet" href="../../assets/css padrao/estilosPadroes.css" />
@@ -20,32 +19,21 @@
       <section class="tela__primaria flex">
         <div class="flex tela__primaria--img">
           <img src="../../assets/img/cesta2.svg" alt="cesta de frutas2" />
-          <img
-            class="primaria__sombra"
-            src="../../assets/img/sombracesta2.svg"
-            alt="sombra da cesta de frutas 2"
-          />
+          <img class="primaria__sombra"src="../../assets/img/sombracesta2.svg"alt="sombra da cesta de frutas 2">
         </div>
       </section>
 
       <section class="tela__secundaria flex">
         <div class="nome flex">
-          <label class="nome__label" for="fnome">Qual é o seu usuario?</label>
-          <input
-            class="nome__input--usuario"
-            type="text"
-            id="fnome"
-            placeholder="Chris"
-          />
-          <label class="nome__label" for="fnome">Senha</label>
+          <label class="label" for="fnome">Email</label>
+          <input class="input__email"type="text" id="email" placeholder="Digite seu email" oninput="emailValidate()"/>
+          <span class="span__email">Digite um email válido</span>
+         <label class="label" for="fnome">Senha</label>
           <div class="nomes flex">
-            <input
-              class="nome__input"
-              type="password"
-              placeholder="Digite sua senha"
-            />
-            <img class="imagem__olho" src="../../assets/img/eye.svg" alt="" />
+            <input class="input__senha" type="password" id="senha" placeholder="Digite sua senha" oninput="senhaValidate()"/>
+            <img class="imagem__olho" src="../../assets/img/eye.svg" alt="">
           </div>
+          <span class="span__senha"> Digite uma senha com no mínimo 8 caracteres</span>
         </div>
         <div>
           <button class="btn__pedido" type="submit">Iniciar pedido</button>
