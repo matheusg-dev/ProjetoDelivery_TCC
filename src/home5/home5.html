@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../assets/css padrao/estilosPadroes.css" />
     <link rel="stylesheet" href="../home5/home5.css" />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header class="flex cabecalho">
       <div class="flex cabecalho__menu">
         <a href="#" class="none__img-logo"
@@ -28,7 +28,7 @@
           <button class="btn__menu none__btn-menu">
             <img class="" src="../../assets/img/menu.svg" alt="menu do site" />
           </button>
-          <menu class="none__textos-menu">
+          <menu class="none__textos-menu" data-menu>
             <ul class="flex textos__menu">
               <li><a href="#">Perfil</a></li>
               <li><a href="#">Pagamento</a></li>
@@ -434,6 +434,7 @@
       </div>
     </main>
 
+    <script src="../home5/home5-JS/menu-responsivo.js"></script>
     <script src="../home5/home5-JS/btn-carrossel.js"></script>
   </body>
 </html>

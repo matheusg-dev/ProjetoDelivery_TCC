@@ -331,7 +331,7 @@
     }
 }
 
-@media screen and (min-width: 542px) {
+@media screen and (min-width: 540px) {
     .none__btn-menu {
         display: none;
     }
