@@ -48,6 +48,8 @@ Um site com telas de etapas de compra...
   - [ ] Consumo de API
   - [x] Funcionalidade de ocultar/mostrar senha
   - [x] Bloqueio de caracter especial no input
+  - [x] Carrossel de compra
+  - [x] Menu responsivo
 
 ---
 
