@@ -18,39 +18,40 @@
       <div class="grid flex">
         <div> 
           <label class="label" for="Nome"><strong>Nome</strong></label>
-          <input class="input" type="text" id="nome" placeholder="Chris" oninput="nameValidate()">
+          <input class="input" type="text" id="nome" placeholder="Digite seu nome" oninput="nameValidate()">
           <span class="span-required">Nome no mínimo 3 caracteres</span>
         </div>
 
         <div>
           <label class="label" for="sobrenome"><strong>Sobrenome</strong></label>
-          <input class="input"type="text"id="sobrenome"placeholder="da Silva" oninput = "sobrenomeValidate()">
+          <input class="input"type="text"id="sobrenome"placeholder="Digite seu sobrenome" oninput = "sobrenomeValidate()">
           <span class="span-required">Sobrenome no mínimo 3 caracteres</span>
         </div>
 
         <div>
           <label class="label" for="email"><strong>Email</strong></label>
-          <input class="input"type="email" id="email"placeholder="Chrisdasilva@gmail.com" oninput ="emailValidate()">
+          <input class="input"type="email" id="email"placeholder="Digite seu email" oninput ="emailValidate()">
           <span class="span-required">Digite um email válido</span>
         </div>
 
         <div>
           <label class="label" for="telefone"><strong>Telefone</strong></label>
-          <input class="input" type="text"id="telefone"placeholder="41 995429432" oninput ="telefoneValidate()" onkeypress="return onlynumber();">
-          <span class="span-required">Telefone no mínimo 11 números</span>
+          <input class="input" type="text"id="telefone"placeholder="Telefone com DDD"  maxlength="15" onkeyup="handlePhone(event)" oninput ="telefoneValidate()" onkeypress="return onlynumber()">
+          <span class="span-required">Telefone deve conter 11 números</span>
         </div>
 
         <div>
           <label class="label" for="nasc"><strong>Nascimento</strong></label>
-          <input class="input" type="date" id="nasc">
+          <input class="input" type="text" id="nasc" placeholder="Digite sua data de nascimento" maxlength="10">
         </div>
 
         <div>
           <label class="label" for="cpf"><strong>CPF</strong></label>
-          <input class="input"type="text"id="cpf"placeholder="090.909.090-90">
-          <span class="span-required">Digite um cpf válido</span>
+          <input class="input" type="text" id="cpf" placeholder ="Digite seu CPF" maxlength="14"  oninput="cpfValidate()" onkeypress="return onlynumber()">
+          <span class="span-required">cpf deve conter 11 digitos</span>
         </div>
 
+        
         <div>
           <label class="label" for="rua"><strong>Rua</strong></label>
           <input class="input" type="text" id="rua" placeholder="10th avenue, Lekki,Lagos">
