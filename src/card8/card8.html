@@ -15,12 +15,16 @@
       <section class="section flex">
         <div class="nome_titular">
           <label class="label" for="nome">Nome do titular do Cartão</label>
-          <input class="input" type="text" id="nome" />
+          <input class="input" type="text" id="nome"  pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" oninput="name_CardValidate()">
+          <br>
+          <span class="spans-inputs">Nome deverá conter no minímo 3 caracteres </span>
         </div>
 
         <div class="numero_cartao">
           <label class="label" for="cartao">Número do cartão</label>
-          <input class="input" type="text" id="cartao" />
+          <input class="input" type="number" id="cartao" oninput="numberCardValidate()">
+          <br>
+          <span class="spans-inputs">número do cartão deverá conter 12 números</span>
         </div>
 
         <div class="flex lp">

@@ -58,11 +58,11 @@ function sobrenomeValidate(){
 function cpfValidate(){
     if(campos[5].value.length <14)
     {
-        setError(5);
+        setError(6);
     }
     else
     {
-        removeError(5);
+        removeError(6);
     }
 }
 
