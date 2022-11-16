@@ -56,13 +56,22 @@ function sobrenomeValidate(){
 }
 
 function cpfValidate(){
-    if(campos[5].value.length <14)
+    if(campos[4].value.length <14)
     {
+<<<<<<< HEAD
         setError(6);
     }
     else
     {
         removeError(6);
+=======
+        campos[4].style.border = '2px solid #e63636';
+        spans[4].style.display = 'block';
+    }
+    else
+    {
+        removeError(4);
+>>>>>>> e2268ac0eaf9b8c6e0abad133b363728bc83e4a8
     }
 }
 
