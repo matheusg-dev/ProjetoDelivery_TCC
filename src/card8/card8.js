@@ -36,6 +36,24 @@ function numberCardValidate(){
 
 //Função para bloquear caracteres especiais e números
 
-function onlyletters(){
-    
+function letras(){
+	tecla = event.keycode;
+	if (tecla >= 48 && tecla <= 57){
+	    return false;
+	}else{
+	   return true;
+	}
 }
+
+//Mascara para input número do cartão
+
+const input = document.querySelector('input');
+
+input.addEventListener('keypress', () => {
+    let inputlength = input.value.length
+
+
+if(inputlength === 4 || inputlength === 9 || inputlength === 14) {
+    input.value += ''
+}
+})
