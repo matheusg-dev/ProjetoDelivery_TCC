@@ -35,43 +35,40 @@
         </div>
 
         <div>
-          <label class="label" for="telefone"><strong>Telefone (whatsapp)</strong></label>
-          <input class="input" type="text"id="telefone"placeholder="Telefone com DDD"  maxlength="15" onkeyup="handlePhone(event)" oninput ="telefoneValidate()" onkeypress="return onlynumber()">
+          <label class="label" for="Confirmar email"><strong>Confirmar email</strong></label>
+          <input class="input" type="text"id="confirmar email"placeholder="Confirme um email">
           <span class="span-required">Telefone deve conter 11 números</span>
         </div>
 
         <div>
-          <label class="label" for="cpf"><strong>CPF</strong></label>
-          <input class="input" type="text" id="cpf" placeholder ="Digite seu CPF" maxlength="14"  oninput="cpfValidate()" onkeypress="return onlynumber()">
+          <label class="label" for="senha"><strong>Senha</strong></label>
+          <input class="input" type="password" id="senha" placeholder ="digite sua senha">
           <span class="span-required">cpf deve conter 11 digitos</span>
         </div>
         
         <div>
-          <label class="label" for="nasc"><strong>Nascimento</strong></label>
-          <input class="input" type="text" id="nasc" placeholder="Digite sua data de nascimento" maxlength="10">
-        </div>
-
-       
-
-        
-        <div>
-          <label class="label" for="rua"><strong>Rua</strong></label>
-          <input class="input" type="text" id="rua" placeholder="10th avenue, Lekki,Lagos">
+          <label class="label" for="repetir senha"><strong>Repetir senha</strong></label>
+          <input class="input" type="password" id="repetir senha" placeholder="repita sua senha">
         </div>
 
         <div>
-          <label class="label" for="bairro"><strong>Bairro</strong></label>
-          <input class="input" type="text" id="bairro" placeholder="Centro">
+          <label class="label" for="cpf"><strong>CPF</strong></label>
+          <input class="input" type="text" id="cpf" placeholder="informe seu cpf">
         </div>
 
         <div>
-          <label class="label" for="complemento"><strong>Complemento</strong></label>
-          <input class="input" type="text" id="complemento" placeholder="Casa">
+          <label class="label" for="data de Nascimento"><strong>Data de Nascimento</strong></label>
+          <input class="input" type="text" id="data de nascimento" placeholder="digite sua data de nascimento">
         </div>
 
         <div>
-          <label class="label" for="numero"><strong>Numero</strong></label>
-          <input class="input" type="number" id="numero" placeholder="450">
+          <label class="label" for="endereço"><strong>Endereço</strong></label>
+          <input class="input" type="text" id="endereço" placeholder="Digite um endereço">
+        </div>
+
+        <div>
+          <label class="label" for="número"><strong>Número</strong></label>
+          <input class="input" type="text" id="número" placeholder="digite um numero de endreço">
         </div>
       </div>
 
@@ -79,5 +76,7 @@
     </form>
 
     <script src="../cadastrar4/cadastrar4.js"></script>
+    <script src="../cadastrar4/api-cep.js"></script>
+
   </body>
 </html>
