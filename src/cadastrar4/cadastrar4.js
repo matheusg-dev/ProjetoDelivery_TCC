@@ -24,45 +24,36 @@ function nameValidate(){
 }
 
 function emailValidate(){
-    if(!emailRegex.test(campos[2].value))
-    {
-        setError(2);
-    }
-    else
-    {
-        removeError(2);
-    }
-}
-
-function telefoneValidate(){
-    if(campos[3].value.length <11)
-    {
-        setError(3);
-    }
-    else
-    {
-        removeError(3);
-    }
-}
-
-function sobrenomeValidate(){
-    if(campos[1].value.length <4)
+    if(!emailRegex.test(campos[1].value))
     {
         setError(1);
     }
-    else{
+    else
+    {
         removeError(1);
     }
 }
 
-function cpfValidate(){
-    if(campos[4].value.length <14)
+function telefoneValidate(){
+    if(campos[6].value.length <11)
     {
         setError(6);
     }
     else
     {
         removeError(6);
+    }
+}
+
+
+function cpfValidate(){
+    if(campos[4].value.length <14)
+    {
+        setError(4);
+    }
+    else
+    {
+        removeError(4);
     }
 }
 
