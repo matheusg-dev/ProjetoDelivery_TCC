@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../assets/img/favicon.ico"
-    />
+    <link rel="icon" type="image/png"sizes="16x16" href="../../assets/img/favicon.ico"/>
     <title>Método de pagamento</title>
     <link rel="stylesheet" href="../../assets/css padrao/reset.css" />
     <link rel="stylesheet" href="../../assets/css padrao/estilosPadroes.css" />
@@ -20,12 +15,16 @@
       <section class="section flex">
         <div class="nome_titular">
           <label class="label" for="nome">Nome do titular do Cartão</label>
-          <input class="input" type="text" id="nome" />
+          <input class="input" type="text" id="nome" onkeypress="return numeros();"  oninput="name_CardValidate()">
+          <br>
+          <span class="spans-inputs">Nome deverá conter no minímo 3 caracteres </span>
         </div>
 
         <div class="numero_cartao">
           <label class="label" for="cartao">Número do cartão</label>
-          <input class="input" type="text" id="cartao" />
+          <input class="input" type="number" id="cartao" maxlength="19" oninput="numberCardValidate()">
+          <br>
+          <span class="spans-inputs">número do cartão deverá conter 19 números</span>
         </div>
 
         <div class="flex lp">

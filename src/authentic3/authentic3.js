@@ -1,4 +1,4 @@
-//Função para ocultar mostrar senha
+//Função para ocultar/ mostrar senha
 
 const input__senha = document.querySelector(".input__senha");
 const imagem__olho = document.querySelector(".imagem__olho");

@@ -24,34 +24,36 @@ function nameValidate(){
 }
 
 function emailValidate(){
-    if(!emailRegex.test(campos[2].value))
+    if(!emailRegex.test(campos[1].value))
     {
-        setError(2);
+        setError(1);
     }
     else
     {
-        removeError(2);
+        removeError(1);
     }
 }
 
 function telefoneValidate(){
-    if(campos[3].value.length <11)
+    if(campos[6].value.length <11)
     {
-        setError(3);
+        setError(6);
     }
     else
     {
-        removeError(3);
+        removeError(6);
     }
 }
 
-function sobrenomeValidate(){
-    if(campos[1].value.length <4)
+
+function cpfValidate(){
+    if(campos[4].value.length <14)
     {
-        setError(1);
+        setError(4);
     }
-    else{
-        removeError(1);
+    else
+    {
+        removeError(4);
     }
 }
 
@@ -114,7 +116,6 @@ function onlynumber(evt) {
     var theEvent = evt || window.event;
     var key = theEvent.keyCode || theEvent.which;
     key = String.fromCharCode(key);
-    //var regex = /^[0-9.,]+$/;
     var regex = /^[0-9.]+$/;
     if( !regex.test(key)) {
         theEvent.returnValue = false;
@@ -122,3 +123,50 @@ function onlynumber(evt) {
         theEvent.preventDefault();
     }
 }
+
+//Mascara para o input telefone
+
+const handlePhone = (event) => {
+    let input = event.target
+    input.value = phoneMask(input.value)
+}
+
+const phoneMask = (value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g, '')
+    value = value.replace(/(\d{2})(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value;
+}
+
+//Mascara para o input CPF
+
+const input = document.querySelector('#cpf')
+
+input.addEventListener('keypress', () => {
+    let inputLength = input.value.length
+
+    // MAX LENGHT 14  CPF
+    if (inputLength == 3 || inputLength == 7) {
+        input.value += '.'  
+    }else if (inputLength == 11) {
+        input.value += '-'
+    }
+})
+
+//Bloquear letras no input cpf
+
+function onlynumber(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    var regex = /^[0-9.]+$/;
+    if( !regex.test(key)) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault)
+        theEvent.preventDefault();
+    }
+}
+    
+ 
+

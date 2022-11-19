@@ -17,64 +17,69 @@
 
       <div class="grid flex">
         <div> 
-          <label class="label" for="Nome"><strong>Nome</strong></label>
-          <input class="input" type="text" id="nome" placeholder="Chris" oninput="nameValidate()">
+          <label class="label" for="Nome"><strong>Nome Completo</strong></label>
+          <input class="input" type="text" id="nome" placeholder="Digite seu nome" oninput="nameValidate()">
           <span class="span-required">Nome no mínimo 3 caracteres</span>
         </div>
 
         <div>
-          <label class="label" for="sobrenome"><strong>Sobrenome</strong></label>
-          <input class="input"type="text"id="sobrenome"placeholder="da Silva" oninput = "sobrenomeValidate()">
-          <span class="span-required">Sobrenome no mínimo 3 caracteres</span>
-        </div>
-
-        <div>
           <label class="label" for="email"><strong>Email</strong></label>
-          <input class="input"type="email" id="email"placeholder="Chrisdasilva@gmail.com" oninput ="emailValidate()">
+          <input class="input"type="email" id="email"placeholder="Digite seu email" oninput ="emailValidate()">
           <span class="span-required">Digite um email válido</span>
         </div>
 
         <div>
-          <label class="label" for="telefone"><strong>Telefone</strong></label>
-          <input class="input" type="text"id="telefone"placeholder="41 995429432" oninput ="telefoneValidate()" onkeypress="return onlynumber();">
-          <span class="span-required">Telefone no mínimo 11 números</span>
+          <label class="label" for="senha"><strong>Senha</strong></label>
+          <input class="input" type="password" id="senha" placeholder ="digite sua senha">
+          <span class="span-required">Senha no minimo 8 caracteres</span>
         </div>
-
+        
         <div>
-          <label class="label" for="nasc"><strong>Nascimento</strong></label>
-          <input class="input" type="date" id="nasc">
+          <label class="label" for="repetir senha"><strong>Repetir senha</strong></label>
+          <input class="input" type="password" id="repetir senha" placeholder="repita sua senha">
+          <span class="span-required">Senhas devem ser compatíveis</span>
         </div>
 
         <div>
           <label class="label" for="cpf"><strong>CPF</strong></label>
-          <input class="input"type="text"id="cpf"placeholder="090.909.090-90">
-          <span class="span-required">Digite um cpf válido</span>
+          <input class="input" type="text" id="cpf" placeholder="informe seu cpf"  maxlength="14"  oninput="cpfValidate()" onkeypress="return onlynumber()">
+          <span class="span-required">cpf deve conter 11 números</span>
         </div>
 
         <div>
-          <label class="label" for="rua"><strong>Rua</strong></label>
-          <input class="input" type="text" id="rua" placeholder="10th avenue, Lekki,Lagos">
+          <label class="label" for="data de Nascimento"><strong>Data de Nascimento</strong></label>
+          <input class="input" type="text" id="data de nascimento" placeholder="digite sua data de nascimento">
+          <span class="span-required">Data deve ter 8 numeros</span>
         </div>
 
         <div>
-          <label class="label" for="bairro"><strong>Bairro</strong></label>
-          <input class="input" type="text" id="bairro" placeholder="Centro">
+          <label class="label" for="telefone"><strong>Telefone(Whatsapp)</strong></label>
+          <input class="input" type="text" id="telefone(whatsapp)" placeholder="digite um numero de telefone" maxlength="15" onkeyup="handlePhone(event)" oninput ="telefoneValidate()" onkeypress="return onlynumber()">
+          <span class="span-required">Telefone deve aceitar 11 números</span>
         </div>
 
         <div>
-          <label class="label" for="complemento"><strong>Complemento</strong></label>
-          <input class="input" type="text" id="complemento" placeholder="Casa">
+          <label class="label" for="cep"><strong>CEP</strong></label>
+          <input class="input" type="text" id="cep" placeholder="digite um CEP">
         </div>
 
         <div>
-          <label class="label" for="numero"><strong>Numero</strong></label>
-          <input class="input" type="number" id="numero" placeholder="450">
+          <label class="label" for="endereço"><strong>Endereço</strong></label>
+          <input class="input" type="text" id="endereço" placeholder="digite um endereço">
         </div>
+
+        <div>
+          <label class="label" for="número"><strong>Número</strong></label>
+          <input class="input" type="text" id="número" placeholder="digite um número de endereço">
+        </div>
+        
       </div>
 
       <button class="botao flex" type="submit">Cadastrar</button>
     </form>
 
     <script src="../cadastrar4/cadastrar4.js"></script>
+    <script src="../cadastrar4/api-cep.js"></script>
+
   </body>
 </html>
