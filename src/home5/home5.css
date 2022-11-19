@@ -354,7 +354,9 @@
     }
 
     .cabecalho__menu {
-        gap: 35vh;
+        gap: 0px;
+        width: 97%;
+        justify-content: space-between;
     }
 
     .cabecalho__barra {
@@ -387,7 +389,7 @@
         margin-top: 24.82vh;
     }
 
-    .menu__none {
+    .textos__menu {
         display: none;
     }
 
@@ -401,7 +403,18 @@
     }
 
     .absolut__menu {
+        display: grid;
+        background: white;
         position: absolute;
-        background: #27214D;
+        height: 155px;
+        width: 100%;
+        gap: 20px;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .z-index {
+        z-index: 0;
     }
 }
