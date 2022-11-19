@@ -331,13 +331,13 @@
     }
 }
 
-@media screen and (min-width: 540px) {
-    .none__btn-menu {
+@media screen and (min-width: 553px) {
+    .btn__menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 553px) {
 
     .cabecalho {
         align-items: flex-start;
@@ -387,7 +387,7 @@
         margin-top: 24.82vh;
     }
 
-    .none__textos-menu {
+    .menu__none {
         display: none;
     }
 
@@ -398,5 +398,10 @@
     .cabecalho__barra--filtro {
         padding: 1.6vh 0.8vh;
         width: 4vh;
+    }
+
+    .absolut__menu {
+        position: absolute;
+        background: #27214D;
     }
 }
