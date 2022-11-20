@@ -35,13 +35,13 @@ function emailValidate(){
 }
 
 function telefoneValidate(){
-    if(campos[6].value.length <11)
+    if(campos[5].value.length <11)
     {
-        setError(6);
+        setError(5);
     }
     else
     {
-        removeError(6);
+        removeError(5);
     }
 }
 

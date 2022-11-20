@@ -47,16 +47,10 @@
         </div>
 
         <div>
-          <label class="label" for="data de Nascimento"><strong>Data de Nascimento</strong></label>
-          <input class="input" type="text" id="data de nascimento" placeholder="digite sua data de nascimento">
-          <span class="span-required">Data deve ter 8 numeros</span>
-        </div>
-
-        <div>
           <label class="label" for="telefone"><strong>Telefone(Whatsapp)</strong></label>
           <input class="input" type="text" id="telefone(whatsapp)" placeholder="digite um numero de telefone" maxlength="15" onkeyup="handlePhone(event)" oninput ="telefoneValidate()" onkeypress="return onlynumber()">
           <span class="span-required">Telefone deve aceitar 11 números</span>
-        </div>
+        </div> 
 
         <div>
           <label class="label" for="cep"><strong>CEP</strong></label>
@@ -65,12 +59,17 @@
 
         <div>
           <label class="label" for="endereço"><strong>Endereço</strong></label>
-          <input class="input" type="text" id="endereço" placeholder="digite um endereço">
+          <input class="input" type="text" id="endereco" placeholder="digite um endereço">
         </div>
 
         <div>
           <label class="label" for="número"><strong>Número</strong></label>
-          <input class="input" type="text" id="número" placeholder="digite um número de endereço">
+          <input class="input" type="number" id="número" placeholder="digite um número de endereço">
+        </div>
+
+        <div>
+          <label class="label" for="Bairro"><strong>Bairro</strong></label>
+          <input class="input" type="text" id="bairro" placeholder="digite um bairro">
         </div>
         
       </div>
