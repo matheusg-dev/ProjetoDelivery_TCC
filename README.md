@@ -45,7 +45,7 @@ Um site com telas de etapas de compra...
   - [ ] Favoritar item
   - [x] Validar cadastro
   - [ ] Barra de pesquisa
-  - [ ] Consumo de API
+  - [x] Consumo de API
   - [x] Funcionalidade de ocultar/mostrar senha
   - [x] Bloqueio de caracter especial no input
   - [x] Carrossel de compra
