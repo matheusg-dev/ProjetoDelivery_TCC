@@ -331,13 +331,13 @@
     }
 }
 
-@media screen and (min-width: 540px) {
-    .none__btn-menu {
+@media screen and (min-width: 553px) {
+    .btn__menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 553px) {
 
     .cabecalho {
         align-items: flex-start;
@@ -354,7 +354,9 @@
     }
 
     .cabecalho__menu {
-        gap: 35vh;
+        gap: 0px;
+        width: 97%;
+        justify-content: space-between;
     }
 
     .cabecalho__barra {
@@ -387,7 +389,7 @@
         margin-top: 24.82vh;
     }
 
-    .none__textos-menu {
+    .textos__menu {
         display: none;
     }
 
@@ -398,5 +400,21 @@
     .cabecalho__barra--filtro {
         padding: 1.6vh 0.8vh;
         width: 4vh;
+    }
+
+    .absolut__menu {
+        display: grid;
+        background: white;
+        position: absolute;
+        height: 155px;
+        width: 100%;
+        gap: 20px;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .z-index {
+        z-index: 0;
     }
 }
