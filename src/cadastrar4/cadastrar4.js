@@ -80,9 +80,39 @@ function cpfValidate(){
     }
 }
 
-$("#cep").keypress(function() {
-    $(this).mask('00.000-000');
-});
+//Função para ocultar e mostrar senha principal
+
+const MainPassword = document.querySelector("[data-senha]");
+const imageEye = document.querySelector(".img__eye");
+
+imageEye.onclick = function () {
+    if(MainPassword.type == "password")
+    {
+        MainPassword.type = "text";
+        imageEye.src = "../../assets/img/eye-off.svg";
+    }
+    else{
+        MainPassword.type = "password";
+        imageEye.src = "../../assets/img/eye.svg";
+    }
+};
+
+
+const repeatedPassword = document.querySelector("[data-senha]");
+const imageEye = document.querySelector(".img__eye");
+
+imageEye.onclick = function () {
+    if(repeatedPassword.type == "password")
+    {
+        repeatedPassword.type = "text";
+        imageEye.src = "../../assets/img/eye-off.svg";
+    }
+    else{
+        repeatedPassword.type = "password";
+        imageEye.src = "../../assets/img/eye.svg";
+    }
+};
+
 
 //Bloquear caracter especial no input Nome
 

@@ -23,7 +23,7 @@
       <div class="grid flex">
         <div>
           <label class="label" for="Nome"
-            ><strong>Digite seu primeiro nome</strong></label
+            ><strong>Primeiro nome</strong></label
           >
           <input
             class="input"
@@ -49,27 +49,32 @@
 
         <div>
           <label class="label" for="senha"><strong>Senha</strong></label>
-          <input
+          <div class="nomes flex">
+            <input
             class="input"
             type="password"
             id="senha"
+            data-senha
             placeholder="digite sua senha"
-            oninput="mainPasswordValidate()"
-          />
-          <span class="span-required">Senha no minimo 8 caracteres</span>
+            oninput="mainPasswordValidate()"/>
+            <img class="img__eye" src="../../assets/img/eye.svg" alt="">
+          </div>
+          
+           <span class="span-required">Senha no minimo 8 caracteres</span>
         </div>
 
         <div>
-          <label class="label" for="repetir senha"
-            ><strong>Repetir senha</strong></label
-          >
+          <label class="label" for="repetir senha"><strong>Repetir senha</strong></label>
+            <div class="nomes flex">
           <input
             class="input"
             type="password"
             id="repetir senha"
+            data-senha
             placeholder="repita sua senha"
-            oninput="comparePassword()"
-          />
+            oninput="comparePassword()"/>
+            <img class="img__eye" src="../../assets/img/eye.svg" alt="">
+          </div>
           <span class="span-required">Senhas devem ser compatíveis</span>
         </div>
 
@@ -89,7 +94,7 @@
 
         <div>
           <label class="label" for="telefone"
-            ><strong>Telefone(Whatsapp)</strong></label
+            ><strong>Telefone (Whatsapp)</strong></label
           >
           <input
             class="input"

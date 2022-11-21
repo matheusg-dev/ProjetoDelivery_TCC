@@ -53,6 +53,19 @@
     box-sizing: border-box;
 }
 
+.img__eye{
+    position:absolute;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    top:24px;
+    right:10px;
+}
+
+.nomes{
+    position:relative;
+}
+
 .span-required{
     display: none;
     font-size:16px;

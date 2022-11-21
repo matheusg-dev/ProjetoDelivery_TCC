@@ -3,6 +3,9 @@
 const input__senha = document.querySelector(".input__senha");
 const imagem__olho = document.querySelector(".imagem__olho");
 
+console.log(input__senha)
+console.log(imagem__olho)
+
 imagem__olho.onclick = () => {
   if(input__senha.type == "password") {
     input__senha.type = "text";
