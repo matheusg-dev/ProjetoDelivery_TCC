@@ -79,6 +79,35 @@
     border-radius: 10px;
     justify-content: center;
     margin-left: 0.53vh;
+    cursor: pointer;
+}
+
+.modal__filtro--barra {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgba(0 0 0 / .3);
+    width: 80%;
+}
+
+.modal__filtro--barra::backdrop {
+    background-color: rgba(0 0 0 / .1);
+}
+
+.estilo__modal {
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+
+.padrao-filtro__svg {
+    width: 72px;
+    height: 72px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    transition: all .2s ease-out;
 }
 
 /* Aqui termina o header */
