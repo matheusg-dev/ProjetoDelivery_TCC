@@ -58,13 +58,14 @@
             <img src="../../assets/img/filtro.svg" alt="icone de filtro" />
           </button>
           <dialog class="modal__filtro--barra">
-            <button class="fecha__modal">&#120;</button>
+            <button class="padrao__modal fecha__modal">&#120;</button>
             <div>
               <h2 class="titulo__modal">Ordenar por</h2>
             </div>
             <div class="grid estilo__modal">
-              <button>
-                <div class="flex center padrao-filtro__svg">
+
+              <button class="padrao__modal">
+                <div class="flex center modal__ativo padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -83,14 +84,14 @@
                     ></path>
                   </svg>
                 </div>
-                <span
+                <span class="text-modal__ativo"
                   >Ordenação <br />
                   Padrão</span
                 >
               </button>
 
-              <button>
-                <div class="flex padrao-filtro__svg">
+              <button class="padrao__modal">
+                <div class="flex center padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -112,8 +113,8 @@
                 <span>Preço</span>
               </button>
 
-              <button>
-                <div class="flex padrao-filtro__svg">
+              <button class="padrao__modal">
+                <div class="flex center padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -131,8 +132,8 @@
                 <span>Avaliação</span>
               </button>
 
-              <button>
-                <div class="flex padrao-filtro__svg">
+              <button class="padrao__modal">
+                <div class="flex center padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -155,8 +156,8 @@
                 >
               </button>
 
-              <button>
-                <div class="flex padrao-filtro__svg">
+              <button class="padrao__modal">
+                <div class="flex center padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -181,8 +182,8 @@
                 >
               </button>
 
-              <button>
-                <div class="flex padrao-filtro__svg">
+              <button class="padrao__modal">
+                <div class="flex center padrao-filtro__svg">
                   <svg
                     svg
                     width="24"
@@ -208,7 +209,7 @@
               </button>
             </div>
 
-            </div>
+          </div>
           </dialog>
         </section>
       </div>
@@ -590,7 +591,7 @@
     </main>
 
     <script src="../home5/home5-JS/menu-responsivo.js"></script>
-    <script src="../home5/home5-JS/btn-filtro.js"></script>
+    <script src="../home5/home5-JS/btn-modal.js"></script>
     <script src="../home5/home5-JS/btn-carrossel.js"></script>
     <script src="../home5/home5-JS/api-fruta.js"></script>
   </body>

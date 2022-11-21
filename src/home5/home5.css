@@ -85,12 +85,28 @@
 .modal__filtro--barra {
     border: none;
     border-radius: .5rem;
-    box-shadow: 0 0 1rem rgba(0 0 0 / .3);
-    width: 80%;
+    box-shadow: 0 0 1rem rgba(0 0 0 / .2);
+    width: 40%;
 }
 
 .modal__filtro--barra::backdrop {
     background-color: rgba(0 0 0 / .1);
+}
+
+.fecha__modal {
+    font-size: x-large;
+}
+
+.padrao__modal {
+    background: none;
+    color: #000000;
+}
+
+.titulo__modal {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: x-large;
 }
 
 .estilo__modal {
@@ -100,6 +116,7 @@
     grid-row-gap: 20px;
 }
 
+
 .padrao-filtro__svg {
     width: 72px;
     height: 72px;
@@ -108,6 +125,22 @@
     border-radius: 50%;
     margin-bottom: 12px;
     transition: all .2s ease-out;
+}
+
+.padrao-filtro__svg:hover {
+    background-color: #fcebea;
+    border-color: transparent;
+    color: #FFA451;
+}
+
+.modal__ativo {
+    background-color: #fcebea;
+    border-color: transparent;
+    color: #FFA451;
+}
+
+.text-modal__ativo {
+    color: #FFA451;
 }
 
 /* Aqui termina o header */
