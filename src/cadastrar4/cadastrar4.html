@@ -54,6 +54,7 @@
             type="password"
             id="senha"
             placeholder="digite sua senha"
+            oninput="mainPasswordValidate()"
           />
           <span class="span-required">Senha no minimo 8 caracteres</span>
         </div>
@@ -67,6 +68,7 @@
             type="password"
             id="repetir senha"
             placeholder="repita sua senha"
+            oninput="comparePassword()"
           />
           <span class="span-required">Senhas devem ser compatíveis</span>
         </div>
@@ -86,21 +88,8 @@
         </div>
 
         <div>
-          <label class="label" for="data de Nascimento"
-            ><strong>Data de Nascimento</strong></label
-          >
-          <input
-            class="input"
-            type="text"
-            id="data de nascimento"
-            placeholder="digite sua data de nascimento"
-          />
-          <span class="span-required">Data deve ter 8 numeros</span>
-        </div>
-
-        <div>
           <label class="label" for="telefone"
-            ><strong>Telefone (Whatsapp)</strong></label
+            ><strong>Telefone(Whatsapp)</strong></label
           >
           <input
             class="input"
@@ -122,6 +111,7 @@
             type="text"
             id="cep"
             placeholder="digite um CEP"
+            onkeypress="$(this).mask('00.000-000');"
           />
         </div>
 
@@ -130,7 +120,7 @@
           <input
             class="input"
             type="text"
-            id="endereço"
+            id="endereco"
             placeholder="digite um endereço"
           />
         </div>
@@ -139,9 +129,19 @@
           <label class="label" for="número"><strong>Número</strong></label>
           <input
             class="input"
-            type="text"
+            type="number"
             id="número"
             placeholder="digite um número de endereço"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="Bairro"><strong>Bairro</strong></label>
+          <input
+            class="input"
+            type="text"
+            id="bairro"
+            placeholder="digite um bairro"
           />
         </div>
       </div>

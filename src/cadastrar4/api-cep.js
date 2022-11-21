@@ -1,18 +1,43 @@
-function consumir()
-{
-    let cep = document.getElementById('cep').value;
-    fetch("https://viacep.com.br/ws/" + cep + "/json/")
-    .then(response => response.json())
-    .then(json => setData(json))
-}
+'use strict';
 
-function setData(json)
-{
-    document.getElementById('cidade').innerText = json.localidade;
-    document.getElementById('bairro').innerText = json.bairro;
-    document.getElementById('rua').innerText = json.logradouro;
-}
-
-function api_cep(){
+const LimparFormulário = (endereco) =>{
+    document.getElementById('endereco').value = '';
+    document.getElementById('bairro').value = '';
     
 }
+
+const preencherFormulário = (endereco) =>{
+    document.getElementById('endereco').value = endereco.logradouro;
+    document.getElementById('bairro').value = endereco.bairro;
+    
+}
+
+const Enumero = (numero) => /^[0-9]+$/.test(numero);
+
+const cepValido = (cep) => cep.length == 8 && Enumero(cep);
+
+const pesquisarCep = async() => {
+    LimparFormulário();
+
+    const cep = document.getElementById('cep').value;
+    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    if(cepValido(cep)){
+        const dados = await fetch(url);
+        const endereco = await dados.json();
+        if(endereco.hasOwnProperty('erro')){     
+            document.getElementById('endereco').value = 'CEP não encontrado!';
+        }
+        else{
+            preencherFormulário(endereco);
+        }
+
+    }
+    else
+    {
+        document.getElementById('endereco').value = 'CEP incorreto!';
+    }
+    
+}
+
+document.getElementById('cep')
+        .addEventListener('focusout',pesquisarCep);
