@@ -34,6 +34,29 @@ function emailValidate(){
     }
 }
 
+function mainPasswordValidate(){
+    if(campos[2].value.length < 8)
+    {
+        setError(2);
+    }
+    else{
+        removeError(2);
+        comparePassword();
+    }
+
+}
+
+function comparePassword(){
+    if(campos[2].value == campos[3].value && campos[3].value.length >= 8 )
+    {
+        removeError(3);
+    }
+    else{
+        setError(3);
+    }
+}
+
+
 function telefoneValidate(){
     if(campos[5].value.length <11)
     {
@@ -56,6 +79,10 @@ function cpfValidate(){
         removeError(4);
     }
 }
+
+$("#cep").keypress(function() {
+    $(this).mask('00.000-000');
+});
 
 //Bloquear caracter especial no input Nome
 
@@ -83,32 +110,6 @@ if(char.match(pattern))
 
 }
 
-//Bloquear caracter especial no input sobrenome
-
-const sobrenomeInput = document.querySelector("#sobrenome");
-
-sobrenomeInput.addEventListener("keypress", function(e){
-
-    if(!checkchar(e)) {
-        e.preventDefault();
-    }
-});
-
-function checkchar(e){
-
-    const char = String.fromCharCode(e.keyCode);
-
-    const pattern = '[a-zA-Z0-9]';
-
-    if(char.match(pattern))
-    {
-        console.log(char);
-        return true;
-    }
-    else{
-        console.log(char);
-    }
-}
 
 //Bloquear letras no input telefone
 
