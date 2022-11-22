@@ -1,5 +1,7 @@
 const main = document.getElementsByClassName('main');
 const campos = document.querySelectorAll('.input');
+const campo = document.querySelector('.input_num');
+const spanNum = document.querySelector('.spans-input-num');
 const spans = document.querySelectorAll('.spans-inputs');
 
 function setError(index){
@@ -8,8 +10,18 @@ function setError(index){
 }
 
 function removeError(index){
-    campos[index].style.border = ''
+    campos[index].style.border = '';
     spans[index].style.display = 'none';
+}
+
+function SetError2(index){
+    campo[index].style.border = '2px solid #e63636';
+    spanNum[index].style.display = 'block';
+}
+
+function removeError2(index){
+    campo[index].style.border = '';
+    spanNum[index].style.display = 'none';
 }
 
 function name_CardValidate(){
@@ -31,6 +43,17 @@ function numberCardValidate(){
     else
     {
         removeError(1);
+    }
+}
+
+function cvvValidate(){
+    if(campo.value.length <3)
+    {
+       SetError2;
+    }
+    else
+    {
+        removeError2;
     }
 }
 
@@ -84,8 +107,36 @@ inputCartao.addEventListener('keypress', () => {
     console.log(inputlength);
 
 
-if(inputlength === 4 || inputlength === 9 || inputlength === 14) {
-    inputCartao.value += ''
+if(inputlength == 4 || inputlength == 9 || inputlength == 14) {
+    inputCartao.value += ' '
 }
 
 })
+
+
+//Bloquear caracteres especiais do input número do cartão
+
+const NomeCartaoInput = document.querySelector("#cartao");
+
+NomeCartaoInput.addEventListener("keypress", function(e){
+
+    if(!checkchar(e)) {
+        e.preventDefault();
+    }
+
+});
+
+//Bloquear letras no input número do cartão
+
+function onlynumbers(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    var regex = /^[0-9.]+$/;
+    if( !regex.test(key)) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault)
+        theEvent.preventDefault();
+    }
+}
+

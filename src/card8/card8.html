@@ -22,7 +22,7 @@
 
         <div class="numero_cartao">
           <label class="label" for="cartao">Número do cartão</label>
-          <input class="input" type="tel" id="cartao" maxlength="19" oninput="numberCardValidate()">
+          <input class="input" type="text" id="cartao" maxlength="19" oninput="numberCardValidate()" onkeypress="return onlynumbers()">
           <br>
           <span class="spans-inputs">número do cartão deverá conter 19 números</span>
         </div>
@@ -35,8 +35,10 @@
 
           <div class="grid">
             <label class="label" for="cvv">cvv</label>
-            <input class="input_num" type="number" id="cvv" />
+            <input class="input_num" type="number" id="cvv" maxlength="3" oninput="cvvValidate()">
+            <span class="spans-input-num">Digite no minimo 3 numeros</span>
           </div>
+
         </div>
 
         <button class="btn" type="submit">Continuar</button>
