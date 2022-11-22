@@ -85,7 +85,7 @@ function cpfValidate(){
 const MainPassword = document.querySelector("[data-senha]");
 const imageEye = document.querySelector(".img__eye");
 
-imageEye.onclick = function () {
+imageEye.onclick = () => {
     if(MainPassword.type == "password")
     {
         MainPassword.type = "text";
@@ -95,23 +95,82 @@ imageEye.onclick = function () {
         MainPassword.type = "password";
         imageEye.src = "../../assets/img/eye.svg";
     }
-};
+}
 
+//Função para ocultar e mostrar a senha repitida 
 
-const repeatedPassword = document.querySelector("[data-senha]");
-const imageEye = document.querySelector(".img__eye");
+const repeatedPassword = document.querySelector("[data-senha-repetida]");
+const img__olho = document.querySelector(".img__eyes");
 
-imageEye.onclick = function () {
+    img__olho.onclick = () => {
     if(repeatedPassword.type == "password")
     {
         repeatedPassword.type = "text";
-        imageEye.src = "../../assets/img/eye-off.svg";
+        img__olho.src = "../../assets/img/eye-off.svg";
     }
     else{
         repeatedPassword.type = "password";
-        imageEye.src = "../../assets/img/eye.svg";
+        img__olho.src = "../../assets/img/eye.svg";
     }
 };
+
+//Bloquear caracter especial de input senha
+
+const senhaInput = document.querySelector("#senha");
+
+senhaInput.addEventListener("keypress", function (e){
+    if(!checkchar(e))
+    {
+        e.preventDefault();
+    }
+});
+
+
+function checkchar (e){
+    
+    const char = String.fromCharCode(e.keyCode);
+    const pattern = '[a-zA-Z0-9]';
+    
+    if(char.match(pattern))
+    {
+        console.log(char);
+        return true;
+    }
+    else
+    {
+        console.log(char);
+    }
+    
+}
+
+//Bloquear caracter especial do input repetir senha
+
+const repetir_senha = document.querySelector("#repetirSenha");
+
+repetir_senha.addEventListener("keypress", function (e){
+    if(!checkchar(e))
+    {
+        e.preventDefault();
+    }
+});
+
+
+function checkchar (e){
+    
+    const char = String.fromCharCode(e.keyCode);
+    const pattern = '[a-zA-Z0-9]';
+    
+    if(char.match(pattern))
+    {
+        console.log(char);
+        return true;
+    }
+    else
+    {
+        console.log(char);
+    }
+    
+}
 
 
 //Bloquear caracter especial no input Nome
@@ -154,6 +213,102 @@ function onlynumber(evt) {
         theEvent.preventDefault();
     }
 }
+
+//Bloquear letras no input CEP
+
+function onlynumber(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    var regex = /^[0-9.]+$/;
+    if( !regex.test(key)) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault)
+        theEvent.preventDefault();
+    }
+}
+
+//Bloquear números no input Endereço
+
+const inputEndereço = document.querySelector("#endereco");
+
+inputEndereço.addEventListener("keypress", function(e){
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58)
+    {
+        e.preventDefault();
+    }
+})
+
+
+//Bloquear caracteres especiais no input Endereço
+
+const EndereçoInput = document.querySelector("#endereco");
+
+EndereçoInput.addEventListener("keypress", function(e){
+
+    if(!checkchar(e)) {
+        e.preventDefault();
+    }
+
+});
+
+function checkchar(e) {
+
+const char = String.fromCharCode(e.keyCode);
+
+const pattern = '[a-zA-Z0-9]';
+
+if(char.match(pattern))
+{
+    console.log(char);
+    return true;
+}
+
+}
+
+//Bloquear caracteres especiais no input Bairro
+
+const BairroInput = document.querySelector("#bairro");
+
+BairroInput.addEventListener("keypress", function(e){
+
+    if(!checkchar(e)) {
+        e.preventDefault();
+    }
+
+});
+
+function checkchar(e) {
+
+const char = String.fromCharCode(e.keyCode);
+
+const pattern = '[a-zA-Z0-9]';
+
+if(char.match(pattern))
+{
+    console.log(char);
+    return true;
+}
+
+}
+
+
+//Bloquear números no input Bairro
+
+const inputBairro = document.querySelector("#bairro");
+
+inputBairro.addEventListener("keypress", function(e){
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58)
+    {
+        e.preventDefault();
+    }
+})
+
+
 
 //Mascara para o input telefone
 

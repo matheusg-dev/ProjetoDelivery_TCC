@@ -53,6 +53,16 @@
     box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .img__eye{
     position:absolute;
     width:20px;
@@ -60,6 +70,15 @@
     cursor:pointer;
     top:24px;
     right:10px;
+}
+
+.img__eyes{
+    position:absolute;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    top:24px;
+     right:10px;
 }
 
 .nomes{

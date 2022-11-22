@@ -69,11 +69,11 @@
           <input
             class="input"
             type="password"
-            id="repetir senha"
-            data-senha
+            id="repetirSenha"
+            data-senha-repetida
             placeholder="repita sua senha"
             oninput="comparePassword()"/>
-            <img class="img__eye" src="../../assets/img/eye.svg" alt="">
+            <img class="img__eyes" src="../../assets/img/eye.svg" alt="">
           </div>
           <span class="span-required">Senhas devem ser compatíveis</span>
         </div>
@@ -116,7 +116,8 @@
             type="text"
             id="cep"
             placeholder="digite um CEP"
-            onkeypress="$(this).mask('00.000-000');"
+            maxlength="8"
+            onkeypress="onlynumber()"
           />
         </div>
 
