@@ -15,14 +15,14 @@
       <section class="section flex">
         <div class="nome_titular">
           <label class="label" for="nome">Nome do titular do Cartão</label>
-          <input class="input" type="text" id="nome" onkeypress="return numeros();"  oninput="name_CardValidate()">
+          <input class="input" type="text" id="nome"   oninput="name_CardValidate()">
           <br>
           <span class="spans-inputs">Nome deverá conter no minímo 3 caracteres </span>
         </div>
 
         <div class="numero_cartao">
           <label class="label" for="cartao">Número do cartão</label>
-          <input class="input" type="number" id="cartao" maxlength="19" oninput="numberCardValidate()">
+          <input class="input" type="tel" id="cartao" maxlength="19" oninput="numberCardValidate()">
           <br>
           <span class="spans-inputs">número do cartão deverá conter 19 números</span>
         </div>

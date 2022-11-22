@@ -34,26 +34,58 @@ function numberCardValidate(){
     }
 }
 
-//Função para bloquear caracteres especiais e números
+//Bloquear números no input Nome
 
-function letras(){
-	tecla = event.keycode;
-	if (tecla >= 48 && tecla <= 57){
-	    return false;
-	}else{
-	   return true;
-	}
+const inputNome = document.querySelector("#nome");
+
+inputNome.addEventListener("keypress", function(e){
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58)
+    {
+        e.preventDefault();
+    }
+})
+
+//Bloquear caracteres especiais do input Nome
+
+const NomeInput = document.querySelector("#nome");
+
+NomeInput.addEventListener("keypress", function(e){
+
+    if(!checkchar(e)) {
+        e.preventDefault();
+    }
+
+});
+
+function checkchar(e) {
+
+const char = String.fromCharCode(e.keyCode);
+
+const pattern = '[a-zA-Z0-9]';
+
+if(char.match(pattern))
+{
+    console.log(char);
+    return true;
 }
+
+}
+
 
 //Mascara para input número do cartão
 
-const input = document.querySelector('input');
+const inputCartao = document.querySelector('#cartao');
 
-input.addEventListener('keypress', () => {
-    let inputlength = input.value.length
+inputCartao.addEventListener('keypress', () => {
+    let inputlength = inputCartao.value.length
+    
+    console.log(inputlength);
 
 
 if(inputlength === 4 || inputlength === 9 || inputlength === 14) {
-    input.value += ''
+    inputCartao.value += ''
 }
+
 })
