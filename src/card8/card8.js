@@ -14,14 +14,14 @@ function removeError(index){
     spans[index].style.display = 'none';
 }
 
-function SetError2(index){
-    campo[index].style.border = '2px solid #e63636';
-    spanNum[index].style.display = 'block';
+function SetError2(){
+    campo.style.border = '2px solid #e63636';
+    spanNum.style.display = 'block';
 }
 
-function removeError2(index){
-    campo[index].style.border = '';
-    spanNum[index].style.display = 'none';
+function removeError2(){
+    campo.style.border = '';
+    spanNum.style.display = 'none';
 }
 
 function name_CardValidate(){
@@ -49,11 +49,11 @@ function numberCardValidate(){
 function cvvValidate(){
     if(campo.value.length <3)
     {
-       SetError2;
+       SetError2();
     }
     else
     {
-        removeError2;
+        removeError2();
     }
 }
 

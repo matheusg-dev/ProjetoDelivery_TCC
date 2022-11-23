@@ -6,7 +6,7 @@
 }
 
 .container{
-    height: 67%;
+    height: 72%;
     width:41%;
    display:flex;
    justify-content: center;
@@ -53,7 +53,7 @@
     color:#e63636;
 }
 
-.span-input-num{
+.spans-input-num{
     font-size:16px;
     display:none;
     color:#e63636;
@@ -109,6 +109,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #F7F5F5;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(169,169,169,0.9);
+    margin-bottom: 30px;
 
 }
 
