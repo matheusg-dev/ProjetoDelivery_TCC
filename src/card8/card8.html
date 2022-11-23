@@ -36,7 +36,7 @@
              
           <div class="grid">
             <label class="label" for="cvv">cvv</label>
-            <input class="input_num" type="number" id="cvv" maxlength="3" oninput="cvvValidate()">
+            <input class="input_num" type="number" id="cvv" maxlength="3" oninput="cvvValidate()" onkeypress="validar(this); return numerico(event)">
             <br>
             <span class="spans-input-num">Digite no minimo 3 numeros</span>
           </div>

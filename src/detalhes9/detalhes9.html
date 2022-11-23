@@ -20,12 +20,14 @@
       <section class="flex section">
         <div class="endereco">
           <label class="label" for="entrega">O seu endereço de entrega</label>
-          <input class="input" type="text" id="entrega" />
+          <input class="input_endereço" type="text" id="entrega" placeholder="Informe um endereço " />
         </div>
 
         <div class="numero">
           <label class="label" for="NumEntrega">Número que podemos ligar</label>
-          <input class="input" type="text" id="NumEntrega" />
+          <input class="input_numero" type="text" id="NumEntrega" placeholder="Informe um número de telefone" maxlength="15"  onkeypress="return onlynumber()"onkeyup="handlePhone(event)" oninput="NumeroTelValidate()"/>
+          <br>
+          <span class="span-numero">Número de telefone deve aceitar 11 números</span>
         </div>
 
         <div class="flex gap">
