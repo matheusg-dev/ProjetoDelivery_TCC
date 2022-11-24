@@ -22,9 +22,7 @@
 
       <div class="grid flex">
         <div>
-          <label class="label" for="Nome"
-            ><strong>Primeiro nome</strong></label
-          >
+          <label class="label" for="Nome"><strong>Primeiro nome</strong></label>
           <input
             class="input"
             type="text"
@@ -51,29 +49,33 @@
           <label class="label" for="senha"><strong>Senha</strong></label>
           <div class="nomes flex">
             <input
-            class="input"
-            type="password"
-            id="senha"
-            data-senha
-            placeholder="digite sua senha"
-            oninput="mainPasswordValidate()"/>
-            <img class="img__eye" src="../../assets/img/eye.svg" alt="">
+              class="input"
+              type="password"
+              id="senha"
+              data-senha
+              placeholder="digite sua senha"
+              oninput="mainPasswordValidate()"
+            />
+            <img class="img__eye" src="../../assets/img/eye.svg" alt="" />
           </div>
-          
-           <span class="span-required">Senha no minimo 8 caracteres</span>
+
+          <span class="span-required">Senha no minimo 8 caracteres</span>
         </div>
 
         <div>
-          <label class="label" for="repetir senha"><strong>Repetir senha</strong></label>
-            <div class="nomes flex">
-          <input
-            class="input"
-            type="password"
-            id="repetirSenha"
-            data-senha-repetida
-            placeholder="repita sua senha"
-            oninput="comparePassword()"/>
-            <img class="img__eyes" src="../../assets/img/eye.svg" alt="">
+          <label class="label" for="repetir senha"
+            ><strong>Repetir senha</strong></label
+          >
+          <div class="nomes flex">
+            <input
+              class="input"
+              type="password"
+              id="repetirSenha"
+              data-senha-repetida
+              placeholder="repita sua senha"
+              oninput="comparePassword()"
+            />
+            <img class="img__eyes" src="../../assets/img/eye.svg" alt="" />
           </div>
           <span class="span-required">Senhas devem ser compatíveis</span>
         </div>
