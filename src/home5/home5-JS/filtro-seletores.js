@@ -13,6 +13,8 @@ btnSelecao[0].onclick = function () {
     tituleH2.classList.add("popular");
     tituleH2.innerHTML = "Todos os pratos";
     displayTudo.appendChild(tituleH2);
+
+    
   } else {
   }
 };
