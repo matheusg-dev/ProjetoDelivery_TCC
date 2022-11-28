@@ -313,6 +313,11 @@
     gap: 27px;
 }
 
+.popular-texto{
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FFA451;
+}
 /* Aqui começa a responsividade */
 
 @media screen and (max-width: 1280px) {
