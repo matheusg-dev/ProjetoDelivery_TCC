@@ -18,28 +18,28 @@
     src: url(../fonts/TT\ Norms\ Pro\ Bold.otf);
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-    -webkit-border-radius: 16px;
+    -webkit-border-radius: 20px;
   }
   
-  ::-webkit-scrollbar-track-piece {
-    background-color: #ffffff;
+body::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    -webkit-border-radius: 20px;
+  }
+  
+body::-webkit-scrollbar-thumb:vertical {
+    height: 1px;
+    background-color: #ffa55196;
     -webkit-border-radius: 3px;
   }
   
-  ::-webkit-scrollbar-thumb:vertical {
-    height: 5px;
-    background-color: #666;
+body::-webkit-scrollbar-thumb:horizontal {
+    width: 1px;
+    background-color: #FFA451;
     -webkit-border-radius: 3px;
-  }
-  
-  ::-webkit-scrollbar-thumb:horizontal {
-    width: 5px;
-    background-color: #666;
-    -webkit-border-radius: 3px;
-  }
+}
 
 
 body {
