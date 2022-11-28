@@ -50,6 +50,8 @@ Um site com telas de etapas de compra...
   - [x] Bloqueio de caracter especial no input
   - [x] Carrossel de compra
   - [x] Menu responsivo
+  - [x] Mascara para os inputs
+  
 
 ---
 
