@@ -40,8 +40,8 @@ Um site com telas de etapas de compra...
   - [x] Todas as telas
 - Javascript
   - [ ] Botões de navegação
-  - [ ] Criar itens de compra
-  - [ ] filtro dos itens de compra
+  - [x] Criar itens de compra
+  - [x] filtro dos itens de compra
   - [ ] Favoritar item
   - [x] Validar cadastro
   - [ ] Barra de pesquisa
