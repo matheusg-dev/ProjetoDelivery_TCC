@@ -39,7 +39,7 @@ Um site com telas de etapas de compra...
 - Design responsivo
   - [x] Todas as telas
 - Javascript
-  - [ ] Botões de navegação
+  - [ ] Rotas de navegação
   - [x] Criar itens de compra
   - [x] filtro dos itens de compra
   - [ ] Favoritar item
