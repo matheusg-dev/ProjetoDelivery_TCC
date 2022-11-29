@@ -295,6 +295,18 @@
     margin-left: 86%;
 }
 
+.prato__coracao:hover {
+   background-image: url(../../assets/img/coracao-red.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-filter: blur(1px);
+   cursor: pointer;
+}
+
+.red{
+    background-color: #000000;
+}
+
 .prato__img {
     width: 20.77vh;
     margin: 0 auto;
