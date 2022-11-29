@@ -133,12 +133,11 @@ function checkchar (e){
     
     if(char.match(pattern))
     {
-        console.log(char);
         return true;
     }
     else
     {
-        console.log(char);
+
     }
     
 }
@@ -162,12 +161,11 @@ function checkchar (e){
     
     if(char.match(pattern))
     {
-        console.log(char);
         return true;
     }
     else
     {
-        console.log(char);
+        
     }
     
 }
@@ -175,7 +173,7 @@ function checkchar (e){
 
 //Bloquear caracter especial no input Nome
 
-const nomeInput = document.querySelector("#nome");
+const nomeInput = document.querySelector("#PrimeiroNome");
 
 nomeInput.addEventListener("keypress", function(e){
 
@@ -193,7 +191,6 @@ const pattern = '[a-zA-Z0-9]';
 
 if(char.match(pattern))
 {
-    console.log(char);
     return true;
 }
 
@@ -262,7 +259,6 @@ const pattern = '[a-zA-Z0-9]';
 
 if(char.match(pattern))
 {
-    console.log(char);
     return true;
 }
 
@@ -288,7 +284,7 @@ const pattern = '[a-zA-Z0-9]';
 
 if(char.match(pattern))
 {
-    console.log(char);
+   
     return true;
 }
 
@@ -353,6 +349,8 @@ function onlynumber(evt) {
         theEvent.preventDefault();
     }
 }
+
+
     
  
 
