@@ -47,9 +47,8 @@ function validar(field) {
     }
   }
 
-  const man = document.getElementsByClassName('main');
+  const principal = document.getElementsByClassName('main');
   const campos = document.querySelector('.input_endereço');
-  const
 
 
   //Mascara para o input Número
