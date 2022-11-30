@@ -29,7 +29,6 @@
             id="PrimeiroNome"
             placeholder="Cris"
             oninput="nameValidate()"
-           
 
           />
           <span class="span-required">Nome no mínimo 3 caracteres</span>
@@ -103,7 +102,7 @@
           <input
             class="input"
             type="text"
-            id="telefone(whatsapp)"
+            id="telefone"
             placeholder="digite um numero de telefone"
             maxlength="15"
             onkeyup="handlePhone(event)"
@@ -158,11 +157,11 @@
         </div>
       </div>
 
-      <button class="botao flex" type="submit">Cadastrar</button>
+      <button class="botao flex" id="send" type="submit">Cadastrar</button>
     </form>
 
     <script src="../cadastrar4/cadastro4-js/api-cep.js"></script>
    <script src="../cadastrar4/cadastro4-js/cadastrar4.js"></script>
-   <script src="../cadastrar4/cadastro4-js/guardavar.js"></script>
+   <script src="../cadastrar4/cadastro4-js/guardavar.js" defer></script>
   </body>
 </html>
