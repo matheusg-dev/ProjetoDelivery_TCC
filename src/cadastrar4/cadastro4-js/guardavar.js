@@ -1,6 +1,5 @@
-const btn = document.querySelector("#send");
-var formulario = new Map();
-formulario.set("Var", "novivip");
+let btn = document.querySelector("#send");
+let formulario = new Map();
 
 btn.addEventListener("click", function(e){
 
@@ -17,47 +16,47 @@ btn.addEventListener("click", function(e){
 
     const senha = document.querySelector("#senha");
 
-    var senhaContent = senha.value;
+    formulario.set("Senha", senha.value);
 
 
     const repetirSenha = document.querySelector("#repetirSenha");
 
-    var repetirSenhaContent = repetirSenha.value;
+    formulario.set("RepetirSenha", repetirSenha.value);
 
     
 
     const cpf = document.querySelector("#cpf");
 
-    var cpfContent = cpf.value;
+    formulario.set("Cpf", cpf.value);
 
 
 
     const telefone = document.querySelector("#telefone");
 
-    var telefoneContent = telefone.value;
-
+    formulario.set("Telefone", telefone.value);
   
 
     const cep = document.querySelector("#cep");
 
-    var cepContent = cep.value;
+    formulario.set("Cep", cep.value);
 
   
 
     const endereco = document.querySelector("#endereco");
 
-    var enderecoContent = endereco.value;
+    formulario.set("Endereco", endereco.value);
 
 
     const numero = document.querySelector("#número");
 
-    var numeroContent = numero.value;
+    formulario.set("Numero", numero.value);
 
     
 
     const bairro = document.querySelector("#bairro");
 
-    var bairroContent = bairro.value;
+    formulario.set("Bairro", bairro.value);
+    
 
     var form = {
         Nome: nome,

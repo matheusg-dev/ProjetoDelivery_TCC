@@ -1,5 +1,14 @@
-const btn2 = document.querySelector("#recebe");
+let btn = document.querySelector("#recebe");
+let formulario = new Map();
 
-btn2.addEventListener("click", function(e){
+btn.addEventListener("click", function(e){
+    e.preventDefault();
     imprimeDados();
+
 });
+
+function imprimeDados() {
+    for (var [key, value] of formulario) {
+    
+        console.log(key + " = " + value);
+    }}
