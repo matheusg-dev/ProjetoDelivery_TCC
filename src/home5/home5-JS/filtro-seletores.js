@@ -30,7 +30,6 @@ btnSelecao[0].onclick = function () {
 
     remove.forEach((elemento) => {
       elemento.remove()
-      console.log(elemento)
     })
 
     deletaPrincipal.classList.add("verdadeiro")
