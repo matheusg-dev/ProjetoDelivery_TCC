@@ -16,7 +16,7 @@ let itemCarrosselAtual = 0;
 
 btnRecomendado.forEach((elementos) => {
   elementos.addEventListener("click", () => {
-    const btnEsquerdo = elementos.classList.contains("btn__esquerda");
+    const btnEsquerdo = elementos.classList.contains("btn__direita");
 
     if (btnEsquerdo) {
       itemCarrosselAtual -= 3;
@@ -42,7 +42,7 @@ btnRecomendado.forEach((elementos) => {
 
 btnPopular.forEach((elementos) => {
   elementos.addEventListener("click", () => {
-    const btnEsquerdo = elementos.classList.contains("btn__esquerda");
+    const btnEsquerdo = elementos.classList.contains("btn__direita");
 
     if (btnEsquerdo) {
       itemCarrosselAtual -= 3;
@@ -68,7 +68,7 @@ btnPopular.forEach((elementos) => {
 
 btnFavorito.forEach((elementos) => {
   elementos.addEventListener("click", () => {
-    const btnEsquerdo = elementos.classList.contains("btn__esquerda");
+    const btnEsquerdo = elementos.classList.contains("btn__direita");
 
     if (btnEsquerdo) {
       itemCarrosselAtual -= 3;
