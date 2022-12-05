@@ -88,12 +88,17 @@ input {
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
+    cursor: pointer;
 }
 
 .cifrao::before {
     color: #F08626;
     content: '\0024';
     margin-right: 4px;
+}
+
+.cifrao{
+    cursor: pointer;
 }
 
 .logo__subtracao {

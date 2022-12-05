@@ -184,6 +184,8 @@
     cursor: not-allowed;
 }
 
+
+
 /* Aqui acaba a seção de de filtro */
 
 .home {
@@ -314,6 +316,7 @@
 .prato__img {
     width: 20.77vh;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .nome__prato {
