@@ -42,7 +42,8 @@ Um site com telas de etapas de compra...
   - [ ] Rotas de navegação
   - [x] Criar itens de compra
   - [x] filtro dos itens de compra
-  - [ ] Favoritar item
+  - [x] Favoritar item
+  - [x] Botão de soma da Página Home
   - [x] Validar cadastro
   - [ ] Barra de pesquisa
   - [x] Consumo de API
