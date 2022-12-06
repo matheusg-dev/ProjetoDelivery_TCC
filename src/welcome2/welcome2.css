@@ -57,39 +57,6 @@
 }
 
 
-.nome__input--usuario{
-    width: 327px;
-    height: 56px;
-    background: #f5caca;
-    border-radius:  1vh;
-    margin-bottom: 0.85vh;
-}
-  
-.nome__input{
-    width: 327px;
-    height: 56px;
-    background: #f5caca;
-    border-radius:  1vh;
-    margin-bottom: 58px;
-}
-
-
-.btn__pedido{
-    width: 163px;
-    height: 56px;
-    background: #FFA451;
-    border-radius:  1vh;
-    border: none;
-}
-
-.btn__cadastro{
-    width: 163px;
-    height: 56px;
-    background: #FFA451;
-    border-radius:  1vh;
-    border: none;
-}
-
 .user__btn{
     width: 60%;
 }
@@ -99,10 +66,20 @@
     height:56px;
 }
 
+@media screen and (max-width:1280px) {
+    .user__nome--label{
+        font-size:3.3vh;
+    }
+
+    .user__btn--continuar{
+        font-size:20px;
+    }
+}
+
 @media screen and (max-width: 960px) {
 
     .tela__primaria--img {
-        width: 50%;
+        width: 40%;
     }
 
     .user__nome--label {
@@ -181,6 +158,16 @@
 
     .user__paragrafo--pg2 {
         font-size: 2vh;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .user__nome--label{
+        font-size:1.7vh;
+    }
+
+    .user__paragrafo--pg2{
+        font-size:1.7vh;
     }
 }
 
