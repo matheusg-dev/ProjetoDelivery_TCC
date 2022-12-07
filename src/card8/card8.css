@@ -82,7 +82,7 @@
 }
 
 .label{
-
+    margin-left:30px;
     margin-top: 20px;
     color:#27214d;
     font-size: 2.3vh;
@@ -133,7 +133,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 .input_num{
-   width:22.4vh;
+   width:25.4vh;
    height:8.7vh;
    left:0px;
    top:0px;
@@ -144,7 +144,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .input_data{
-    width:22.4vh;
+    width:25.4vh;
+    margin-left: 20px;;
     height:8.7vh;
     left:0px;
     top:0px;
@@ -245,6 +246,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width:80%;
     }
 
+    .input{
+        width:50.4vh;
+        height:7.8vh;
+    }
 
 }
 
@@ -412,6 +417,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width:375px){
     .container{
         width:80%;
+        height:80%;
     }
 
     .carrinho__gap{
@@ -468,6 +474,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width:280px) {
     .container{
         width:87%;
+        height: 80%;
     }
 
     .input{
@@ -482,6 +489,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width:12.4vh;
     }
 }
+
 
 
 
