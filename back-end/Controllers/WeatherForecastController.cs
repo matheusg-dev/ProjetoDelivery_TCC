@@ -15,7 +15,7 @@ public class UserController : ControllerBase
     {
         try
         {
-            using CadastroArmazemContext context = new CadastroArmazemContext();
+            CadastroArmazemContext context = new CadastroArmazemContext();
 
             var jojos = 
                 from u in context.Usuarios
@@ -39,16 +39,24 @@ public class UserController : ControllerBase
         });
     }
 
-//    [HttpGet("Login")]
-//    public object Login(Usuario user)
-//    {
-//         cadastro_armazem context = new cadastro_armazem();
+   [HttpGet("Login")]
+    public object Login()
+   {
+        var user = new Usuario();
+        user.UsuarioPrimeiroSome = "kf";
+        user.UsuarioSenha = "matheus123";
+        user.UsuarioRepetirSenha = "matheus1234";
+        CadastroArmazemContext context = new CadastroArmazemContext();
 
-//      /*    var query1 = context.usuarios.FirstOrDefault(u => u.Nome == user.Nome);
-//         if(query1.Nome == null)
-//             return BadRequest("Nome invalido.");
-//         if(query1.Senha == null)
-//             return BadRequest("senha invalida.");
-//         return Ok("Login efetuado com sucesso."); */
-//    }
+        var query1 = context.Usuarios.FirstOrDefault(u => u.UsuarioPrimeiroSome == user.UsuarioPrimeiroSome);
+        if(query1.UsuarioPrimeiroSome.value.length <= 3)
+            return BadRequest("Primeiro nome inválido.");
+        var query2 = context.Usuarios.FirstOrDefault(u => u.UsuarioSenha == user.UsuarioSenha);
+        if(query2.UsuarioSenha.value.length <= 8)
+            return BadRequest("senha invalida.");
+            var query3 = context.Usuarios.FirstOrDefault(u => u.UsuarioRepetirSenha == user.UsuarioRepetirSenha);
+            if(query2.UsuarioSenha.value == query3.UsuarioRepetirSenha.value && query3.UsuarioRepetirSenha.value.length <= 8)
+            return BadRequest("Senhas não compativeis");
+        return Ok("Login efetuado com sucesso."); 
+    }
 }

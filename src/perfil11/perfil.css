@@ -157,14 +157,16 @@ input[type=number] {
       height: 50%;
   }
   .grid{
-    gap: 2.8vh 12.2vh;;
-
+    gap:1.8vh 0.2vh;
   }
 } 
 @media screen and (max-width:1024px) {
   .form {
       width:30%;
       height: 55%;
+  }
+  .grid{
+    gap:1.8vh 5.2vh;
   }
 }
 
@@ -196,7 +198,7 @@ input[type=number] {
     width:70%;
   }
   .grid{
-    gap:2.8vh 12.2vh;
+    gap:2.8vh 6.2vh;
     grid-template-columns: 30.83vh 26.83vh;
   }
 }
@@ -204,6 +206,7 @@ input[type=number] {
   @media screen and (max-width:768px) {
     .grid{
       grid-template-columns: 32.83vh 26.83vh;
+      gap:1.8vh 10.2vh;
     }
   }
 
@@ -219,16 +222,16 @@ input[type=number] {
       margin-left: 125px;
     }
     .label__senha{
-      margin-left:160px
+      margin-left:127px
     }
     .label__cpf{
-      margin-left:160px
+      margin-left:127px
     }
     .label__cep{
-      margin-left:160px
+      margin-left:127px
     }
     .label__numero{
-      margin-left:150px
+      margin-left:127px
     }
   }
 
@@ -290,7 +293,7 @@ input[type=number] {
     width:70%;
   }
   .grid{
-    gap: 2.8vh 12.2vh;
+    gap: 2.8vh 6.2vh;
   }
   .label__nome{
     margin-left:30px;
