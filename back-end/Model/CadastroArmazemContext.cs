@@ -25,51 +25,40 @@ public partial class CadastroArmazemContext : DbContext
     {
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__usuario__2ED7D2AF42909640");
+            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8C27ED019");
 
-            entity.ToTable("usuario");
+            entity.ToTable("Usuario");
 
-            entity.Property(e => e.UsuarioId).HasColumnName("usuario_id");
             entity.Property(e => e.UsuarioBairro)
                 .HasMaxLength(15)
-                .IsUnicode(false)
-                .HasColumnName("usuario_bairro");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioCep)
                 .HasMaxLength(8)
-                .IsUnicode(false)
-                .HasColumnName("usuario_cep");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioCpf)
                 .HasMaxLength(14)
-                .IsUnicode(false)
-                .HasColumnName("usuario_cpf");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioEmail)
                 .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("usuario_email");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioEndereco)
                 .HasMaxLength(25)
-                .IsUnicode(false)
-                .HasColumnName("usuario_endereco");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioNumeroCasa)
                 .HasMaxLength(4)
-                .IsUnicode(false)
-                .HasColumnName("usuario_numero_casa");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioPrimeiroSome)
                 .HasMaxLength(15)
-                .IsUnicode(false)
-                .HasColumnName("usuario_primeiro_some");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioRepetirSenha)
                 .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("usuario_repetir_senha");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioSenha)
                 .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("usuario_senha");
+                .IsUnicode(false);
             entity.Property(e => e.UsuarioTelefoneWhatsapp)
                 .HasMaxLength(15)
-                .IsUnicode(false)
-                .HasColumnName("usuario_telefone_whatsapp");
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);
