@@ -137,7 +137,7 @@ function checkchar (e){
     }
     else
     {
-
+       return false; 
     }
     
 }

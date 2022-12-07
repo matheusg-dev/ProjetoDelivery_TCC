@@ -21,14 +21,14 @@
       <section class="section flex">
         <div class="nome_titular">
           <label class="label" for="nome">Nome do titular do Cartão</label>
-          <input class="input" type="text" id="nome"   oninput="name_CardValidate()">
+          <input class="input" type="text" id="nome"   oninput="name_CardValidate()" required>
           <br>
           <span class="spans-inputs">Nome deverá conter no minímo 3 caracteres </span>
         </div>
 
         <div class="numero_cartao">
           <label class="label" for="cartao">Número do cartão</label>
-          <input class="input" type="text" id="cartao" maxlength="19" oninput="numberCardValidate()" onkeypress="return onlynumbers()">
+          <input class="input" type="text" id="cartao" maxlength="19" oninput="numberCardValidate()" onkeypress="return onlynumbers()" required >
           <br>
           <span class="spans-inputs">número do cartão deverá conter 19 números</span>
         </div>
@@ -37,12 +37,12 @@
         <div class="flex lp">
           <div class="grid">
           <label class="label" for="data">Data</label>
-            <input class="input_data" type="date" id="data" />
+            <input class="input_data" type="date" id="data" required />
              </div>
              
           <div class="grid">
             <label class="label" for="cvv">cvv</label>
-            <input class="input_num" type="number" id="cvv" maxlength="3" oninput="cvvValidate()" onkeypress="validar(this); return numerico(event)">
+            <input class="input_num" type="number" id="cvv" maxlength="3" oninput="cvvValidate()" onkeypress="validar(this); return numerico(event)" required>
             <br>
             <span class="spans-input-num">Digite no minimo 3 numeros</span>
           </div>

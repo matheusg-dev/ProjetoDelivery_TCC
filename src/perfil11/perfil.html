@@ -21,142 +21,80 @@
 
     <form action="" class="flex form">
 
-      <h1 class="titulo">Delivery <span class="Armazem"> Armazém</span></h1>
+      <h1 class="titulo">Perfil <span class="Armazem"> Armazém</span></h1>
       
       <div class="grid flex">
         <div>
-          <label class="label" for="Nome"><strong>Primeiro nome</strong></label>
-          <input
-            class="input"
-            type="text"
-            id="Nome"
-            placeholder="Cris"  
-          />
-          <span class="span-required">Nome no mínimo 3 caracteres</span>
+          <label class="label__nome" for="Nome"><strong>Primeiro nome</strong></label>
+         
         </div>
+        
 
         <div>
-          <label class="label" for="email"><strong>Email</strong></label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            placeholder="Digite seu email"
-            oninput="emailValidate()"
-          />
-          <span class="span-required">Digite um email válido</span>
+          <label class="label__email" for="email"><strong>Email</strong></label>
+         
         </div>
+       
 
         <div>
-          <label class="label" for="senha"><strong>Senha</strong></label>
+          <label class="label__senha" for="senha"><strong>Senha</strong></label>
+          
           <div class="nomes flex">
-            <input
-              class="input"
-              type="password"
-              id="senha"
-              data-senha
-              placeholder="digite sua senha"
-              oninput="mainPasswordValidate()"
-            />
-            <img class="img__eye" src="../../assets/img/eye.svg" alt="" />
+           
           </div>
-
-          <span class="span-required">Senha no minimo 8 caracteres</span>
+         
         </div>
 
         <div>
-          <label class="label" for="repetir senha"
+          <label class="label__repetirsenha" for="repetir senha"
             ><strong>Repetir senha</strong></label
           >
           <div class="nomes flex">
-            <input
-              class="input"
-              type="password"
-              id="repetirSenha"
-              data-senha-repetida
-              placeholder="repita sua senha"
-              oninput="comparePassword()"
-            />
-            <img class="img__eyes" src="../../assets/img/eye.svg" alt="" />
+            
+            
+           
           </div>
-          <span class="span-required">Senhas devem ser compatíveis</span>
+          
         </div>
 
         <div>
-          <label class="label" for="cpf"><strong>CPF</strong></label>
-          <input
-            class="input"
-            type="text"
-            id="cpf"
-            placeholder="informe seu cpf"
-            maxlength="14"
-            oninput="cpfValidate()"
-            onkeypress="return onlynumber()"
-          />
-          <span class="span-required">cpf deve conter 11 números</span>
+          <label class="label__cpf" for="cpf"><strong>CPF</strong></label>
         </div>
+       
 
         <div>
-          <label class="label" for="telefone"
-            ><strong>Telefone (Whatsapp)</strong></label
-          >
-          <input
-            class="input"
-            type="text"
-            id="telefone(whatsapp)"
-            placeholder="digite um numero de telefone"
-            maxlength="15"
-            onkeyup="handlePhone(event)"
-            oninput="telefoneValidate()"
-            onkeypress="return onlynumber()"
-          />
-          <span class="span-required">Telefone deve aceitar 11 números</span>
+          <label class="label__telefone" for="telefone"
+            ><strong>Telefone (Whatsapp)</strong></label>
+        
         </div>
+        
 
         <div>
-          <label class="label" for="cep"><strong>CEP</strong></label>
-          <input
-            class="input"
-            type="text"
-            id="cep"
-            placeholder="digite um CEP"
-            maxlength="8"
-            onkeypress="onlynumber()"
-          />
+          <label class="label__cep" for="cep"><strong>CEP</strong></label>
+          
         </div>
+      
 
         <div>
-          <label class="label" for="endereço"><strong>Endereço</strong></label>
-          <input
-            class="input"
-            type="text"
-            id="endereco"
-            placeholder="digite um endereço"
-          />
+          <label class="label__endereco" for="endereço"><strong>Endereço</strong></label>
+          
         </div>
+      
 
         <div>
-          <label class="label" for="número"><strong>Número</strong></label>
-          <input
-            class="input"
-            type="number"
-            id="número"
-            placeholder="digite um número de endereço"
-          />
+          <label class="label__numero" for="número"><strong>Número</strong></label>
+         
         </div>
+       
 
         <div>
-          <label class="label" for="Bairro"><strong>Bairro</strong></label>
-          <input
-            class="input"
-            type="text"
-            id="bairro"
-            placeholder="digite um bairro"
-          />
+          <label class="label__bairro" for="Bairro"><strong>Bairro</strong></label>
+          
         </div>
+        
       </div>
 
-      <button id="recebe" class="botao flex" type="submit">Cadastrar</button>
+      <button id="recebe" class="botao flex" type="submit">Sair</button>
       <script src="./perfil.js"></script>
     </form>
 

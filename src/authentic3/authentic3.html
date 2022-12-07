@@ -26,16 +26,16 @@
       <section class="tela__secundaria flex">
         <div class="nome flex">
           <label class="label" for="fnome">Email</label>
-          <input class="input__email"type="text" id="email" placeholder="Digite seu email" oninput="emailValidate()"/>
+          <input class="input__email"type="text" id="email" placeholder="Digite seu email" oninput="emailValidate()" required/>
           <span class="span__email">Digite um email válido</span>
          <label class="label" for="fnome">Senha</label>
           <div class="nomes flex">
-            <input class="input__senha" type="password" id="senha" placeholder="Digite sua senha" oninput="senhaValidate()"/>
+            <input class="input__senha" type="password" id="senha" placeholder="Digite sua senha" oninput="senhaValidate()" required/>
             <img class="imagem__olho" src="../../assets/img/eye.svg" alt="">
           </div>
           <span class="span__senha"> Digite uma senha com no mínimo 8 caracteres</span>
         </div>
-        <div>
+        <div class="buttons">
           <button class="btn__pedido" type="submit">Iniciar pedido</button>
           <button class="btn__cadastro" type="submit">Cadastrar-se</button>
         </div>
