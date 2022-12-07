@@ -133,7 +133,7 @@ input[type=number] {
 .botao {
   background: #FFA451;
   width: 43.8vh;
-  height: 6.5vh;
+  height: 7.5vh;
   margin-top: 10vh;
   display: flex;
   justify-content: center;
@@ -181,7 +181,6 @@ input[type=number] {
     height: 60%;
     padding: 3.43vh 5.43vh 0px 5.43vh;
   }
-
   .grid {
     gap: 2.8vh 12.2vh;
     grid-template-columns: 26.83vh 26.83vh;
@@ -190,10 +189,12 @@ input[type=number] {
 }
 
 @media screen and (max-width:820px) {
+  body,html{
+    overflow-x: hidden;
+  }
   .form{
     width:70%;
   }
-
   .grid{
     gap:2.8vh 12.2vh;
     grid-template-columns: 30.83vh 26.83vh;
@@ -210,63 +211,113 @@ input[type=number] {
     .form{
       height:65%;
     }
-    
     .grid{
       gap:1.8vh 12.2vh;
     
     }
-
     .label__nome{
       margin-left: 125px;
     }
-
     .label__senha{
       margin-left:160px
     }
-
     .label__cpf{
       margin-left:160px
     }
-
     .label__cep{
       margin-left:160px
     }
-    
     .label__numero{
       margin-left:150px
     }
   }
 
 @media screen and (max-width:415px) {
+  body,html{
+    overflow-x: hidden;
+  }
   .form {
     width: 68%;
   }
-
   .titulo {
     font-size: 3vh;
   }
-
   .grid {
     grid-template-columns: 18.83vh 18.83vh;
+    gap:1.8vh 5.2vh;
   }
-
-  .input {
-    font-size: 1.5vh;
-    height: 6.5vh;
+  .label__nome{
+    margin-left:40px;
   }
-
+  .label__senha{
+    margin-left:40px;
+  }
+  .label__cpf{
+    margin-left:40px;
+  }
+  .label__cep{
+    margin-left:40px;
+  }
+  .label__numero{
+    margin-left:40px;
+  }
   .botao {
     width: 32.8vh;
+  }
+}
+
+@media screen and (max-width:393px) {
+  .label__nome{
+    margin-left:30px;
+  }
+  .label__senha{
+    margin-left:30px;
+  }
+  .label__cpf{
+    margin-left:30px;
+  }
+  .label__cep{
+    margin-left:30px;
+  }
+  .label__nome{
+    margin-left:30px;
   }
 }
 
 @media screen and (max-width:375px) {
   .form{
     height:63%;
+    width:70%;
   }
-
   .grid{
-    
+    gap: 2.8vh 12.2vh;
+  }
+  .label__nome{
+    margin-left:30px;
+  }
+  .label__senha{
+    margin-left:30px;
+  }
+  .label__cpf{
+    margin-left:30px;
+  }
+  .label__cep{
+    margin-left:30px;
+  }
+  .label__numero{
+    margin-left:30px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .grid{
+    gap:1.8vh 5.1vh;
+  }
+}
+
+@media screen and (max-width:280px) {
+  .label__nome{
+    margin-left:29px;
   }
 }
 
