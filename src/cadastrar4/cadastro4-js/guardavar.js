@@ -1,4 +1,4 @@
-/*
+
 let btn = document.querySelector("#send");
 let formulario = new Map();
 
@@ -83,4 +83,3 @@ for (var [key, value] of formulario) {
 
     console.log(key + " = " + value);
 }}
-*/
