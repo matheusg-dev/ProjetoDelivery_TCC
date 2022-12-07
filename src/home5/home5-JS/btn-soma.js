@@ -17,9 +17,8 @@ valorPrato.forEach((alteraValor) => {
             rotaAtiva.onclick = function () {
                 let naoAlterado = rotaAtiva.parentElement.childNodes[7].innerText
                     
-                if (naoAlterado === alterado) {
-                    
-                    window.location.assign("../orderListA6/orderListA6.html")
+                if (naoAlterado === alterado) {        
+                    window.location.assign("/src/gorderListA6/orderListA6.html")
                 }
             }
         })

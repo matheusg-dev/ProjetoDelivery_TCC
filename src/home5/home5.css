@@ -87,6 +87,7 @@
     border-radius: .5rem;
     box-shadow: 0 0 1rem rgba(0 0 0 / .2);
     width: 40%;
+    padding-bottom: 80px;
 }
 
 .modal__filtro--barra::backdrop {
@@ -163,7 +164,7 @@
     width: -webkit-fill-available;
     justify-content: space-evenly;
     padding: 0.93vh 0px 0.93vh 0px;
-    height: 5.5vh;
+    height: 37px;
 }
 
 .selecao__berry {
