@@ -57,29 +57,12 @@ btn.addEventListener("click", function(e){
         UsuarioNumeroCasa: numero.value,
         UsuarioBairro: bairro.value
     }
+
+    var dadosCadastrais = JSON.stringify(user)
+
     
-    post("Usuario/cadastrar4", user)
-        .then(response => console.log(response))
+    /* post("Usuario/cadastrar4", dadosCadastrais)
+        .then(response => console.log(response)) */
 
 });
 
-function post(endpoint, body)
-{
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    return fetch("https://localhost:7180/" + endpoint, { 
-        method: 'POST',
-        headers: myHeaders,
-        mode: 'cors',
-        cache: 'default',
-        body: JSON.stringify(body)
-    })
-    .then(response => response.json())
-}
-
-function imprimeDados() {
-for (var [key, value] of formulario) {
-
-    console.log(key + " = " + value);
-}}

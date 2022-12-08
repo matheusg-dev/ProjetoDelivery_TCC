@@ -22,3 +22,25 @@ UsuarioTelefoneWhatsapp varchar (15),
 select * from Usuario
 
 dotnet watch
+
+function post(endpoint, body)
+{
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    return fetch("https://localhost:7180/" + endpoint, { 
+        method: 'POST',
+        headers: myHeaders,
+        mode: 'cors',
+        cache: 'default',
+        body: body
+    })
+    .then(response => response.json())
+}
+
+function imprimeDados() {
+for (var [key, value] of formulario) {
+
+    console.log(key + " = " + value);
+}}
+ */

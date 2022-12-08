@@ -17,7 +17,7 @@
   </head>
 
   <body class="form-container">
-    <form class="flex form">
+    <form class="flex form" >
       <h1 class="titulo">Delivery <span class="Armazem"> Armazém</span></h1>
 
       <div class="grid flex">
@@ -31,7 +31,7 @@
             maxlength="15"
             oninput="nameValidate()"
             required
-            
+            name="primeiroNome"
           />
           <span class="span-required">Nome no mínimo 3 caracteres</span>
         </div>
@@ -46,6 +46,7 @@
             maxlength="50"
             oninput="emailValidate()"
             required
+            name="email"
           />
           <span class="span-required">Digite um email válido</span>
         </div>
@@ -62,6 +63,7 @@
               maxlength="20"
               oninput="mainPasswordValidate()"
               required
+              name="senha"
             />
             <img class="img__eye" src="../../assets/img/eye.svg" alt="" />
           </div>
@@ -83,6 +85,7 @@
               maxlength="20"
               oninput="comparePassword()"
               required
+              name="repetirSenha"
             />
             <img class="img__eyes" src="../../assets/img/eye.svg" alt="" />
           </div>
@@ -100,6 +103,7 @@
             oninput="cpfValidate()"
             onkeypress="return onlynumber()"
             required
+            name="cpf"
           />
           <span class="span-required">cpf deve conter 11 números</span>
         </div>
@@ -118,6 +122,7 @@
             oninput="telefoneValidate()"
             onkeypress="return onlynumber()"
             required
+            name="telefoneWhats"
           />
           <span class="span-required">Telefone deve aceitar 11 números</span>
         </div>
@@ -132,6 +137,7 @@
             maxlength="8"
             onkeypress="onlynumber()"
             required
+            name="cep"
           />
         </div>
 
@@ -144,6 +150,7 @@
             id="endereco"
             placeholder="digite um endereço"
             required
+            name="endereco"
           />
         </div>
 
@@ -158,6 +165,7 @@
            type = "number"
            maxlength = "4"
            required
+           name="numero"
           />
         </div>
 
@@ -170,6 +178,7 @@
             id="bairro"
             placeholder="digite um bairro"
             required
+            name="bairro"
           />
         </div>
       </div>
@@ -180,5 +189,6 @@
     <script src="../cadastrar4/cadastro4-js/api-cep.js"></script>
    <script src="../cadastrar4/cadastro4-js/cadastrar4.js"></script>
    <script src="../cadastrar4/cadastro4-js/guardavar.js" defer></script>
+   <script src="../cadastrar4/cadastro4-js/dados-cadastrais.js"></script>
   </body>
 </html>
