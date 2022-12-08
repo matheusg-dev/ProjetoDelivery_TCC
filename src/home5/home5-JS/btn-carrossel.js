@@ -6,11 +6,13 @@ const combinado = document.querySelectorAll(".combinado");
 
 let combinadoCarrossel = combinado[0].children;
 let popularCarrossel = combinado[1].children;
-let favoritoCarrossel = combinado[2].children;
+
+
+
 
 let maxCombinado = combinadoCarrossel.length;
 let maxCombinadoPopular = popularCarrossel.length;
-let maxCombinadoFavorito = favoritoCarrossel.length;
+
 
 let itemCarrosselAtual = 0;
 
@@ -66,28 +68,5 @@ btnPopular.forEach((elementos) => {
   });
 });
 
-btnFavorito.forEach((elementos) => {
-  elementos.addEventListener("click", () => {
-    const btnEsquerdo = elementos.classList.contains("btn__direita");
 
-    if (btnEsquerdo) {
-      itemCarrosselAtual -= 3;
-    } else {
-      itemCarrosselAtual += 3;
-    }
 
-    if (itemCarrosselAtual >= maxCombinadoFavorito) {
-      itemCarrosselAtual = 0;
-    }
-
-    if (itemCarrosselAtual < 0) {
-      itemCarrosselAtual = maxCombinadoFavorito - 1;
-    }
-
-    favoritoCarrossel[itemCarrosselAtual].scrollIntoView({
-      inline: "center",
-      behavior: "smooth",
-      block: "nearest",
-    });
-  });
-});
