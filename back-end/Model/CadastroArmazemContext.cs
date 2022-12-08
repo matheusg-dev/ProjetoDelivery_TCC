@@ -19,13 +19,13 @@ public partial class CadastroArmazemContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=SNCCHLAB02F29\\TEW_SQLEXPRESS;Initial Catalog=cadastro_armazem;Integrated Security=SSPI;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-O6AL255\\MSSQLSERVER01;Initial Catalog=cadastro_armazem;Integrated Security=SSPI;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8C27ED019");
+            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8CC5D49B5");
 
             entity.ToTable("Usuario");
 

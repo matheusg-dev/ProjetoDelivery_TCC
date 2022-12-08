@@ -50,6 +50,8 @@ public class UserController : ControllerBase
    [HttpGet("Login")]
     public object Login()
    {
+
+    //Validação dos campos do Formulário
         var user = new Usuario();
         user.UsuarioPrimeiroSome = "kf";
         user.UsuarioSenha = "matheus123";
@@ -57,13 +59,13 @@ public class UserController : ControllerBase
         CadastroArmazemContext context = new CadastroArmazemContext();
 
         var query1 = context.Usuarios.FirstOrDefault(u => u.UsuarioPrimeiroSome == user.UsuarioPrimeiroSome);
-        if(query1.UsuarioPrimeiroSome.value.length <= 3)
+        if(query1.UsuarioPrimeiroSome.Length <= 3)
             return BadRequest("Primeiro nome inválido.");
         var query2 = context.Usuarios.FirstOrDefault(u => u.UsuarioSenha == user.UsuarioSenha);
-        if(query2.UsuarioSenha.value.length <= 8)
+        if(query2.UsuarioSenha.Length <= 8)
             return BadRequest("senha invalida.");
             var query3 = context.Usuarios.FirstOrDefault(u => u.UsuarioRepetirSenha == user.UsuarioRepetirSenha);
-            if(query2.UsuarioSenha.value == query3.UsuarioRepetirSenha.value && query3.UsuarioRepetirSenha.value.length <= 8)
+            if(query2.UsuarioSenha.Length == query3.UsuarioRepetirSenha.Length && query3.UsuarioRepetirSenha.Length <= 8)
             return BadRequest("Senhas não compativeis");
         return Ok("Login efetuado com sucesso."); 
     }
