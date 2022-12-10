@@ -36,10 +36,11 @@ Um site com telas de etapas de compra...
   - [x] Estrutura pronta
 - Css
   - [x] Definir fonte e classes de style
+  - [x] Fidelidade ao Layout
 - Design responsivo
   - [x] Todas as telas
 - Javascript
-  - [ ] Rotas de navegação
+  - [x] Rotas de navegação
   - [x] Criar itens de compra
   - [x] filtro dos itens de compra
   - [x] Favoritar item
@@ -52,8 +53,13 @@ Um site com telas de etapas de compra...
   - [x] Carrossel de compra
   - [x] Menu responsivo
   - [x] Mascara para os inputs
+  - Back-end
+  - [x] Puxar valores do cadastro
+  - [x] Revalidar dados do cadastro
+  - [x] conexão com SQL
+  - [x] Enviar informações a tabela usuários
   
-
+  
 ---
 
 ## Autor
