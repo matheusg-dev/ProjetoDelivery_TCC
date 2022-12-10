@@ -144,3 +144,7 @@ input {
 .block {
     display: block;
 }
+
+.cursor-block {
+    cursor: not-allowed;
+}
