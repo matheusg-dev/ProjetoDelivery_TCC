@@ -58,11 +58,26 @@ btn.addEventListener("click", function(e){
         UsuarioBairro: bairro.value
     }
 
+    function post(endpoint, body)
+{
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    return fetch("https://localhost:7180/" + endpoint, { 
+        method: 'POST',
+        headers: myHeaders,
+        mode: 'cors',
+        cache: 'default',
+        body: body
+    })
+    .then(response => response.json())
+}
+
     var dadosCadastrais = JSON.stringify(user)
 
     
-    /* post("Usuario/cadastrar4", dadosCadastrais)
-        .then(response => console.log(response)) */
+    post("Usuario/cadastrar4", dadosCadastrais)
+        .then(response => console.log(response))
 
 });
 
