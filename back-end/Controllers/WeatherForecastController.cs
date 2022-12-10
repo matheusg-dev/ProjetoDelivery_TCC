@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Cors;
 using System.Data;
 namespace back_end.Controllers;
+using System;
 
 [ApiController]
 [Route("Usuario")]
@@ -13,6 +14,7 @@ public class UserController : ControllerBase
     [HttpPost("cadastrar4")]
     public async Task<IActionResult> cadastrarUsuario([FromBody]Usuario user)
     {
+        Console.WriteLine("oi");
         try
         {
             CadastroArmazemContext context = new CadastroArmazemContext();
@@ -25,13 +27,16 @@ public class UserController : ControllerBase
             await context.AddAsync(user);
             await context.SaveChangesAsync();
         }
-        catch
+        catch (Exception ex)
+        
         {
+            Console.WriteLine(ex);
             return Ok(new {
                 Status = "Erro",
                 Message = "Erro na conexão do banco de dados"
             });
         }
+
 
         return Ok(new {
             Status = "Sucess",
@@ -47,26 +52,22 @@ public class UserController : ControllerBase
         return Ok(TakeUser);
     } */
 
+    [Route("Usuario")]
    [HttpGet("Login")]
     public object Login()
    {
 
-    //Validação dos campos do Formulário
+    //Validação dos campos de login
         var user = new Usuario();
-        user.UsuarioPrimeiroSome = "kf";
+        user.UsuarioEmail = "matheus@gmail.com";
         user.UsuarioSenha = "matheus123";
-        user.UsuarioRepetirSenha = "matheus1234";
         CadastroArmazemContext context = new CadastroArmazemContext();
 
-        var query1 = context.Usuarios.FirstOrDefault(u => u.UsuarioPrimeiroSome == user.UsuarioPrimeiroSome);
-        if(query1.UsuarioPrimeiroSome.Length <= 3)
-            return BadRequest("Primeiro nome inválido.");
-        var query2 = context.Usuarios.FirstOrDefault(u => u.UsuarioSenha == user.UsuarioSenha);
-        if(query2.UsuarioSenha.Length <= 8)
-            return BadRequest("senha invalida.");
-            var query3 = context.Usuarios.FirstOrDefault(u => u.UsuarioRepetirSenha == user.UsuarioRepetirSenha);
-            if(query2.UsuarioSenha.Length == query3.UsuarioRepetirSenha.Length && query3.UsuarioRepetirSenha.Length <= 8)
-            return BadRequest("Senhas não compativeis");
+        var possibleUser = context.Usuarios.FirstOrDefault(u => u.UsuarioEmail ==  user.UsuarioEmail);
+        if(possibleUser == null)
+            return NotFound("Email invalido.");
+       if(possibleUser.UsuarioSenha!= user.UsuarioSenha)
+            return NotFound("senha invalida.");
         return Ok("Login efetuado com sucesso."); 
     }
 }
