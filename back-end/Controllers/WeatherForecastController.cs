@@ -14,7 +14,6 @@ public class UserController : ControllerBase
     [HttpPost("cadastrar4")]
     public async Task<IActionResult> cadastrarUsuario([FromBody]Usuario user)
     {
-        Console.WriteLine("oi");
         try
         {
             CadastroArmazemContext context = new CadastroArmazemContext();
@@ -52,11 +51,9 @@ public class UserController : ControllerBase
         return Ok(TakeUser);
     } */
 
-    [Route("Usuario")]
    [HttpGet("Login")]
     public object Login()
    {
-
     //Validação dos campos de login
         var user = new Usuario();
         user.UsuarioEmail = "matheus@gmail.com";
@@ -66,8 +63,8 @@ public class UserController : ControllerBase
         var possibleUser = context.Usuarios.FirstOrDefault(u => u.UsuarioEmail ==  user.UsuarioEmail);
         if(possibleUser == null)
             return NotFound("Email invalido.");
-       if(possibleUser.UsuarioSenha!= user.UsuarioSenha)
+       if(possibleUser.UsuarioSenha != user.UsuarioSenha)
             return NotFound("senha invalida.");
-        return Ok("Login efetuado com sucesso."); 
+        return Ok("Login efetuado com sucesso!"); 
     }
 }

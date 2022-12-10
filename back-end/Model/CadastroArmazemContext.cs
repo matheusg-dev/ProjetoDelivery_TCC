@@ -25,39 +25,39 @@ public partial class CadastroArmazemContext : DbContext
     {
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B85B4AB9CF");
+            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8202A76BF");
 
             entity.ToTable("Usuario");
 
             entity.Property(e => e.UsuarioBairro)
-                .HasMaxLength(15)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioCep)
-                .HasMaxLength(8)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioCpf)
-                .HasMaxLength(14)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioEmail)
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioEndereco)
-                .HasMaxLength(25)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioNumeroCasa)
-                .HasMaxLength(4)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioPrimeiroSome)
-                .HasMaxLength(15)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioRepetirSenha)
-                .HasMaxLength(20)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioSenha)
-                .HasMaxLength(20)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.UsuarioTelefoneWhatsapp)
-                .HasMaxLength(15)
+                .HasMaxLength(50)
                 .IsUnicode(false);
         });
 

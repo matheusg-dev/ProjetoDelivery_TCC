@@ -1,46 +1,26 @@
-create database cadastro_armazem
 Set-ExecutionPolicy -ExecutionPolicy ByPass -Scope CurrentUser
 .\createmodel.ps1 SNCCHLAB02F29\TEW_SQLEXPRESS cadastro_armazem
+dotnet watch
+
+
+create database cadastro_armazem
 
 use cadastro_armazem
 
 
 create table Usuario(
 UsuarioId int identity primary key,
-UsuarioBairro varchar (15),
-UsuarioCep varchar (8),
-UsuarioCpf varchar (14),
+UsuarioBairro varchar (50),
+UsuarioCep varchar (50),
+UsuarioCpf varchar (50),
 UsuarioEmail varchar (50),
-UsuarioEndereco varchar (25),
-UsuarioNumeroCasa varchar (4),
-UsuarioPrimeiroSome varchar (15),
-UsuarioRepetirSenha varchar (20),
-UsuarioSenha varchar (20),
-UsuarioTelefoneWhatsapp varchar (15),
+UsuarioEndereco varchar (50),
+UsuarioNumeroCasa varchar (50),
+UsuarioPrimeiroSome varchar (50),
+UsuarioRepetirSenha varchar (50),
+UsuarioSenha varchar (50),
+UsuarioTelefoneWhatsapp varchar (50),
 );
 
 select * from Usuario
 
-dotnet watch
-
-function post(endpoint, body)
-{
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    return fetch("https://localhost:7180/" + endpoint, { 
-        method: 'POST',
-        headers: myHeaders,
-        mode: 'cors',
-        cache: 'default',
-        body: body
-    })
-    .then(response => response.json())
-}
-
-function imprimeDados() {
-for (var [key, value] of formulario) {
-
-    console.log(key + " = " + value);
-}}
- */
