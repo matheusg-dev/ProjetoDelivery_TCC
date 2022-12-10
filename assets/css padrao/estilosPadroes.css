@@ -148,3 +148,7 @@ input {
 .cursor-block {
     cursor: not-allowed;
 }
+
+.colunm{
+    flex-direction: column;
+}

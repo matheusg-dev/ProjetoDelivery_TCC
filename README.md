@@ -46,6 +46,7 @@ Um site com telas de etapas de compra...
   - [x] Favoritar item
   - [x] Botão de soma da Página Home
   - [x] Validar cadastro
+  - [ ] Validar perfil
   - [ ] Barra de pesquisa
   - [x] Consumo de API
   - [x] Funcionalidade de ocultar/mostrar senha
@@ -56,7 +57,7 @@ Um site com telas de etapas de compra...
 - Back-end
   - [x] Puxar valores do cadastro
   - [x] Revalidar dados do cadastro
-  - [x] conexão com SQL
+  - [x] Conexão com SQL
   - [x] Enviar informações a tabela usuários
   
   

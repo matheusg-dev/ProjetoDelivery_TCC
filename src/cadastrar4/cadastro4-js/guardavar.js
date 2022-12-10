@@ -6,7 +6,12 @@ btn.addEventListener("click", function(e){
 
     e.preventDefault();
 
-    const nome = document.querySelector("#PrimeiroNome");
+    const vazio = document.querySelectorAll(".vazio");
+    if (vazio.length != 0) {
+        
+    }else{
+        
+        const nome = document.querySelector("#PrimeiroNome");
     formulario.set("Nome", nome.value);
 
     const email = document.querySelector("#email");
@@ -78,6 +83,11 @@ btn.addEventListener("click", function(e){
     
     post("Usuario/cadastrar4", dadosCadastrais)
         .then(response => console.log(response))
+    }
+
+    
+
+    
 
 });
 

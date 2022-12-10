@@ -1,11 +1,14 @@
 const btnCadastrar = document.querySelector("#send");
-const formStorage = document.forms.item(0);
-
 
 
 btnCadastrar.onclick = (eventoEnviar) => {
-    eventoEnviar.preventDefault();
-    
+  eventoEnviar.preventDefault();
+
+  const vazio = document.querySelectorAll(".vazio");
+  if (vazio.length != 0) {
+    localStorage.clear()
+    console.log(11)
+  } else {
     let primeiroNome = formStorage.elements[0].value;
     let email = formStorage.elements[1].value;
     let senha = formStorage.elements[2].value;
@@ -16,33 +19,32 @@ btnCadastrar.onclick = (eventoEnviar) => {
     let endereco = formStorage.elements[7].value;
     let numero = formStorage.elements[8].value;
     let bairro = formStorage.elements[9].value;
-    
 
-  let dadosObjetoUsuario = new Array();
+    let dadosObjetoUsuario = new Array();
 
-  if (localStorage.hasOwnProperty("dadosObjetoUsuario")) {
-    // getItem pegar
-    dadosObjetoUsuario = JSON.parse(localStorage.getItem("dadosObjetoUsuario"));
+    if (localStorage.hasOwnProperty("dadosObjetoUsuario")) {
+      // getItem pegar
+      dadosObjetoUsuario = JSON.parse(
+        localStorage.getItem("dadosObjetoUsuario")
+      );
+    }
 
+    dadosObjetoUsuario.push({
+      primeiroNome,
+      email,
+      senha,
+      repetirSenha,
+      cpf,
+      telefoneWhats,
+      cep,
+      endereco,
+      numero,
+      bairro,
+    });
+
+    localStorage.setItem(
+      "dadosObjetoUsuario",
+      JSON.stringify(dadosObjetoUsuario)
+    );
   }
-
-  dadosObjetoUsuario.push({
-    primeiroNome,
-    email,
-    senha,
-    repetirSenha,
-    cpf,
-    telefoneWhats,
-    cep,
-    endereco,
-    numero,
-    bairro,
-  });
-
-  localStorage.setItem(
-    "dadosObjetoUsuario",
-    JSON.stringify(dadosObjetoUsuario)
-  );
 };
-
-

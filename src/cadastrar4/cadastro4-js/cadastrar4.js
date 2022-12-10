@@ -21,6 +21,7 @@ function nameValidate(){
     else{
         removeError(0);
     }
+
 }
 
 function emailValidate(){
