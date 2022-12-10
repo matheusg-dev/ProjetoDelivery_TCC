@@ -53,7 +53,7 @@ Um site com telas de etapas de compra...
   - [x] Carrossel de compra
   - [x] Menu responsivo
   - [x] Mascara para os inputs
-  - Back-end
+- Back-end
   - [x] Puxar valores do cadastro
   - [x] Revalidar dados do cadastro
   - [x] conexão com SQL
