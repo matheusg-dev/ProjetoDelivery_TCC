@@ -7,7 +7,6 @@ btnCadastrar.onclick = (eventoEnviar) => {
   const vazio = document.querySelectorAll(".vazio");
   if (vazio.length != 0) {
     localStorage.clear()
-    console.log(11)
   } else {
     let primeiroNome = formStorage.elements[0].value;
     let email = formStorage.elements[1].value;
