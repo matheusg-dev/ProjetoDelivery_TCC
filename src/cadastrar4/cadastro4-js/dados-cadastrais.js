@@ -1,13 +1,14 @@
-const btnCadastrar = document.querySelector("#send");
+const btnSalvaLocal = document.querySelector(".botao")
 
 
-btnCadastrar.onclick = (eventoEnviar) => {
-  eventoEnviar.preventDefault();
-
+btnSalvaLocal.addEventListener("click", () => {
+  
   const vazio = document.querySelectorAll(".vazio");
   if (vazio.length != 0) {
+    
     localStorage.clear()
-  } else {
+  }else{
+
     let primeiroNome = formStorage.elements[0].value;
     let email = formStorage.elements[1].value;
     let senha = formStorage.elements[2].value;
@@ -44,6 +45,8 @@ btnCadastrar.onclick = (eventoEnviar) => {
     localStorage.setItem(
       "dadosObjetoUsuario",
       JSON.stringify(dadosObjetoUsuario)
-    );
+    ); 
   }
-};
+})
+
+/* */

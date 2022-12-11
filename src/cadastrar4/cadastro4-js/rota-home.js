@@ -1,5 +1,5 @@
 
-btnCadastrar.onclick = (eventoEnviar) => {
+formStorage[10].onclick = (eventoEnviar) => {
   eventoEnviar.preventDefault();
 
   const vazio = document.querySelectorAll(".vazio");
