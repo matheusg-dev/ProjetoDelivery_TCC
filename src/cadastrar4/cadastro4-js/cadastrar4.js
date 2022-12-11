@@ -171,8 +171,21 @@ function checkchar (e){
     
 }
 
+//Bloquear números no input Primeiro Nome
 
-//Bloquear caracter especial no input Nome
+const InputNome = document.querySelector("#PrimeiroNome");
+
+InputNome.addEventListener("keypress", function(e){
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58)
+    {
+        e.preventDefault();
+    }
+})
+
+
+//Bloquear caracter especial no input Primeiro Nome
 
 const nomeInput = document.querySelector("#PrimeiroNome");
 
