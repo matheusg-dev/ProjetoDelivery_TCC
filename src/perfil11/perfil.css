@@ -32,7 +32,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 44.83vh 44.83vh;
+  grid-template-columns: 36.83vh 36.83vh;
   gap: 2.35vh 4vh;
 }
 
@@ -134,7 +134,7 @@ input[type=number] {
   background: #FFA451;
   width: 43.8vh;
   height: 7.5vh;
-  margin-top: 10vh;
+  margin-top: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +184,7 @@ input[type=number] {
     padding: 3.43vh 5.43vh 0px 5.43vh;
   }
   .grid {
-    gap: 2.8vh 12.2vh;
+    gap: 3.8vh 12.2vh;
     grid-template-columns: 26.83vh 26.83vh;
   }
 
