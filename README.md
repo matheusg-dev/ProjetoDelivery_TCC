@@ -1,6 +1,7 @@
-<h1 align="center">
+<div align="center">
     <img   height="50%" width="40%" title="#" src="./assets/img/telasProjetoDesktop.PNG" alt="paginas layout desktop"/>
-</h1>
+     <img   height="50%" width="40%" title="#" src="./assets/img/telasProjeto.PNG" alt="paginas layout desktop"/>
+</div>
 
 <h1 align="center">
    <a href="#"> Delivery Armazém</a>
