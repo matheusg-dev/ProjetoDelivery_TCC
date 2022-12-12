@@ -424,6 +424,31 @@
     .popular {
         font-size: x-large;
     }
+
+    .selecao__filtros {
+        grid-template-columns: 206px 206px 206px;
+        gap: 99px;
+    }
+
+    .prato__img {
+        width: 10.77vh;
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .selecao__filtros {
+        padding-top: 6vh;
+        grid-template-columns: 206px 206px 206px;
+        gap: 57px;
+    }
+
+    .prato__img {
+        width: 12.77vh;
+    }
+
+    .modal__filtro--barra {
+        width: 75%;
+    }
 }
 
 @media screen and (min-width: 553px) {
@@ -511,5 +536,20 @@
 
     .z-index {
         z-index: 0;
+    }
+
+    .selecao__filtros {
+        gap: 7px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .selecao__filtros {
+        grid-template-columns: 206px;
+        justify-content: center;
+    }
+
+    .prato__img {
+        width: 22.77vh;
     }
 }
