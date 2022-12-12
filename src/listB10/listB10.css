@@ -52,10 +52,21 @@ html, body {
   justify-content: space-between;
   width: 100%;
   gap: 5.6vh;
+  margin-right: 100px;
 }
 
 .pedido__recebido--text {
   width: 57%;
+  margin-left:7.7vh;
+}
+
+.pedido__img:hover {
+  padding: 2.5vh;
+  background: #F1EFF6;
+  border-radius: 10px;
+  width: 7.5vh;
+  transform: scale(1.1);
+
 }
 
 .pedido__img {
@@ -63,7 +74,10 @@ html, body {
   background: #F1EFF6;
   border-radius: 10px;
   width: 7.5vh;
+  transition: transform 0.3s;
 }
+
+
 
 .pedido__refeicao--text {
   letter-spacing: -0.01em;
@@ -72,14 +86,23 @@ html, body {
   line-height: 5.1vh;
 }
 
-.verificado {
+.verificado:hover{
   width: 3.1vh;
   padding: 7px;
   background: #4CD964;
   border-radius: 100px;
+  transform: scale(1.1);
 }
 
-.pedido__telefone {
+.verificado{
+  width: 3.1vh;
+  padding: 7px;
+  background: #4CD964;
+  border-radius: 100px;
+  transition: transform 0.3s;
+}
+
+.pedido__telefone:hover {
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -88,6 +111,20 @@ html, body {
   background-image: url(../../assets/img/telefone.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transform: scale(1.1);
+}
+
+.pedido__telefone {
+  cursor:auto;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../../assets/img/telefone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s;
 }
 
 .mapa__pedido {
@@ -109,8 +146,16 @@ html, body {
 }
 
 @media screen and (max-width:1280px) {
-  .pedido__recebido--text {
-    width: 50%;
+  .iframe__mapa{
+    width: 100%;
+  }
+
+  .carrinho__itens{
+    height: 82%;
+  }
+
+  .status__pedido{
+    gap:0.6vh;
   }
 }
 
@@ -121,6 +166,16 @@ html, body {
 
   .status {
     gap: 3.2vh;
+  }
+
+  .iframe__mapa{
+    width: 100%;
+  }
+  .carrinho__itens{
+    height: 75%;
+  }
+  .status__pedido{
+    gap:2.6vh;
   }
 
   .carrinho {
@@ -137,6 +192,9 @@ html, body {
     margin-left: 2.7vh;
     width: 59%;
   }
+  .carrinho__itens{
+    height: 80%;
+  }
 
   .volta {
     font-size: 2.2vh;
@@ -145,6 +203,13 @@ html, body {
 
   .status {
     font-size: 2.2vh;
+  }
+  .status__pedido{
+    gap:3.6vh;
+  }
+
+  .iframe__mapa{
+    width: 100%;
   }
 
   .pedido__telefone {
@@ -156,6 +221,7 @@ html, body {
     width: 48px;
     height: 48px;
   }
+
 
   .pedido__recebido--text {
     font-size: 36px;
@@ -178,13 +244,50 @@ html, body {
   }
 }
 
+@media screen and (max-width:820px){
+  .carrinho__itens{
+    height: 80%;
+  }
+  .status__pedido{
+    gap:2.6vh;
+  }
+  .pedido__img{
+    width:5.5vh;
+  }
+  .titulo__pedido{
+    margin-left:20px;
+  }
+  .iframe__mapa{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .carrinho__itens{
+    height: 80%;
+  }
+  .status__pedido{
+    gap:0.6vh;
+  }
+  .iframe__mapa{
+    width:100%;
+  }
+  .titulo__pedido{
+    margin-left:50px;
+  }
+}
+
 @media screen and (max-width:540px) {
   .carrinho {
     height: 8%;
   }
 
   .carrinho__itens {
-    height: 88%;
+    height: 75%;
+  }
+
+  .iframe__mapa{
+    width: 100%;
   }
 
   .pedido__img {
@@ -197,7 +300,7 @@ html, body {
   }
 
   .status__pedido {
-    gap: 4.6vh;
+    gap: 0.6vh;
   }
 
   .pedido__img {
@@ -238,6 +341,7 @@ html, body {
 
   .titulo__pedido {
     font-size: 18px;
+    margin-left:20px;
   }
 }
 
@@ -252,6 +356,11 @@ html, body {
     margin-left: 17px;
   }
 
+  .iframe__mapa{
+    width: 385px;
+    height:200px;
+  }
+
   .volta {
     font-size: 1.7vh;
     line-height: 1.7vh;
@@ -262,7 +371,7 @@ html, body {
   }
 
   .status__pedido {
-    gap: 3.6vh;
+    gap: 0.6vh;
   }
 
   .pedido__img {
@@ -270,19 +379,19 @@ html, body {
   }
 
   .pedido__recebido--text {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .preparo__pedido {
-    font-size: 14px;
-  }
-
-  .entrega__pedido {
     font-size: 16px;
   }
 
+  .entrega__pedido {
+    font-size: 15px;
+  }
+
   .pedido__refeicao--text {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .verificado {
@@ -290,8 +399,8 @@ html, body {
     height: 2.6vh;
   }
 
-  .entrega__pedido {
-    font-size: 13px;
+  .titulo__pedido{
+    margin-left:20px;
   }
 }
 
@@ -299,15 +408,48 @@ html, body {
   .preparo__pedido {
     font-size: 13px;
   }
+  .carrinho__itens{
+    height:65%;
+  }
+  .iframe__mapa{
+    width: 100%;
+  }
+  .status__pedido{
+    gap:0.6vh;
+  }
+  .preparo__pedido{
+    font-size:15px;
+  }
+  .entrega__pedido{
+    font-size:15px;
+  }
+  .pedido__refeicao--text{
+    font-size:15px;
+  }
 }
 
 @media screen and (max-width:393px) {
   .entrega__pedido {
-    font-size: 12px;
+    font-size: 15px;
   }
 
-  .pedido__refeicao--text {
-    font-size: 12px;
+  .iframe__mapa{
+    width: 100%;
+  }
+  .pedido__recebido--text{
+    font-size:19px;
+  }
+  .pedido__refeicao--text{
+    font-size:15px;
+  }
+  .preparo__pedido{
+    font-size:15px;
+  }
+}
+
+@media screen and (max-width:390px){
+  .iframe__mapa{
+    width:100%;
   }
 }
 
@@ -317,8 +459,15 @@ html, body {
   }
 
   .carrinho__itens {
-    width: 92%;
     margin-left: 17px;
+  }
+  .status__pedido{
+    gap:0.6vh;
+  }
+
+  .iframe__mapa{
+    width: 100%;
+    height:200px;
   }
 
   .verificado {
@@ -330,11 +479,17 @@ html, body {
     width: 40px;
     height: 40px;
   }
+  .pedido__recebido--text{
+    margin-left:1px;
+  }
 }
 
 @media screen and (max-width:360px) {
   .preparo__pedido {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .iframe__mapa{
+    width: 100%;
   }
 }
 
@@ -347,6 +502,10 @@ html, body {
     font-size: 1.7vh;
   }
 
+  .iframe__mapa{
+    width: 99%;
+  }
+
   .volta {
     font-size: 1.4vh;
     line-height: 1.4vh;
@@ -357,15 +516,15 @@ html, body {
   }
 
   .preparo__pedido {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .entrega__pedido {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .pedido__refeicao--text {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .verificado {
@@ -377,8 +536,18 @@ html, body {
     width: 30px;
     height: 30px;
   }
+  .pedido__img{
+    width:4.5vh;
+  }
 
   .titulo__pedido {
     font-size: 12px;
+    margin-left: 5px;
+  }
+  .status__pedido{
+    gap:0.6vh;
+  }
+  .pedido__recebido--text{
+    margin-left: 23px;
   }
 }
