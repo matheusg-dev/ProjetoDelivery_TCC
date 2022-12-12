@@ -38,9 +38,9 @@
 
 .main {
   margin: 0 auto;
-    margin-top: 10%;
-  width: 50%;
-  height: 40%;
+    margin-top: 1%;
+  width: 100%;
+  height: 10%;
   padding: 2.43vh 5.43vh 5.43vh 5.43vh;
   background: #F7F5F5;
   flex-direction: column;
@@ -50,9 +50,9 @@
 }
 
 .form{
-  width:30%;
+  width:45%;
     height:10%;
-    margin-top: 7%;
+    margin-top: 3%;
     flex-direction: column;
     background: #F7F5F5;
     border-radius: 15px;
@@ -78,12 +78,12 @@
 .grid {
   display: grid;
   grid-template-columns: 36.83vh 36.83vh;
-  gap: 2.35vh 7vh;
+  gap: 2.35vh 1vh;
 }
 
 .label__nome {
   font-size: 2.17vh;
-  margin-left:140px;
+  margin-left:1px;
 }
 
 .label__email {
@@ -92,7 +92,7 @@
 }
 .label__senha {
   font-size: 2.17vh;
-  margin-left:170px;
+  margin-left:1px;
 }
 .label__repetirsenha {
   font-size: 2.17vh;
@@ -100,7 +100,7 @@
 }
 .label__cpf {
   font-size: 2.17vh;
-  margin-left:170px;
+  margin-left:1px;
 }
 .label__telefone {
   font-size: 2.17vh;
@@ -108,7 +108,7 @@
 }
 .label__cep {
   font-size: 2.17vh;
-  margin-left:170px;
+  margin-left:1px;
 }
 .label__endereco {
   font-size: 2.17vh;
@@ -116,7 +116,7 @@
 }
 .label__numero {
   font-size: 2.17vh;
-  margin-left:160px;
+  margin-left:1px;
 }
 .label__bairro {
   font-size: 2.17vh;
@@ -177,9 +177,10 @@ input[type=number] {
 
 .botao {
   background: #FFA451;
-  width: 43.8vh;
+  width: 60%;
   height: 7.5vh;
   margin-top: 7vh;
+  margin-left:0.1vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,8 +199,9 @@ input[type=number] {
 
 @media screen and (max-width:1280px) {
   .form {
-      width:40%;
+      width:50%;
       height: 50%;
+      margin-top: 8%
   }
   .grid{
     gap:1.8vh 0.2vh;
@@ -207,11 +209,12 @@ input[type=number] {
 } 
 @media screen and (max-width:1024px) {
   .label__nome{
-    margin-left:135px;
+    margin-left:1px;
   }
   .form {
-      width:30%;
+      width:50%;
       height: 55%;
+      margin-top: 5%
   }
   .grid{
     gap:1.8vh 5.2vh;
@@ -227,9 +230,9 @@ input[type=number] {
 
 @media screen and (max-width:912px) {
   .form {
-    width: 70%;
+    width: 78%;
     height: 60%;
-    margin-top:20%;
+    margin-top:8%;
     padding: 3.43vh 5.43vh 0px 5.43vh;
   }
   .status{
@@ -250,7 +253,8 @@ input[type=number] {
     overflow-x: hidden;
   }
   .form{
-    width:70%;
+    width:78%;
+    margin-top: 8%
   }
   .status{
     font-size:30px;
@@ -262,6 +266,9 @@ input[type=number] {
 }
 
   @media screen and (max-width:768px) {
+    .form{
+      width:80%;
+    }
     .grid{
       grid-template-columns: 32.83vh 26.83vh;
       gap:1.8vh 10.2vh;
@@ -271,6 +278,7 @@ input[type=number] {
   @media screen and (max-width:540px) {
     .form{
       height:65%;
+      margin-top: 7%
     }
     .grid{
       gap:1.8vh 12.2vh;
@@ -280,19 +288,19 @@ input[type=number] {
       font-size:20px;
     }
     .label__nome{
-      margin-left: 125px;
+      margin-left: 1px;
     }
     .label__senha{
-      margin-left:127px
+      margin-left:1px
     }
     .label__cpf{
-      margin-left:127px
+      margin-left:1px
     }
     .label__cep{
-      margin-left:127px
+      margin-left:1px
     }
     .label__numero{
-      margin-left:127px
+      margin-left:1px
     }
   }
 
@@ -301,7 +309,8 @@ input[type=number] {
     overflow-x: hidden;
   }
   .form {
-    width: 65%;
+    width: 70%;
+    margin-top: 20%
   }
   .carrinho__gap{
     width:55%;
@@ -314,19 +323,19 @@ input[type=number] {
     gap:1.8vh 5.2vh;
   }
   .label__nome{
-    margin-left:40px;
+    margin-left:1px;
   }
   .label__senha{
-    margin-left:40px;
+    margin-left:1px;
   }
   .label__cpf{
-    margin-left:40px;
+    margin-left:1px;
   }
   .label__cep{
-    margin-left:40px;
+    margin-left:1px;
   }
   .label__numero{
-    margin-left:40px;
+    margin-left:1px;
   }
   .botao {
     width: 32.8vh;
@@ -344,19 +353,37 @@ input[type=number] {
 
 @media screen and (max-width:393px) {
   .label__nome{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__senha{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__cpf{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__cep{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__nome{
-    margin-left:30px;
+    margin-left:1px;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .label__nome{
+    margin-left:1px;
+  }
+  .label__senha{
+    margin-left:1px;
+  }
+  .label__cpf{
+    margin-left:1px;
+  }
+  .label__cep{
+    margin-left:1px;
+  }
+  .label__nome{
+    margin-left:1px;
   }
 }
 
@@ -364,6 +391,7 @@ input[type=number] {
   .form{
     height:63%;
     width:70%;
+    margin-top: 4%
   }
   .status{
     font-size:20px;
@@ -375,19 +403,19 @@ input[type=number] {
     gap: 2.8vh 6.2vh;
   }
   .label__nome{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__senha{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__cpf{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__cep{
-    margin-left:30px;
+    margin-left:1px;
   }
   .label__numero{
-    margin-left:30px;
+    margin-left:1px;
   }
 }
 
@@ -399,10 +427,23 @@ input[type=number] {
 
 @media screen and (max-width:280px) {
   .label__nome{
-    margin-left:29px;
+    margin-left:1px;
+  }
+  .label__senha{
+    margin-left:1px;
+  }
+  .label__cpf{
+    margin-left:1px;
+  }
+  .label__cep{
+    margin-left:1px;
+  }
+  .label__numero{
+    margin-left:1px;
   }
   .form{
-    width:65%;
+    width:68%;
+    margin-top: 9%
   }
   .carrinho__gap{
     width:58%;

@@ -51,5 +51,3 @@ btnSalvaLocal.addEventListener("click", () => {
 
 
 })
-
-/* */
