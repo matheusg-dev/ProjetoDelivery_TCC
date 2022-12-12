@@ -37,11 +37,7 @@ btnLogin.onclick = (e) =>{
         
         localStorage.setItem("usuarioAtivo", JSON.stringify(usuarioAtivo))
         
-<<<<<<< HEAD
         window.location.assign("/src/home5/home5.html") 
-=======
-       window.location.assign("/src/home5/home5.html")
->>>>>>> 44d4463f018baedf153ec384ac0a8efee2f5334b
     }else {
         alert("Usuário e/ou senha inválidos")
     }

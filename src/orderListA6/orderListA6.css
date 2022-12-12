@@ -261,9 +261,11 @@
  }
 
  @media screen and (max-width:415px) {
-   .carrinho {
-     width: 50.3vh;
-   }
+   
+    .carrinho {
+      width: 59.3vh;
+  }
+   
 
    .carrinho__gap {
      margin-left: 1.6vh;
@@ -317,6 +319,10 @@
  @media screen and (max-width:393px) {
    .prato__img {
      margin-left: 44.9vh;
+   }
+
+   .carrinho__itens{
+    margin-left: 123px;
    }
  }
 

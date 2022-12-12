@@ -552,4 +552,8 @@
     .prato__img {
         width: 22.77vh;
     }
+
+    .popular {
+        font-size: smaller;
+    }
 }

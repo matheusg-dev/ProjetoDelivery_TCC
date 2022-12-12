@@ -58,7 +58,5 @@ window.onload = function(){
     bairro.appendChild(criaBairro)
     
     
-    btnSair.onclick = function () {
-        window.location.assign("/src/authentic3/authentic3.html")
-    }
+    
 }
