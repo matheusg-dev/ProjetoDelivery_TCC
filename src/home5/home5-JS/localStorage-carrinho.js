@@ -1,5 +1,6 @@
 
-btnImg.forEach((mostraValor) => {
+
+/* btnImg.forEach((mostraValor) => {
     mostraValor.onclick = function (evento) {
         mostraValor.outerHTML
 
@@ -9,4 +10,4 @@ btnImg.forEach((mostraValor) => {
         
 
     }
-})
+}) */

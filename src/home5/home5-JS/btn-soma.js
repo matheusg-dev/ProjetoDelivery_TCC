@@ -17,8 +17,28 @@ valorPrato.forEach((alteraValor) => {
             rotaAtiva.onclick = function () {
                 let naoAlterado = rotaAtiva.parentElement.childNodes[7].innerText
                     
-                if (naoAlterado === alterado) {        
-                    window.location.assign("/src/orderListA6/orderListA6.html")
+                let imgLogin = rotaAtiva.outerHTML
+                let nomeImgLogin = rotaAtiva.alt
+                let valorImgLogin = rotaAtiva.parentElement.children[3].innerText
+                
+                let usuarioAtivo = new Array()
+    
+                if(localStorage.hasOwnProperty("usuarioAtivo")){
+                    usuarioAtivo = JSON.parse(localStorage.getItem("usuarioAtivo"))
+                }
+
+                usuarioAtivo.push({
+                    imgLogin,
+                    nomeImgLogin,
+                    valorImgLogin,
+                });
+                
+                localStorage.setItem("usuarioAtivo", JSON.stringify(usuarioAtivo))
+                console.log("foi")
+
+                if (naoAlterado === alterado) {   
+                    
+                  window.location.assign("/src/orderListA6/orderListA6.html")
                 }
             }
         })

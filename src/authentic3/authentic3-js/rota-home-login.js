@@ -20,7 +20,22 @@ btnLogin.onclick = (e) =>{
     }else if (senhaLogin.value == ""){
         alert("Usuário e/ou senha inválidos")
     }else if(confereEmail && confereSenha == true){
-        window.location.assign("/src/home5/home5.html")
+        
+        let emailLoginAtivo = emailLogin.value
+        
+        let usuarioAtivo = new Array()
+        
+        if(localStorage.hasOwnProperty("usuarioAtivo")){
+            usuarioAtivo = JSON.parse(localStorage.getItem("usuarioAtivo"))
+        }
+        
+        usuarioAtivo.push({
+            emailLoginAtivo,
+        })
+        
+        localStorage.setItem("usuarioAtivo", JSON.stringify(usuarioAtivo))
+        
+       /*  window.location.assign("/src/home5/home5.html") */
     }else {
         alert("Usuário e/ou senha inválidos")
     }
