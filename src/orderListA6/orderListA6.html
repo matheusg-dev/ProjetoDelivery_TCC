@@ -26,13 +26,9 @@
 
     <main class="grid carrinho__itens">
       <div class="flex itens" data-carrinho>
-        <div class="flex prato__itens">
-          <img
-            class="prato__img"
-            src="../../assets/img/saladafrutaquinoa.svg"
-            alt="salada de fruta de quinoa"
-          />
-          <div>
+        <div class="flex prato__itens" >
+          <section data-img></section>
+          <div >
             <p class="salada">Salada de fruta de quinoa</p>
             <p class="prato__itens--texto">2 pacotes</p>
             <p class="cifrao">20,000</p>
@@ -41,12 +37,13 @@
         <div class="logo__subtracao"></div>
         <div class="logo__adicao"></div>
       </div>
+
     </main>
 
     <footer class="flex center carrinho__total">
       <div>
         <p class="total__texto">Total</p>
-        <p class="cifrao">60,000</p>
+        <p class="cifrao" data-total>60,000</p>
       </div>
       <button class="checkout">Confirmar</button>
     </footer>

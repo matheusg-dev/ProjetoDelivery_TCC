@@ -47,7 +47,7 @@ Um site com telas de etapas de compra...
   - [x] Favoritar item
   - [x] Botão de soma da Página Home
   - [x] Validar cadastro
-  - [ ] Validar perfil
+  - [x] Validar perfil
   - [ ] Barra de pesquisa
   - [x] Consumo de API
   - [x] Funcionalidade de ocultar/mostrar senha

@@ -7,15 +7,17 @@ btnLogin.onclick = (e) =>{
 
     e.preventDefault();
 
+    if(emailLogin.value == "souVisitante@visitante.com"){
+        window.location.assign("/src/home5/home5.html") 
+    }
+    
     var arrStorage = window.localStorage.getItem("dadosObjetoUsuario")
+    
     
     let confereEmail = arrStorage.includes(emailLogin.value)
     let confereSenha = arrStorage.includes(senhaLogin.value)
     
-
-    if(emailLogin.value == "souVisitante@visitante.com"){
-        window.location.assign("/src/home5/home5.html") 
-    }else if (emailLogin.value == ""){
+    if (emailLogin.value == ""){
         alert("Usuário e/ou senha inválidos")
     }else if (senhaLogin.value == ""){
         alert("Usuário e/ou senha inválidos")
@@ -35,7 +37,7 @@ btnLogin.onclick = (e) =>{
         
         localStorage.setItem("usuarioAtivo", JSON.stringify(usuarioAtivo))
         
-       /*  window.location.assign("/src/home5/home5.html") */
+       window.location.assign("/src/home5/home5.html")
     }else {
         alert("Usuário e/ou senha inválidos")
     }
