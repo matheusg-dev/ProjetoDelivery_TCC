@@ -38,7 +38,7 @@
 
 .label__nome {
   font-size: 2.17vh;
-  margin-left:170px;
+  margin-left:140px;
 }
 
 .label__email {
@@ -161,6 +161,9 @@ input[type=number] {
   }
 } 
 @media screen and (max-width:1024px) {
+  .label__nome{
+    margin-left:135px;
+  }
   .form {
       width:30%;
       height: 55%;
