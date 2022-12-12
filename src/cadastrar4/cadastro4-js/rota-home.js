@@ -1,3 +1,4 @@
+/*
 
 formStorage[10].onclick = (eventoEnviar) => {
   eventoEnviar.preventDefault();
@@ -9,3 +10,4 @@ formStorage[10].onclick = (eventoEnviar) => {
     window.location.assign("/src/home5/home5.html")
   }
 }
+*/

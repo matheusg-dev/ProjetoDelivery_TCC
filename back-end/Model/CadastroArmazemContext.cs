@@ -25,7 +25,7 @@ public partial class CadastroArmazemContext : DbContext
     {
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8202A76BF");
+            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuario__2B3DE7B8E4AFF8F1");
 
             entity.ToTable("Usuario");
 

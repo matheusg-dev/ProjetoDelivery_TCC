@@ -1,19 +1,64 @@
-.form-container {
-  display: flex;
-  background-image: linear-gradient(180deg, #FFA451, 54%, #F7F5F5 50%);
+.carrinho {
+  background: #FFA451;
+  height: 8%;
   align-items: center;
-  justify-content: center;
+  color: #ffffff;
 }
 
-.form {
-  width: 35%;
-  height: 50%;
+.carrinho__gap {
+  gap: 5.0vh;
+  align-items: center;
+  margin-left: 3.7vh;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.volta {
+  font-size: 1.8vh;
+  line-height: 2.5vh;
+  align-items: center;
+  color: #27214D;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 6px 8px;
+  gap: 4px;
+}
+
+.volta::before {
+  content: url(../../assets/img/seta__voltar.svg);
+  font-size: 2.9vh;
+}
+
+.form-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.main {
+  margin: 0 auto;
+    margin-top: 10%;
+  width: 50%;
+  height: 40%;
   padding: 2.43vh 5.43vh 5.43vh 5.43vh;
   background: #F7F5F5;
   flex-direction: column;
-  align-items: center;
+
   border-radius: 15px;
   filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+}
+
+.form{
+  width:30%;
+    height:10%;
+    margin-top: 7%;
+    flex-direction: column;
+    background: #F7F5F5;
+    border-radius: 15px;
+    align-items: center;
+    gap:2.1vh;
+    
 }
 
 .Armazem {
@@ -33,7 +78,7 @@
 .grid {
   display: grid;
   grid-template-columns: 36.83vh 36.83vh;
-  gap: 2.35vh 4vh;
+  gap: 2.35vh 7vh;
 }
 
 .label__nome {
@@ -71,7 +116,7 @@
 }
 .label__numero {
   font-size: 2.17vh;
-  margin-left:170px;
+  margin-left:160px;
 }
 .label__bairro {
   font-size: 2.17vh;
@@ -184,11 +229,18 @@ input[type=number] {
   .form {
     width: 70%;
     height: 60%;
+    margin-top:20%;
     padding: 3.43vh 5.43vh 0px 5.43vh;
+  }
+  .status{
+    font-size:30px;
   }
   .grid {
     gap: 3.8vh 12.2vh;
     grid-template-columns: 26.83vh 26.83vh;
+  }
+  .botao{
+    margin-bottom:6.1vh;
   }
 
 }
@@ -199,6 +251,9 @@ input[type=number] {
   }
   .form{
     width:70%;
+  }
+  .status{
+    font-size:30px;
   }
   .grid{
     gap:2.8vh 6.2vh;
@@ -220,6 +275,9 @@ input[type=number] {
     .grid{
       gap:1.8vh 12.2vh;
     
+    }
+    .status{
+      font-size:20px;
     }
     .label__nome{
       margin-left: 125px;
@@ -243,7 +301,10 @@ input[type=number] {
     overflow-x: hidden;
   }
   .form {
-    width: 68%;
+    width: 65%;
+  }
+  .carrinho__gap{
+    width:55%;
   }
   .titulo {
     font-size: 3vh;
@@ -272,6 +333,15 @@ input[type=number] {
   }
 }
 
+@media screen and (max-width:412px) {
+  .status{
+    font-size:25px;
+  }
+  .carrinho__gap{
+    width:58%;
+  }
+}
+
 @media screen and (max-width:393px) {
   .label__nome{
     margin-left:30px;
@@ -294,6 +364,12 @@ input[type=number] {
   .form{
     height:63%;
     width:70%;
+  }
+  .status{
+    font-size:20px;
+  }
+  .carrinho__gap{
+    width:59%;
   }
   .grid{
     gap: 2.8vh 6.2vh;
@@ -324,6 +400,15 @@ input[type=number] {
 @media screen and (max-width:280px) {
   .label__nome{
     margin-left:29px;
+  }
+  .form{
+    width:65%;
+  }
+  .carrinho__gap{
+    width:58%;
+  }
+  .status{
+    font-size:15px;
   }
 }
 
