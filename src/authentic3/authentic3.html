@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../assets/css padrao/reset.css" />
     <link rel="stylesheet" href="../../assets/css padrao/estilosPadroes.css" />
     <link rel="stylesheet" href="../authentic3/authentic3.css" />
+    <script src="../authentic3/authentic3-js/rota-home-login.js" defer></script>
   </head>
   <body>
     <main class="tela__inteira">
@@ -24,24 +25,24 @@
       </section>
 
       <section class="tela__secundaria flex">
-        <div class="nome flex">
+        <form class="nome flex">
           <label class="label" for="fnome">Email</label>
-          <input class="input__email"type="text" id="email" placeholder="Digite seu email" oninput="emailValidate()" required/>
+          <input data-emailLogin class="input__email"type="text" id="email" placeholder="Digite seu email ou souVisitante@visitante.com" oninput="emailValidate()" required/>
           <span class="span__email">Digite um email válido</span>
          <label class="label" for="fnome">Senha</label>
           <div class="nomes flex">
-            <input class="input__senha" type="password" id="senha" placeholder="Digite sua senha" oninput="senhaValidate()" required/>
+            <input data-senhaLogin class="input__senha" type="password" id="senha" placeholder="Digite sua senha" oninput="senhaValidate()" required/>
             <img class="imagem__olho" src="../../assets/img/eye.svg" alt="">
           </div>
           <span class="span__senha"> Digite uma senha com no mínimo 8 caracteres</span>
-        </div>
-        <div class="buttons">
-          <button class="btn__pedido" type="submit">Iniciar pedido</button>
-          <button class="btn__cadastro" type="submit">Cadastrar-se</button>
-        </div>
+          <div class="buttons">
+            <button data-btnLogin class="btn__pedido" type="submit">Iniciar pedido</button>
+            <a href="../cadastrar4/cadastrar4.html" class="btn__cadastro" >Cadastrar-se</a>
+          </div>
+        </form>
       </section>
     </main>
 
-    <script src="../authentic3/authentic3.js"></script>
+    <script src="../authentic3/authentic3-js/authentic3.js"></script>
   </body>
 </html>

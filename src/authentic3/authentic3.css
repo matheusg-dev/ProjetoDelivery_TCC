@@ -104,8 +104,10 @@
 }
 
 .btn__cadastro {
-    width: 26.08vh;
-    height: 5.97vh;
+    color: #ffffff;
+    font-family: Medium;
+    cursor: pointer;
+    padding: 1.9vh 7vh;
     background: #FFA451;
     border-radius: 10px;
     border: none;

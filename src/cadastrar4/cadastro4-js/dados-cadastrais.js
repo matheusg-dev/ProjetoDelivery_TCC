@@ -45,8 +45,11 @@ btnSalvaLocal.addEventListener("click", () => {
     localStorage.setItem(
       "dadosObjetoUsuario",
       JSON.stringify(dadosObjetoUsuario)
-    ); 
+    );    
+
   }
+
+
 })
 
 /* */
